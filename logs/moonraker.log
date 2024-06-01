@@ -359,3 +359,17 @@ Content-Type: multipart/form-data; boundary=------------------------pi5qm8mqvBmJ
 2024-06-01 04:00:09,635 [klippy_apis.py:start_print()] - Requesting Job Start, filename = a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode
 2024-06-01 04:00:09,640 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 1322.32ms
 2024-06-01 04:00:09,747 [job_state.py:_status_update()] - Job Started: a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 04:12:04,033 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.82ms
+2024-06-01 04:12:04,033 [websockets.py:open()] - Websocket Opened: ID: 140732472014096, Proxied: False, User Agent: Dart/3.3 (dart:io), Host Name: 3dprinters.local
+2024-06-01 04:12:04,043 [websockets.py:_handle_identify()] - Websocket 140732472014096 Client Identified - Name: Mobileraker-ios, Version: 2.6.19-468, Type: mobile
+2024-06-01 04:12:04,085 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.210) [_TRUSTED_USER_] 1.60ms
+2024-06-01 04:12:04,198 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.210) [_TRUSTED_USER_] 1.61ms
+2024-06-01 04:12:34,261 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732472014096
+2024-06-01 04:12:39,034 [websockets.py:on_close()] - Websocket Closed: ID: 140732472014096 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2024-06-01 04:29:07,717 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-01 04:51:01,357 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.50ms
+2024-06-01 04:51:01,357 [websockets.py:open()] - Websocket Opened: ID: 140732460051088, Proxied: False, User Agent: Dart/3.3 (dart:io), Host Name: 3dprinters.local
+2024-06-01 04:51:01,378 [websockets.py:_handle_identify()] - Websocket 140732460051088 Client Identified - Name: Mobileraker-ios, Version: 2.6.19-468, Type: mobile
+2024-06-01 04:51:01,430 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.80ms
+2024-06-01 04:51:31,436 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732460051088
+2024-06-01 04:51:36,358 [websockets.py:on_close()] - Websocket Closed: ID: 140732460051088 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
