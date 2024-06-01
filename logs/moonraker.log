@@ -1086,3 +1086,31 @@ Content-Type: multipart/form-data; boundary=------------------------wVIcKnIy0q2j
 2024-06-01 16:47:27,566 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735520583312
 2024-06-01 16:47:30,286 [websockets.py:on_close()] - Websocket Closed: ID: 140735529615632 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.96
 2024-06-01 16:47:32,478 [websockets.py:on_close()] - Websocket Closed: ID: 140735520583312 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.97
+2024-06-01 17:02:00,496 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.210
+2024-06-01 17:02:00,497 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.73ms
+2024-06-01 17:02:00,497 [websockets.py:open()] - Websocket Opened: ID: 140735531166544, Proxied: False, User Agent: Dart/3.3 (dart:io), Host Name: 3dprinters.local
+2024-06-01 17:02:00,541 [websockets.py:_handle_identify()] - Websocket 140735531166544 Client Identified - Name: Mobileraker-ios, Version: 2.6.19-468, Type: mobile
+2024-06-01 17:02:04,292 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 1.28ms
+2024-06-01 17:02:20,022 [websockets.py:on_close()] - Websocket Closed: ID: 140735531166544 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.51
+2024-06-01 17:22:57,108 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-01 17:27:57,108 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-01 17:36:07,058 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-01 17:36:07,180 [application.py:log_request()] - 101 GET /websocket?token=SETCU7T5IGK7WOIVP56ZUBRWSUFIBRBR (192.168.0.181) [_TRUSTED_USER_] 0.36ms
+2024-06-01 17:36:07,180 [websockets.py:open()] - Websocket Opened: ID: 140735529509584, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 17:36:07,187 [websockets.py:_handle_identify()] - Websocket 140735529509584 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 17:36:07,187 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 17:36:31,019 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------8MggqtQVsS86jcN6gQLgrx
+2024-06-01 17:36:31,222 [application.py:post()] - Processing Uploaded File: abl_bl_touch_uhf_13m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 17:36:31,296 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-01 17:36:31,330 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "abl_bl_touch_uhf_13m_0.20mm_245C_ASA_ENDER3V2.gcode") successfully finished
+2024-06-01 17:36:31,331 [klippy_apis.py:start_print()] - Requesting Job Start, filename = abl_bl_touch_uhf_13m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 17:36:31,335 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 316.15ms
+2024-06-01 17:36:31,477 [job_state.py:_status_update()] - Job Started: abl_bl_touch_uhf_13m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 17:44:07,301 [websockets.py:on_close()] - Websocket Closed: ID: 140735531256976 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.30
+2024-06-01 17:49:16,040 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-01 17:49:16,122 [application.py:log_request()] - 101 GET /websocket?token=ZX25QRTBG5I4U5B5IXO2RTXUVVXI53CS (192.168.0.100) [_TRUSTED_USER_] 0.43ms
+2024-06-01 17:49:16,122 [websockets.py:open()] - Websocket Opened: ID: 140735531090704, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-01 17:49:16,127 [websockets.py:_handle_identify()] - Websocket 140735531090704 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 17:49:16,128 [file_manager.py:get_file_list()] - Updating File List <config>...
