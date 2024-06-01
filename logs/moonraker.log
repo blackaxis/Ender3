@@ -973,3 +973,10 @@ Content-Type: multipart/form-data; boundary=------------------------nhzjgYpiFcnV
 2024-06-01 12:58:11,406 [websockets.py:_handle_identify()] - Websocket 140735493827280 Client Identified - Name: Mobileraker-ios, Version: 2.6.19-468, Type: mobile
 2024-06-01 12:58:11,470 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.81ms
 2024-06-01 12:58:28,699 [websockets.py:on_close()] - Websocket Closed: ID: 140735493827280 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.30
+2024-06-01 13:10:35,544 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.51ms
+2024-06-01 13:10:35,544 [websockets.py:open()] - Websocket Opened: ID: 140735529699472, Proxied: False, User Agent: Dart/3.3 (dart:io), Host Name: 3dprinters.local
+2024-06-01 13:10:35,668 [websockets.py:_handle_identify()] - Websocket 140735529699472 Client Identified - Name: Mobileraker-ios, Version: 2.6.19-468, Type: mobile
+2024-06-01 13:10:35,914 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.86ms
+2024-06-01 13:11:05,761 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735529699472
+2024-06-01 13:11:10,546 [websockets.py:on_close()] - Websocket Closed: ID: 140735529699472 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2024-06-01 13:35:55,966 [websockets.py:on_close()] - Websocket Closed: ID: 140735493718928 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.50
