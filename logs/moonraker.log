@@ -373,3 +373,24 @@ Content-Type: multipart/form-data; boundary=------------------------pi5qm8mqvBmJ
 2024-06-01 04:51:01,430 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.80ms
 2024-06-01 04:51:31,436 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732460051088
 2024-06-01 04:51:36,358 [websockets.py:on_close()] - Websocket Closed: ID: 140732460051088 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2024-06-01 05:04:07,724 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-01 05:13:22,010 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-01 05:13:22,027 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------T5PAiCjwbFkjPjFO6daxJn
+2024-06-01 05:13:23,214 [application.py:post()] - Processing Uploaded File: a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 05:13:23,312 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-01 05:13:23,354 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode") successfully finished
+2024-06-01 05:13:23,354 [klippy_apis.py:start_print()] - Requesting Job Start, filename = a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 05:13:23,361 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 1334.69ms
+2024-06-01 05:13:23,513 [job_state.py:_status_update()] - Job Started: a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 05:13:36,761 [application.py:log_request()] - 101 GET /websocket?token=COINLYMYGJ53XGFTXHJTOIQ24LZ4YWNK (192.168.0.181) [_TRUSTED_USER_] 0.59ms
+2024-06-01 05:13:36,762 [websockets.py:open()] - Websocket Opened: ID: 140732462450384, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 05:13:36,872 [websockets.py:_handle_identify()] - Websocket 140732462450384 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 05:13:36,873 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 05:13:38,317 [application.py:log_request()] - 101 GET /websocket?token=M333DCFYSWUTAUXADO2WHIW34VXEG6DW (192.168.0.181) [_TRUSTED_USER_] 0.41ms
+2024-06-01 05:13:38,317 [websockets.py:open()] - Websocket Opened: ID: 140732460854224, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 05:13:38,324 [websockets.py:_handle_identify()] - Websocket 140732460854224 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 05:13:38,324 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 05:51:52,415 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-01 05:54:07,738 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
