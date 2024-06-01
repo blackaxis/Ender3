@@ -1,0 +1,361 @@
+-------------------- Log Start | Sat Jun  1 04:07:32 2024 --------------------
+platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
+data_path: /home/blackaxis/Ender3_data
+is_default_data_path: False
+config_file: /home/blackaxis/Ender3_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: 5f9d5402db9a40248e3d1a5c01ed37ed
+unix_socket_path: /home/blackaxis/Ender3_data/comms/moonraker.sock
+software_version: v0.8.0-359-g73df63d
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/blackaxis/Ender3_data/logs/moonraker.log
+python_version: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+launch_args: /home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/moonraker.py -d /home/blackaxis/Ender3_data
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7126
+klippy_uds_address = /home/blackaxis/Ender3_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager canboot]
+type = git_repo
+origin = https://github.com/Arksine/Katapult.git
+path = ~/Katapult
+is_system_service = False
+
+[update_manager moonraker-telegram-bot]
+type = git_repo
+path = ~/moonraker-telegram-bot
+origin = https://github.com/nlef/moonraker-telegram-bot.git
+env = ~/moonraker-telegram-bot-env/bin/python
+requirements = scripts/requirements.txt
+install_script = scripts/install.sh
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+[update_manager mobileraker]
+type = git_repo
+path = /home/blackaxis/mobileraker_companion
+origin = https://github.com/Clon1998/mobileraker_companion.git
+primary_branch = main
+managed_services = mobileraker
+env = /home/blackaxis/mobileraker-env/bin/python
+requirements = scripts/mobileraker-requirements.txt
+install_script = scripts/install.sh
+
+#################################################################
+All Configuration Files:
+/home/blackaxis/Ender3_data/config/moonraker.conf
+#################################################################
+
+Database Versions: pylmdb = 1.4.1, lmdb = (0, 9, 29)
+Unsafe Shutdown Count: 54
+
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: dddf145f114e1876
+  hardware_desc: 
+  model: Raspberry Pi 5 Model B Rev 1.0
+  total_memory: 8245712
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 6f
+  manufacturer: Unknown
+  oem_id: 0303
+  product_name: SDABC
+  product_revision: 1.0
+  serial_number: aa0001c7
+  manufacturer_date: 5/2023
+  capacity: 58.3 GiB
+  total_bytes: 62550179840
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.6.28+rpt-rpi-2712
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+  mobileraker
+Module libcamera unavailble, import failed
+
+Systemd unit moonraker-Ender3.service:
+unit_name: moonraker-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['network-online.target', 'sysinit.target', 'system.slice', '-.mount']
+**After=['system.slice', 'basic.target', 'sysinit.target', '-.mount', 'network-online.target', 'systemd-journald.socket']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/moonraker.env
+**ExecStart=/home/blackaxis/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/blackaxis/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3.service
+**Description=API Server for Klipper SV1 Ender3
+**User=blackaxis
+
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['-.mount', 'system.slice', 'sysinit.target']
+**After=['system.slice', '-.mount', 'sysinit.target', 'network-online.target', 'systemd-journald.socket', 'basic.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/klipper.env
+**ExecStart=/home/blackaxis/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/blackaxis/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=blackaxis
+Git Repo moonraker: No warnings detected
+Git Repo klipper: No warnings detected
+Git Repo mainsail-config: No warnings detected
+Git Repo canboot: No warnings detected
+Git Repo moonraker-telegram-bot: No warnings detected
+Git Repo fluidd-config: No warnings detected
+Git Repo mobileraker: No warnings detected
+Klipper Version: v0.12.0-192-gb7f7b8a3
+2024-06-01 00:07:32,353 [websockets.py:on_close()] - Websocket Closed: ID: 140732471905616 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.32
+2024-06-01 00:09:53,090 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-01 00:09:53,435 [application.py:log_request()] - 101 GET /websocket?token=IM7IAV2N2XVW3XB2ODAIQYTH25QXXBQD (192.168.0.100) [_TRUSTED_USER_] 0.45ms
+2024-06-01 00:09:53,435 [websockets.py:open()] - Websocket Opened: ID: 140732473491280, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-01 00:09:53,442 [websockets.py:_handle_identify()] - Websocket 140732473491280 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 00:09:53,442 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 00:10:14,794 [websockets.py:on_close()] - Websocket Closed: ID: 140732473491280 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.35
+2024-06-01 00:19:19,662 [application.py:log_request()] - 101 GET /websocket?token=YMRSOXCPJTOKTMYA5DLCKPPMJM6GEVBQ (192.168.0.181) [_TRUSTED_USER_] 0.38ms
+2024-06-01 00:19:19,662 [websockets.py:open()] - Websocket Opened: ID: 140732472094608, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 00:19:19,671 [websockets.py:_handle_identify()] - Websocket 140732472094608 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 00:19:19,672 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 00:19:23,817 [websockets.py:on_close()] - Websocket Closed: ID: 140732472094608 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.16
+2024-06-01 00:26:25,800 [application.py:log_request()] - 101 GET /websocket?token=6B5A7GJGSJ3TFCH7QJYAYHH2W3YGI3ZA (192.168.0.181) [_TRUSTED_USER_] 0.58ms
+2024-06-01 00:26:25,800 [websockets.py:open()] - Websocket Opened: ID: 140732459986640, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 00:26:25,806 [websockets.py:_handle_identify()] - Websocket 140732459986640 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 00:26:25,806 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 00:26:26,271 [application.py:log_request()] - 101 GET /websocket?token=OMXXK3YHRBJ46LXE5RF5WYI5C6AGY2VO (192.168.0.181) [_TRUSTED_USER_] 1.05ms
+2024-06-01 00:26:26,271 [websockets.py:open()] - Websocket Opened: ID: 140732472077392, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 00:26:26,635 [websockets.py:_handle_identify()] - Websocket 140732472077392 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 00:26:26,635 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 01:14:07,657 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-01 01:59:05,046 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------x3KSb0Su3XMqPB4DthQtVI
+2024-06-01 01:59:06,495 [application.py:post()] - Processing Uploaded File: x_endstop_block_PLUS_28m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 01:59:06,565 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-01 01:59:06,608 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "x_endstop_block_PLUS_28m_0.20mm_245C_ASA_ENDER3V2.gcode") successfully finished
+2024-06-01 01:59:06,608 [klippy_apis.py:start_print()] - Requesting Job Start, filename = x_endstop_block_PLUS_28m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 01:59:06,614 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 1568.51ms
+2024-06-01 01:59:06,709 [job_state.py:_status_update()] - Job Started: x_endstop_block_PLUS_28m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 02:32:40,883 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-01 02:32:40,985 [application.py:log_request()] - 101 GET /websocket?token=YEBVOTZFJRLSYMN2T63WVJNZD4YLITJ4 (192.168.0.100) [_TRUSTED_USER_] 0.45ms
+2024-06-01 02:32:40,985 [websockets.py:open()] - Websocket Opened: ID: 140732460370128, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-01 02:32:41,008 [websockets.py:_handle_identify()] - Websocket 140732460370128 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 02:32:41,008 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 02:32:48,539 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-01 02:33:32,500 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 175.000 205.000 7.659 [15812.487]
+2024-06-01 02:33:35,471 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 175.000 205.000 7.659 [15812.487]
+2024-06-01 02:33:49,332 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-01 02:35:17,577 [application.py:prepare()] - Upload Request Received from 192.168.0.100
+Content-Type: 
+2024-06-01 02:35:17,586 [application.py:prepare()] - Upload Request Received from 192.168.0.100
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary0T8iNQszvuOFBu8L
+2024-06-01 02:35:17,589 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-01 02:35:17,590 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.100) [_TRUSTED_USER_] 4.92ms
+2024-06-01 02:35:18,726 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-01 02:35:18,755 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 02:35:18,759 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 02:35:18,900 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 02:35:19,981 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-01 02:35:19,998 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-01 02:35:22,517 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-01 02:35:22,518 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-01 02:35:22,768 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-01 02:35:23,026 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-01 02:35:23,520 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-01 02:39:40,427 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-01 02:41:39,712 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-01 02:45:06,592 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-01 02:47:35,779 [klippy_apis.py:start_print()] - Requesting Job Start, filename = x_endstop_block_PLUS_28m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 02:47:35,897 [job_state.py:_status_update()] - Job Started: x_endstop_block_PLUS_28m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 03:20:17,709 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-01 03:20:17,711 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1717226388.090893, Usage: 1.15%, Memory: 59408 kB
+System Time: 1717226389.092220, Usage: 2.61%, Memory: 59408 kB
+System Time: 1717226390.093122, Usage: 0.75%, Memory: 59408 kB
+System Time: 1717226391.093304, Usage: 1.24%, Memory: 59408 kB
+System Time: 1717226392.094427, Usage: 0.51%, Memory: 59408 kB
+System Time: 1717226393.095475, Usage: 0.45%, Memory: 59408 kB
+System Time: 1717226394.096724, Usage: 0.6%, Memory: 59408 kB
+System Time: 1717226395.097689, Usage: 0.45%, Memory: 59408 kB
+System Time: 1717226396.098290, Usage: 0.49%, Memory: 59408 kB
+System Time: 1717226397.099683, Usage: 0.51%, Memory: 59408 kB
+System Time: 1717226398.100766, Usage: 0.59%, Memory: 59408 kB
+System Time: 1717226399.102247, Usage: 2.31%, Memory: 59408 kB
+System Time: 1717226400.102655, Usage: 0.83%, Memory: 59408 kB
+System Time: 1717226401.102854, Usage: 1.76%, Memory: 59408 kB
+System Time: 1717226402.104080, Usage: 1.33%, Memory: 59408 kB
+System Time: 1717226403.104665, Usage: 1.16%, Memory: 59408 kB
+System Time: 1717226404.105907, Usage: 0.56%, Memory: 59408 kB
+System Time: 1717226405.106980, Usage: 0.45%, Memory: 59408 kB
+System Time: 1717226406.108271, Usage: 0.5%, Memory: 59408 kB
+System Time: 1717226407.109403, Usage: 0.49%, Memory: 59408 kB
+System Time: 1717226408.110381, Usage: 0.45%, Memory: 59408 kB
+System Time: 1717226409.111189, Usage: 0.47%, Memory: 59408 kB
+System Time: 1717226410.112236, Usage: 0.6%, Memory: 59408 kB
+System Time: 1717226411.112394, Usage: 2.65%, Memory: 59408 kB
+System Time: 1717226412.113463, Usage: 0.73%, Memory: 59408 kB
+System Time: 1717226413.113920, Usage: 1.81%, Memory: 59408 kB
+System Time: 1717226414.116361, Usage: 1.44%, Memory: 59408 kB
+System Time: 1717226415.115482, Usage: 1.27%, Memory: 59408 kB
+System Time: 1717226416.115759, Usage: 0.48%, Memory: 59408 kB
+System Time: 1717226417.116502, Usage: 0.48%, Memory: 59408 kB
+CPU Temperature: 56.75
+2024-06-01 03:20:17,712 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-01 03:23:01,309 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-01 03:23:01,436 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 03:23:01,467 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 03:23:02,565 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-01 03:23:02,634 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-01 03:23:04,168 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-01 03:23:04,169 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-01 03:23:04,170 [klippy_connection.py:_check_ready()] - 
+Can not update MCU 'mcu' config as it is shutdown
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-06-01 03:24:04,777 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-01 03:24:04,958 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 03:24:04,963 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 03:24:06,033 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-01 03:24:06,055 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-01 03:24:08,834 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-01 03:24:08,834 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-01 03:24:09,084 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-01 03:24:09,337 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-01 03:24:09,836 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-01 03:30:55,370 [websockets.py:on_close()] - Websocket Closed: ID: 140732460370128 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.19
+2024-06-01 03:35:03,143 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------RKz8j7xbVMlukES5NUtlky
+2024-06-01 03:35:04,325 [application.py:post()] - Processing Uploaded File: a_FlangeSpacer_pair_14m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 03:35:04,441 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-01 03:35:04,499 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "a_FlangeSpacer_pair_14m_0.20mm_245C_ASA_ENDER3V2.gcode") successfully finished
+2024-06-01 03:35:04,500 [klippy_apis.py:start_print()] - Requesting Job Start, filename = a_FlangeSpacer_pair_14m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 03:35:04,508 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 1365.29ms
+2024-06-01 03:35:04,631 [job_state.py:_status_update()] - Job Started: a_FlangeSpacer_pair_14m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 03:56:15,474 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.210
+2024-06-01 03:56:15,475 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.56ms
+2024-06-01 03:56:15,475 [websockets.py:open()] - Websocket Opened: ID: 140732471889744, Proxied: False, User Agent: Dart/3.3 (dart:io), Host Name: 3dprinters.local
+2024-06-01 03:56:15,585 [websockets.py:_handle_identify()] - Websocket 140732471889744 Client Identified - Name: Mobileraker-ios, Version: 2.6.19-468, Type: mobile
+2024-06-01 03:56:26,162 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.210) [_TRUSTED_USER_] 2.56ms
+2024-06-01 03:56:28,656 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-01 03:56:39,167 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 125.000 230.000 12.059 [806.307]
+2024-06-01 03:56:40,551 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 125.000 230.000 12.059 [806.307]
+2024-06-01 03:58:40,618 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-01 03:58:45,381 [websockets.py:on_close()] - Websocket Closed: ID: 140732472077392 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 9.01
+2024-06-01 03:58:45,381 [websockets.py:on_close()] - Websocket Closed: ID: 140732459986640 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 9.48
+2024-06-01 03:58:47,455 [application.py:log_request()] - 101 GET /websocket?token=M3MEGKJMUCA4F26LHRJDAM3AWEJYY4MK (192.168.0.181) [_TRUSTED_USER_] 0.48ms
+2024-06-01 03:58:47,455 [websockets.py:open()] - Websocket Opened: ID: 140732460870800, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 03:58:47,459 [websockets.py:_handle_identify()] - Websocket 140732460870800 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 03:58:47,459 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 03:59:19,868 [websockets.py:on_close()] - Websocket Closed: ID: 140732471889744 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.38
+2024-06-01 04:00:08,318 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------pi5qm8mqvBmJqfOXMkVvMn
+2024-06-01 04:00:09,524 [application.py:post()] - Processing Uploaded File: a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 04:00:09,591 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-01 04:00:09,635 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode") successfully finished
+2024-06-01 04:00:09,635 [klippy_apis.py:start_print()] - Requesting Job Start, filename = a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 04:00:09,640 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 1322.32ms
+2024-06-01 04:00:09,747 [job_state.py:_status_update()] - Job Started: a_FlangeSpacer_pair_16m_0.20mm_245C_ASA_ENDER3V2.gcode
