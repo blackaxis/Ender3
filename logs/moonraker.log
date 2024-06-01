@@ -1114,3 +1114,80 @@ Content-Type: multipart/form-data; boundary=------------------------8MggqtQVsS86
 2024-06-01 17:49:16,122 [websockets.py:open()] - Websocket Opened: ID: 140735531090704, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
 2024-06-01 17:49:16,127 [websockets.py:_handle_identify()] - Websocket 140735531090704 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-01 17:49:16,128 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 18:02:37,182 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735529509584
+2024-06-01 18:02:42,182 [websockets.py:on_close()] - Websocket Closed: ID: 140735529509584 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.89
+2024-06-01 18:02:57,114 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
+2024-06-01 18:12:33,808 [websockets.py:on_close()] - Websocket Closed: ID: 140735531090704 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.68
+2024-06-01 18:12:57,684 [application.py:log_request()] - 101 GET /websocket?token=UWN2NALIEVYDKZCWJDDWWVJ357NBQETA (192.168.0.181) [_TRUSTED_USER_] 0.62ms
+2024-06-01 18:12:57,684 [websockets.py:open()] - Websocket Opened: ID: 140735529294736, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 18:12:57,690 [websockets.py:_handle_identify()] - Websocket 140735529294736 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 18:12:57,690 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 18:14:38,159 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------bTstladK23TLg0WQDJCgcr
+2024-06-01 18:14:38,422 [application.py:post()] - Processing Uploaded File: abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:14:38,488 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-01 18:14:38,522 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode") successfully finished
+2024-06-01 18:14:38,522 [klippy_apis.py:start_print()] - Requesting Job Start, filename = abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:14:38,527 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 367.90ms
+2024-06-01 18:14:38,653 [job_state.py:_status_update()] - Job Started: abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:18:46,559 [application.py:log_request()] - 101 GET /websocket?token=XFMSMU4AZRJLS6UNFSWIBZASRPJNSLIN (192.168.0.100) [_TRUSTED_USER_] 0.37ms
+2024-06-01 18:18:46,559 [websockets.py:open()] - Websocket Opened: ID: 140735529921488, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-01 18:18:46,563 [websockets.py:_handle_identify()] - Websocket 140735529921488 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 18:18:46,564 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 18:19:30,545 [application.py:prepare()] - Upload Request Received from 192.168.0.100
+Content-Type: 
+2024-06-01 18:19:30,550 [application.py:prepare()] - Upload Request Received from 192.168.0.100
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryz9TqvM8oWt2Lyubh
+2024-06-01 18:19:30,555 [application.py:post()] - Processing Uploaded File: KAMP_Settings.cfg
+2024-06-01 18:19:30,557 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.100) [_TRUSTED_USER_] 6.60ms
+2024-06-01 18:19:31,679 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-01 18:19:31,834 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 18:19:31,949 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-01 18:19:32,933 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-01 18:19:32,946 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-01 18:19:35,461 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-01 18:19:35,462 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-01 18:19:35,712 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-01 18:19:35,967 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-01 18:19:36,464 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-01 18:19:45,155 [klippy_apis.py:start_print()] - Requesting Job Start, filename = abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:19:45,242 [job_state.py:_status_update()] - Job Started: abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:21:36,568 [application.py:prepare()] - Upload Request Received from 192.168.0.100
+Content-Type: 
+2024-06-01 18:21:36,577 [application.py:prepare()] - Upload Request Received from 192.168.0.100
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryox7pwhUcMmgEDc3O
+2024-06-01 18:21:36,582 [application.py:post()] - Processing Uploaded File: KAMP_Settings.cfg
+2024-06-01 18:21:36,584 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.100) [_TRUSTED_USER_] 6.73ms
+2024-06-01 18:24:49,962 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: 
+2024-06-01 18:24:49,967 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryEQJDfbOsxWBoSkkG
+2024-06-01 18:24:49,985 [application.py:post()] - Processing Uploaded File: klipper_macros.cfg
+2024-06-01 18:24:49,986 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.181) [_TRUSTED_USER_] 19.66ms
+2024-06-01 18:25:33,050 [websockets.py:on_close()] - Websocket Closed: ID: 140735529294736 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.27
+2024-06-01 18:30:06,533 [application.py:log_request()] - 101 GET /websocket?token=S6YKR4V6PW6IVU4JS5RJRML4M345Z6O6 (192.168.0.181) [_TRUSTED_USER_] 0.49ms
+2024-06-01 18:30:06,534 [websockets.py:open()] - Websocket Opened: ID: 140735529625936, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 18:30:06,538 [websockets.py:_handle_identify()] - Websocket 140735529625936 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 18:30:06,538 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 18:30:08,773 [application.py:log_request()] - 101 GET /websocket?token=WFYQDVZ3CYX54DL2KTXEMBCSND3UJS7E (192.168.0.181) [_TRUSTED_USER_] 0.88ms
+2024-06-01 18:30:08,773 [websockets.py:open()] - Websocket Opened: ID: 140735529717072, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-01 18:30:08,788 [websockets.py:_handle_identify()] - Websocket 140735529717072 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 18:30:08,788 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 18:30:34,573 [klippy_apis.py:start_print()] - Requesting Job Start, filename = abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:30:34,652 [job_state.py:_status_update()] - Job Started: abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:33:27,741 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------Tqu4xbU0IxzyrDTXtogAvH
+2024-06-01 18:33:28,337 [application.py:post()] - Processing Uploaded File: abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:33:28,454 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-01 18:33:28,508 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode") successfully finished
+2024-06-01 18:33:28,508 [klippy_apis.py:start_print()] - Requesting Job Start, filename = abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:33:28,515 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 774.10ms
+2024-06-01 18:33:28,618 [job_state.py:_status_update()] - Job Started: abl_bl_touch_uhf_26m_0.20mm_245C_ASA_ENDER3V2.gcode
+2024-06-01 18:53:05,782 [websockets.py:on_close()] - Websocket Closed: ID: 140735529921488 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.12
+2024-06-01 18:54:20,925 [application.py:log_request()] - 101 GET /websocket?token=PY5GMBKJE2CJPLAEFR4OIDLAZQQWYFAS (192.168.0.100) [_TRUSTED_USER_] 0.67ms
+2024-06-01 18:54:20,925 [websockets.py:open()] - Websocket Opened: ID: 140735529820304, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-01 18:54:20,962 [websockets.py:_handle_identify()] - Websocket 140735529820304 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-01 18:54:20,962 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-01 18:54:31,787 [websockets.py:on_close()] - Websocket Closed: ID: 140735529820304 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.82
