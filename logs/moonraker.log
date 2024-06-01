@@ -445,3 +445,7 @@ Content-Type: multipart/form-data; boundary=------------------------zJVR7lvZ0VEM
 2024-06-01 07:14:07,755 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
 2024-06-01 07:28:36,058 [websockets.py:on_close()] - Websocket Closed: ID: 140732460080400 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.25
 2024-06-01 07:44:07,761 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-01 09:08:26,767 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732462450384
+2024-06-01 09:08:28,326 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732460854224
+2024-06-01 09:08:31,764 [websockets.py:on_close()] - Websocket Closed: ID: 140732462450384 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.63
+2024-06-01 09:08:33,319 [websockets.py:on_close()] - Websocket Closed: ID: 140732460854224 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.86
