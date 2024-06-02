@@ -1034,3 +1034,4 @@ Content-Type: multipart/form-data; boundary=------------------------nf6Lul26iEaH
 2024-06-02 17:45:26,532 [klippy_apis.py:start_print()] - Requesting Job Start, filename = RTT9 ambi mag catch 4.17.23.step_4h14m_0.20mm_245C_ASA_.gcode
 2024-06-02 17:45:26,534 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4914.43ms
 2024-06-02 17:45:44,094 [websockets.py:on_close()] - Websocket Closed: ID: 140732343656656 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.52
+2024-06-02 18:47:30,833 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
