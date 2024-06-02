@@ -290,3 +290,4 @@ Klipper Version: v0.12.0-192-gb7f7b8a3
 2024-06-02 09:52:25,854 [websockets.py:_handle_identify()] - Websocket 140735529663504 Client Identified - Name: Mobileraker-ios, Version: 2.6.19-468, Type: mobile
 2024-06-02 09:52:57,280 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
 2024-06-02 09:53:21,573 [websockets.py:on_close()] - Websocket Closed: ID: 140735529663504 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.50
+2024-06-02 10:52:57,290 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
