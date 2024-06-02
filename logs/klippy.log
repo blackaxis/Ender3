@@ -6387,3 +6387,9 @@ Receive: 96 106565.968184 106565.798347 15: seq: 1a, analog_in_state oid=11 next
 Receive: 97 106566.258172 106565.798347 14: seq: 1a, analog_in_state oid=10 next_clock=3734809910 value=7309
 Receive: 98 106566.268175 106565.798347 15: seq: 1a, analog_in_state oid=11 next_clock=3735449910 value=31445
 Receive: 99 106566.385699 106566.385243 12: seq: 1b, shutdown clock=3724208409 static_string_id=Command request
+Lost communication with MCU 'mcu'
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+

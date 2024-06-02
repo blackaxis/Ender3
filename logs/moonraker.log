@@ -1023,3 +1023,14 @@ CPU Temperature: 58.95
 2024-06-02 16:18:43,396 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-02 16:28:21,855 [websockets.py:on_close()] - Websocket Closed: ID: 140732345455376 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.38
 2024-06-02 16:28:21,856 [websockets.py:on_close()] - Websocket Closed: ID: 140732324648656 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.20
+2024-06-02 17:27:30,817 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-02 17:45:21,320 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-02 17:45:21,620 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------nf6Lul26iEaHR3OWA036lp
+2024-06-02 17:45:26,420 [application.py:post()] - Processing Uploaded File: RTT9 ambi mag catch 4.17.23.step_4h14m_0.20mm_245C_ASA_.gcode
+2024-06-02 17:45:26,487 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-02 17:45:26,531 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "RTT9 ambi mag catch 4.17.23.step_4h14m_0.20mm_245C_ASA_.gcode") successfully finished
+2024-06-02 17:45:26,532 [klippy_apis.py:start_print()] - Requesting Job Start, filename = RTT9 ambi mag catch 4.17.23.step_4h14m_0.20mm_245C_ASA_.gcode
+2024-06-02 17:45:26,534 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4914.43ms
+2024-06-02 17:45:44,094 [websockets.py:on_close()] - Websocket Closed: ID: 140732343656656 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.52
