@@ -978,3 +978,38 @@ Pinned Commit: None
 2024-06-02 14:20:30,577 [websockets.py:_handle_identify()] - Websocket 140732343656656 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-02 14:20:30,577 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-02 14:22:30,789 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-06-02 15:38:26,604 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-02 15:38:26,606 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1717357077.414798, Usage: 1.3%, Memory: 58384 kB
+System Time: 1717357078.415637, Usage: 1.03%, Memory: 58384 kB
+System Time: 1717357079.416909, Usage: 0.96%, Memory: 58384 kB
+System Time: 1717357080.418058, Usage: 1.87%, Memory: 58384 kB
+System Time: 1717357081.418718, Usage: 0.63%, Memory: 58384 kB
+System Time: 1717357082.419129, Usage: 0.94%, Memory: 58384 kB
+System Time: 1717357083.419814, Usage: 0.33%, Memory: 58384 kB
+System Time: 1717357084.420504, Usage: 0.37%, Memory: 58384 kB
+System Time: 1717357085.421208, Usage: 0.33%, Memory: 58384 kB
+System Time: 1717357086.421801, Usage: 0.32%, Memory: 58384 kB
+System Time: 1717357087.423090, Usage: 0.35%, Memory: 58384 kB
+System Time: 1717357088.424252, Usage: 0.42%, Memory: 58384 kB
+System Time: 1717357089.425215, Usage: 1.47%, Memory: 58384 kB
+System Time: 1717357090.426119, Usage: 1.12%, Memory: 58384 kB
+System Time: 1717357091.427315, Usage: 0.68%, Memory: 58384 kB
+System Time: 1717357092.428423, Usage: 1.88%, Memory: 58384 kB
+System Time: 1717357093.429887, Usage: 0.48%, Memory: 58384 kB
+System Time: 1717357094.430389, Usage: 0.87%, Memory: 58384 kB
+System Time: 1717357095.430959, Usage: 0.36%, Memory: 58384 kB
+System Time: 1717357096.431729, Usage: 0.32%, Memory: 58384 kB
+System Time: 1717357097.432275, Usage: 0.34%, Memory: 58384 kB
+System Time: 1717357098.434030, Usage: 0.32%, Memory: 58384 kB
+System Time: 1717357099.436149, Usage: 0.48%, Memory: 58384 kB
+System Time: 1717357100.437367, Usage: 0.39%, Memory: 58384 kB
+System Time: 1717357101.438263, Usage: 1.34%, Memory: 58384 kB
+System Time: 1717357102.445493, Usage: 1.14%, Memory: 58384 kB
+System Time: 1717357103.445260, Usage: 0.8%, Memory: 58384 kB
+System Time: 1717357104.444674, Usage: 2.01%, Memory: 58384 kB
+System Time: 1717357105.445363, Usage: 0.51%, Memory: 58384 kB
+System Time: 1717357106.445523, Usage: 0.97%, Memory: 58384 kB
+CPU Temperature: 58.95
+2024-06-02 15:38:26,608 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
