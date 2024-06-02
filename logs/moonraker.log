@@ -1013,3 +1013,13 @@ System Time: 1717357105.445363, Usage: 0.51%, Memory: 58384 kB
 System Time: 1717357106.445523, Usage: 0.97%, Memory: 58384 kB
 CPU Temperature: 58.95
 2024-06-02 15:38:26,608 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-02 16:18:41,634 [application.py:log_request()] - 101 GET /websocket?token=AAAXYM3ZMASBKQFRQU22KSBQZRJN2H4P (192.168.0.181) [_TRUSTED_USER_] 0.82ms
+2024-06-02 16:18:41,635 [websockets.py:open()] - Websocket Opened: ID: 140732324648656, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-02 16:18:41,640 [websockets.py:_handle_identify()] - Websocket 140732324648656 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-02 16:18:41,641 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-02 16:18:43,384 [application.py:log_request()] - 101 GET /websocket?token=OOVHYPLONF5IUMAHT22566475XPP2RIZ (192.168.0.181) [_TRUSTED_USER_] 0.37ms
+2024-06-02 16:18:43,384 [websockets.py:open()] - Websocket Opened: ID: 140732345455376, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-02 16:18:43,396 [websockets.py:_handle_identify()] - Websocket 140732345455376 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-02 16:18:43,396 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-02 16:28:21,855 [websockets.py:on_close()] - Websocket Closed: ID: 140732345455376 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.38
+2024-06-02 16:28:21,856 [websockets.py:on_close()] - Websocket Closed: ID: 140732324648656 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.20
