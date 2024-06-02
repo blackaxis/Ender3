@@ -216,3 +216,4 @@ Klipper Version: v0.12.0-192-gb7f7b8a3
 2024-06-02 00:27:17,908 [websockets.py:_handle_identify()] - Websocket 140735520027024 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-02 00:27:17,908 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-02 00:27:57,180 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-02 01:27:57,195 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
