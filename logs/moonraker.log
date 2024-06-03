@@ -219,3 +219,44 @@ Content-Type: multipart/form-data; boundary=------------------------rC1tT315Um1k
 2024-06-03 07:53:46,629 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Flow calibration_4h5m_0.20mm_245C_ASA_.gcode") successfully finished
 2024-06-03 07:53:46,629 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Flow calibration_4h5m_0.20mm_245C_ASA_.gcode
 2024-06-03 07:53:46,633 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4365.79ms
+2024-06-03 08:09:12,465 [application.py:log_request()] - 101 GET /websocket?token=YE5VM5XVSXDP6SI6TQOYPE7VRZQ5RE5L (192.168.0.181) [_TRUSTED_USER_] 0.45ms
+2024-06-03 08:09:12,465 [websockets.py:open()] - Websocket Opened: ID: 140732324595728, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-03 08:09:12,469 [websockets.py:_handle_identify()] - Websocket 140732324595728 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 08:09:12,470 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 08:09:14,068 [application.py:log_request()] - 101 GET /websocket?token=7YCE3X6IXHWYTX2P3SUATWN7BBYWWU4O (192.168.0.181) [_TRUSTED_USER_] 0.36ms
+2024-06-03 08:09:14,068 [websockets.py:open()] - Websocket Opened: ID: 140732351172048, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-03 08:09:14,072 [websockets.py:_handle_identify()] - Websocket 140732351172048 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 08:09:14,072 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 08:09:14,812 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-03 08:09:14,918 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 08:09:15,007 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 08:09:16,070 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-03 08:09:16,090 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-03 08:09:18,618 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-03 08:09:18,618 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-03 08:09:18,868 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-03 08:09:19,121 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-03 08:09:19,619 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-03 08:09:51,926 [websockets.py:on_close()] - Websocket Closed: ID: 140732351172048 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.75
+2024-06-03 08:13:24,776 [application.py:log_request()] - 101 GET /websocket?token=FXB55Z3GH3SP4VQQZ5VXUSJDHWINRXX3 (192.168.0.181) [_TRUSTED_USER_] 0.41ms
+2024-06-03 08:13:24,776 [websockets.py:open()] - Websocket Opened: ID: 140732345610384, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-03 08:13:24,783 [websockets.py:_handle_identify()] - Websocket 140732345610384 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 08:13:24,783 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 08:19:10,146 [websockets.py:on_close()] - Websocket Closed: ID: 140732324595728 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.64
+2024-06-03 08:22:57,584 [application.py:log_request()] - 101 GET /websocket?token=DHG36H6XRQSHNPBJNSV5QWMCSSUR37XH (192.168.0.181) [_TRUSTED_USER_] 0.49ms
+2024-06-03 08:22:57,584 [websockets.py:open()] - Websocket Opened: ID: 140732345486736, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-03 08:22:57,590 [websockets.py:_handle_identify()] - Websocket 140732345486736 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 08:22:57,590 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 08:22:59,005 [application.py:log_request()] - 101 GET /websocket?token=VCYMWCDP47G2A5VMMFC2RRR5GZA4CJUR (192.168.0.181) [_TRUSTED_USER_] 0.98ms
+2024-06-03 08:22:59,005 [websockets.py:open()] - Websocket Opened: ID: 140732344991888, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-03 08:22:59,009 [websockets.py:_handle_identify()] - Websocket 140732344991888 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 08:22:59,010 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 08:25:45,267 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------EyxUGHgJyvau9UskARfgt9
+2024-06-03 08:25:49,602 [application.py:post()] - Processing Uploaded File: Flow calibration_3h50m_0.20mm_245C_ASA_.gcode
+2024-06-03 08:25:49,670 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-03 08:25:49,712 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Flow calibration_3h50m_0.20mm_245C_ASA_.gcode") successfully finished
+2024-06-03 08:25:49,713 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Flow calibration_3h50m_0.20mm_245C_ASA_.gcode
+2024-06-03 08:25:49,718 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4450.85ms
+2024-06-03 08:25:49,868 [job_state.py:_status_update()] - Job Started: Flow calibration_3h50m_0.20mm_245C_ASA_.gcode
