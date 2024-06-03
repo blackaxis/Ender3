@@ -442,3 +442,5 @@ Printer is shutdown
 2024-06-03 15:10:42,239 [job_state.py:_status_update()] - Job Started: RTT TFGG PacGhost Charging Handle_27m_0.20mm_245C_ASA_.gcode
 2024-06-03 15:27:31,150 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
 2024-06-03 15:39:29,069 [websockets.py:on_close()] - Websocket Closed: ID: 140732324667856 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.95
+2024-06-03 16:12:31,158 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-03 16:12:31,158 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
