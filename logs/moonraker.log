@@ -380,3 +380,65 @@ Content-Type: multipart/form-data; boundary=------------------------YHaV2RGgo48L
 2024-06-03 14:56:58,747 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 1005.29ms
 2024-06-03 14:56:58,815 [job_state.py:_status_update()] - Job Started: RTT TFGG PacGhost Charging Handle_27m_0.20mm_245C_ASA_.gcode
 2024-06-03 14:57:39,002 [websockets.py:on_close()] - Websocket Closed: ID: 140732345552400 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.14
+2024-06-03 15:04:55,516 [websockets.py:on_close()] - Websocket Closed: ID: 140732345571792 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.90
+2024-06-03 15:09:07,219 [application.py:log_request()] - 101 GET /websocket?token=BDR4ZHGAV6I4BRUC7AUQSAJVCJV5J3M6 (192.168.0.100) [_TRUSTED_USER_] 0.68ms
+2024-06-03 15:09:07,219 [websockets.py:open()] - Websocket Opened: ID: 140732344998608, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-03 15:09:07,225 [websockets.py:_handle_identify()] - Websocket 140732344998608 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 15:09:07,225 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 15:09:17,318 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-03 15:09:34,191 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-03 15:09:34,193 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1717441744.248972, Usage: 1.42%, Memory: 61328 kB
+System Time: 1717441745.250602, Usage: 1.37%, Memory: 61328 kB
+System Time: 1717441746.251046, Usage: 1.17%, Memory: 61328 kB
+System Time: 1717441747.253536, Usage: 4.04%, Memory: 61328 kB
+System Time: 1717441748.255114, Usage: 22.39%, Memory: 62256 kB
+System Time: 1717441749.254949, Usage: 1.36%, Memory: 62256 kB
+System Time: 1717441750.255799, Usage: 1.29%, Memory: 62256 kB
+System Time: 1717441751.256437, Usage: 0.51%, Memory: 62256 kB
+System Time: 1717441752.257159, Usage: 0.47%, Memory: 62256 kB
+System Time: 1717441753.257339, Usage: 0.6%, Memory: 62256 kB
+System Time: 1717441754.258096, Usage: 0.53%, Memory: 62256 kB
+System Time: 1717441755.259173, Usage: 0.6%, Memory: 62256 kB
+System Time: 1717441756.259711, Usage: 1.54%, Memory: 62256 kB
+System Time: 1717441757.261330, Usage: 1.5%, Memory: 62256 kB
+System Time: 1717441758.261228, Usage: 1.27%, Memory: 62256 kB
+System Time: 1717441759.262408, Usage: 2.1%, Memory: 62256 kB
+System Time: 1717441760.263658, Usage: 0.79%, Memory: 62256 kB
+System Time: 1717441761.263438, Usage: 1.26%, Memory: 62256 kB
+System Time: 1717441762.263625, Usage: 0.64%, Memory: 62256 kB
+System Time: 1717441763.264697, Usage: 0.82%, Memory: 62256 kB
+System Time: 1717441764.265321, Usage: 0.7%, Memory: 62256 kB
+System Time: 1717441765.265861, Usage: 0.62%, Memory: 62256 kB
+System Time: 1717441766.265981, Usage: 0.49%, Memory: 62256 kB
+System Time: 1717441767.267030, Usage: 0.48%, Memory: 62256 kB
+System Time: 1717441768.267333, Usage: 1.16%, Memory: 62256 kB
+System Time: 1717441769.267840, Usage: 1.54%, Memory: 62256 kB
+System Time: 1717441770.268511, Usage: 1.2%, Memory: 62256 kB
+System Time: 1717441771.269680, Usage: 2.13%, Memory: 62256 kB
+System Time: 1717441772.270565, Usage: 0.71%, Memory: 62256 kB
+System Time: 1717441773.270498, Usage: 1.46%, Memory: 62256 kB
+CPU Temperature: 57.85
+2024-06-03 15:09:34,195 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-03 15:09:34,241 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.pause, Code: 400, Message: Shutdown due to webhooks request
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-06-03 15:10:05,336 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-03 15:10:05,399 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 15:10:05,419 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 15:10:05,463 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 15:10:06,601 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-03 15:10:06,615 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-03 15:10:09,143 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-03 15:10:09,143 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-03 15:10:09,394 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-03 15:10:09,647 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-03 15:10:10,146 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-03 15:10:42,019 [klippy_apis.py:start_print()] - Requesting Job Start, filename = RTT TFGG PacGhost Charging Handle_27m_0.20mm_245C_ASA_.gcode
+2024-06-03 15:10:42,239 [job_state.py:_status_update()] - Job Started: RTT TFGG PacGhost Charging Handle_27m_0.20mm_245C_ASA_.gcode
+2024-06-03 15:27:31,150 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
+2024-06-03 15:39:29,069 [websockets.py:on_close()] - Websocket Closed: ID: 140732324667856 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.95
