@@ -1082,3 +1082,46 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2024-06-02 20:31:25,961 [klippy_apis.py:start_print()] - Requesting Job Start, filename = G80 Grip Module revA_3h55m_0.20mm_245C_ASA_ENDER3V2.gcode
 2024-06-02 20:31:26,002 [job_state.py:_status_update()] - Job Started: G80 Grip Module revA_3h55m_0.20mm_245C_ASA_ENDER3V2.gcode
 2024-06-02 20:32:43,024 [websockets.py:on_close()] - Websocket Closed: ID: 140732345525008 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.86
+2024-06-02 21:01:43,794 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-02 21:01:43,920 [application.py:log_request()] - 101 GET /websocket?token=OZMUWYHXGQ7UQ57SOZXJRPQHPTTTKXLV (192.168.0.100) [_TRUSTED_USER_] 0.42ms
+2024-06-02 21:01:43,920 [websockets.py:open()] - Websocket Opened: ID: 140732345487312, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-02 21:01:43,927 [websockets.py:_handle_identify()] - Websocket 140732345487312 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-02 21:01:43,927 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-02 21:01:49,127 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-02 21:04:50,019 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-02 21:04:50,031 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1717376660.179456, Usage: 0.37%, Memory: 59504 kB
+System Time: 1717376661.180611, Usage: 0.47%, Memory: 59504 kB
+System Time: 1717376662.181545, Usage: 1.37%, Memory: 59504 kB
+System Time: 1717376663.183109, Usage: 1.3%, Memory: 59504 kB
+System Time: 1717376664.183976, Usage: 1.82%, Memory: 59504 kB
+System Time: 1717376665.184871, Usage: 1.5%, Memory: 59504 kB
+System Time: 1717376666.185769, Usage: 1.16%, Memory: 59504 kB
+System Time: 1717376667.185970, Usage: 0.65%, Memory: 59504 kB
+System Time: 1717376668.186559, Usage: 0.36%, Memory: 59504 kB
+System Time: 1717376669.187194, Usage: 0.35%, Memory: 59504 kB
+System Time: 1717376670.187823, Usage: 0.36%, Memory: 59504 kB
+System Time: 1717376671.188599, Usage: 0.35%, Memory: 59504 kB
+System Time: 1717376672.190418, Usage: 0.38%, Memory: 59504 kB
+System Time: 1717376673.191871, Usage: 0.45%, Memory: 59504 kB
+System Time: 1717376674.192729, Usage: 1.33%, Memory: 59504 kB
+System Time: 1717376675.194800, Usage: 1.37%, Memory: 59504 kB
+System Time: 1717376676.195071, Usage: 1.92%, Memory: 59504 kB
+System Time: 1717376677.196212, Usage: 1.15%, Memory: 59504 kB
+System Time: 1717376678.198169, Usage: 0.82%, Memory: 59504 kB
+System Time: 1717376679.198271, Usage: 0.6%, Memory: 59504 kB
+System Time: 1717376680.198845, Usage: 0.35%, Memory: 59504 kB
+System Time: 1717376681.199508, Usage: 0.34%, Memory: 59504 kB
+System Time: 1717376682.200633, Usage: 0.36%, Memory: 59504 kB
+System Time: 1717376683.201126, Usage: 0.35%, Memory: 59504 kB
+System Time: 1717376684.202104, Usage: 0.47%, Memory: 59504 kB
+System Time: 1717376685.202800, Usage: 0.51%, Memory: 59504 kB
+System Time: 1717376686.203919, Usage: 1.51%, Memory: 59504 kB
+System Time: 1717376687.205093, Usage: 1.2%, Memory: 59504 kB
+System Time: 1717376688.205007, Usage: 1.83%, Memory: 59504 kB
+System Time: 1717376689.206720, Usage: 1.3%, Memory: 59504 kB
+CPU Temperature: 60.05
+2024-06-02 21:04:50,035 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-02 21:32:30,864 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-02 21:58:56,819 [websockets.py:on_close()] - Websocket Closed: ID: 140732345487312 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.88
