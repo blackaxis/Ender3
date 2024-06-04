@@ -444,3 +444,15 @@ Printer is shutdown
 2024-06-03 15:39:29,069 [websockets.py:on_close()] - Websocket Closed: ID: 140732324667856 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.95
 2024-06-03 16:12:31,158 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
 2024-06-03 16:12:31,158 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-03 19:20:13,405 [websockets.py:on_close()] - Websocket Closed: ID: 140732344998608 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.18
+2024-06-03 19:37:15,314 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-03 19:37:15,331 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------EQSTjO8BxJgF9u01YUPxqj
+2024-06-03 19:37:15,514 [application.py:post()] - Processing Uploaded File: OPTIONAL_4x_mellow--super-8-spacer_2m_0.20mm_245C_ASA_.gcode
+2024-06-03 19:37:15,579 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-03 19:37:15,606 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "OPTIONAL_4x_mellow--super-8-spacer_2m_0.20mm_245C_ASA_.gcode") successfully finished
+2024-06-03 19:37:15,607 [klippy_apis.py:start_print()] - Requesting Job Start, filename = OPTIONAL_4x_mellow--super-8-spacer_2m_0.20mm_245C_ASA_.gcode
+2024-06-03 19:37:15,612 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 280.81ms
+2024-06-03 19:37:15,689 [job_state.py:_status_update()] - Job Started: OPTIONAL_4x_mellow--super-8-spacer_2m_0.20mm_245C_ASA_.gcode
+2024-06-03 19:37:17,364 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
