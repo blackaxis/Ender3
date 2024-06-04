@@ -558,3 +558,21 @@ System Time: 1717466305.389643, Usage: 1.71%, Memory: 63136 kB
 System Time: 1717466306.391128, Usage: 0.57%, Memory: 63136 kB
 CPU Temperature: 58.95
 2024-06-03 21:58:27,232 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-03 22:13:57,198 [application.py:log_request()] - 101 GET /websocket?token=ACPFHD7HROF6V2JRC7AOVNIJOQXFNSPZ (192.168.0.181) [_TRUSTED_USER_] 0.41ms
+2024-06-03 22:13:57,198 [websockets.py:open()] - Websocket Opened: ID: 140732344868880, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-03 22:13:57,204 [websockets.py:_handle_identify()] - Websocket 140732344868880 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 22:13:57,204 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 22:14:00,293 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-03 22:14:00,392 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 22:14:00,748 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 22:14:01,547 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-03 22:14:01,560 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-03 22:14:02,820 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-03 22:14:02,820 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-03 22:14:02,820 [klippy_connection.py:_check_ready()] - 
+Failed automated reset of MCU 'mcu'
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
