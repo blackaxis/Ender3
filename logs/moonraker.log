@@ -456,3 +456,48 @@ Content-Type: multipart/form-data; boundary=------------------------EQSTjO8BxJgF
 2024-06-03 19:37:15,612 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 280.81ms
 2024-06-03 19:37:15,689 [job_state.py:_status_update()] - Job Started: OPTIONAL_4x_mellow--super-8-spacer_2m_0.20mm_245C_ASA_.gcode
 2024-06-03 19:37:17,364 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-03 20:06:23,750 [application.py:log_request()] - 101 GET /websocket?token=L4WHG5GJ6TO77W5TAHC3A2NGEJUIWBI4 (192.168.0.181) [_TRUSTED_USER_] 0.78ms
+2024-06-03 20:06:23,750 [websockets.py:open()] - Websocket Opened: ID: 140732343628048, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-03 20:06:23,756 [websockets.py:_handle_identify()] - Websocket 140732343628048 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 20:06:23,756 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 20:06:27,405 [websockets.py:on_close()] - Websocket Closed: ID: 140732343628048 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.65
+2024-06-03 20:18:32,517 [application.py:log_request()] - 101 GET /websocket?token=F33RMK4MYJKPMCFEHZMCRALUZRWSY4SV (192.168.0.181) [_TRUSTED_USER_] 0.53ms
+2024-06-03 20:18:32,517 [websockets.py:open()] - Websocket Opened: ID: 140732323392464, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-03 20:18:32,522 [websockets.py:_handle_identify()] - Websocket 140732323392464 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 20:18:32,522 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 20:18:51,055 [websockets.py:on_close()] - Websocket Closed: ID: 140732323392464 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.53
+2024-06-03 20:21:11,228 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-03 20:21:11,231 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1717460441.435846, Usage: 0.31%, Memory: 62992 kB
+System Time: 1717460442.436133, Usage: 0.3%, Memory: 62992 kB
+System Time: 1717460443.437397, Usage: 0.33%, Memory: 62992 kB
+System Time: 1717460444.437971, Usage: 0.4%, Memory: 62992 kB
+System Time: 1717460445.438925, Usage: 1.92%, Memory: 62992 kB
+System Time: 1717460446.440045, Usage: 0.73%, Memory: 62992 kB
+System Time: 1717460447.441215, Usage: 1.24%, Memory: 62992 kB
+System Time: 1717460448.441716, Usage: 0.31%, Memory: 62992 kB
+System Time: 1717460449.443386, Usage: 1.82%, Memory: 62992 kB
+System Time: 1717460450.443712, Usage: 0.58%, Memory: 62992 kB
+System Time: 1717460451.443445, Usage: 1.02%, Memory: 62992 kB
+System Time: 1717460452.444504, Usage: 0.3%, Memory: 62992 kB
+System Time: 1717460453.445404, Usage: 0.32%, Memory: 62992 kB
+System Time: 1717460454.446083, Usage: 0.34%, Memory: 62992 kB
+System Time: 1717460455.447031, Usage: 0.31%, Memory: 62992 kB
+System Time: 1717460456.447972, Usage: 0.42%, Memory: 62992 kB
+System Time: 1717460457.448804, Usage: 2.05%, Memory: 62992 kB
+System Time: 1717460458.449517, Usage: 0.54%, Memory: 62992 kB
+System Time: 1717460459.450133, Usage: 1.24%, Memory: 62992 kB
+System Time: 1717460460.450545, Usage: 0.34%, Memory: 62992 kB
+System Time: 1717460461.455077, Usage: 1.69%, Memory: 62992 kB
+System Time: 1717460462.454640, Usage: 0.63%, Memory: 62992 kB
+System Time: 1717460463.455984, Usage: 1.12%, Memory: 62992 kB
+System Time: 1717460464.456878, Usage: 0.33%, Memory: 62992 kB
+System Time: 1717460465.458922, Usage: 0.34%, Memory: 62992 kB
+System Time: 1717460466.458441, Usage: 0.42%, Memory: 62992 kB
+System Time: 1717460467.459311, Usage: 0.34%, Memory: 62992 kB
+System Time: 1717460468.460572, Usage: 0.35%, Memory: 62992 kB
+System Time: 1717460469.462247, Usage: 0.57%, Memory: 62992 kB
+System Time: 1717460470.467766, Usage: 2.07%, Memory: 62992 kB
+CPU Temperature: 58.4
+2024-06-03 20:21:11,235 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
