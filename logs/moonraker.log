@@ -501,3 +501,60 @@ System Time: 1717460469.462247, Usage: 0.57%, Memory: 62992 kB
 System Time: 1717460470.467766, Usage: 2.07%, Memory: 62992 kB
 CPU Temperature: 58.4
 2024-06-03 20:21:11,235 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-03 21:06:02,008 [application.py:log_request()] - 101 GET /websocket?token=ZB4JC2AYKJ337MDOQXXIRO6J5MZW3E4I (192.168.0.181) [_TRUSTED_USER_] 0.42ms
+2024-06-03 21:06:02,008 [websockets.py:open()] - Websocket Opened: ID: 140732343685456, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-03 21:06:02,014 [websockets.py:_handle_identify()] - Websocket 140732343685456 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 21:06:02,014 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 21:06:15,407 [websockets.py:on_close()] - Websocket Closed: ID: 140732343685456 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.24
+2024-06-03 21:22:31,213 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-03 21:25:44,007 [application.py:log_request()] - 101 GET /websocket?token=YKCI3K7V4P4526KQEDWYV7RBQWDZJZ3S (192.168.0.181) [_TRUSTED_USER_] 0.62ms
+2024-06-03 21:25:44,007 [websockets.py:open()] - Websocket Opened: ID: 140732345312080, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-03 21:25:44,013 [websockets.py:_handle_identify()] - Websocket 140732345312080 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-03 21:25:44,013 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-03 21:25:46,172 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-03 21:25:46,187 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 21:25:46,360 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-03 21:25:47,428 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-03 21:25:47,446 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-03 21:25:49,970 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-03 21:25:49,971 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-03 21:25:50,221 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-03 21:25:50,475 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-03 21:25:50,973 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-03 21:25:52,358 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-03 21:26:08,675 [websockets.py:on_close()] - Websocket Closed: ID: 140732345312080 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.66
+2024-06-03 21:58:27,228 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-03 21:58:27,230 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1717466277.365835, Usage: 1.31%, Memory: 63136 kB
+System Time: 1717466278.368898, Usage: 1.33%, Memory: 63136 kB
+System Time: 1717466279.368674, Usage: 0.8%, Memory: 63136 kB
+System Time: 1717466280.369118, Usage: 0.7%, Memory: 63136 kB
+System Time: 1717466281.369992, Usage: 1.61%, Memory: 63136 kB
+System Time: 1717466282.370610, Usage: 0.55%, Memory: 63136 kB
+System Time: 1717466283.370715, Usage: 1.03%, Memory: 63136 kB
+System Time: 1717466284.371263, Usage: 0.45%, Memory: 63136 kB
+System Time: 1717466285.372310, Usage: 0.3%, Memory: 63136 kB
+System Time: 1717466286.373674, Usage: 0.3%, Memory: 63136 kB
+System Time: 1717466287.374066, Usage: 0.31%, Memory: 63136 kB
+System Time: 1717466288.376272, Usage: 0.31%, Memory: 63136 kB
+System Time: 1717466289.377298, Usage: 1.27%, Memory: 63136 kB
+System Time: 1717466290.378499, Usage: 1.15%, Memory: 63136 kB
+System Time: 1717466291.378867, Usage: 0.82%, Memory: 63136 kB
+System Time: 1717466292.378911, Usage: 0.58%, Memory: 63136 kB
+System Time: 1717466293.380264, Usage: 1.62%, Memory: 63136 kB
+System Time: 1717466294.381430, Usage: 0.97%, Memory: 63136 kB
+System Time: 1717466295.381192, Usage: 0.98%, Memory: 63136 kB
+System Time: 1717466296.382399, Usage: 0.36%, Memory: 63136 kB
+System Time: 1717466297.382926, Usage: 0.33%, Memory: 63136 kB
+System Time: 1717466298.383189, Usage: 0.32%, Memory: 63136 kB
+System Time: 1717466299.383745, Usage: 0.33%, Memory: 63136 kB
+System Time: 1717466300.385374, Usage: 0.38%, Memory: 63136 kB
+System Time: 1717466301.386587, Usage: 1.33%, Memory: 63136 kB
+System Time: 1717466302.387929, Usage: 1.29%, Memory: 63136 kB
+System Time: 1717466303.388498, Usage: 0.84%, Memory: 63136 kB
+System Time: 1717466304.388309, Usage: 0.8%, Memory: 63136 kB
+System Time: 1717466305.389643, Usage: 1.71%, Memory: 63136 kB
+System Time: 1717466306.391128, Usage: 0.57%, Memory: 63136 kB
+CPU Temperature: 58.95
+2024-06-03 21:58:27,232 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
