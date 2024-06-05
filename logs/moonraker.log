@@ -213,3 +213,6 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-05 00:04:00,551 [job_state.py:_status_update()] - Job Started: RTT9 endcap 4.17.23.step_10h20m_0.20mm_245C_ASA_.gcode
 2024-06-05 00:09:32,271 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-05 00:57:31,568 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-05 01:11:20,678 [websockets.py:on_close()] - Websocket Closed: ID: 140732344017168 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.20
+2024-06-05 01:11:53,126 [websockets.py:on_close()] - Websocket Closed: ID: 140732324063888 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.33
+2024-06-05 01:27:48,745 [websockets.py:on_close()] - Websocket Closed: ID: 140732344010320 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.42
