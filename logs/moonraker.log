@@ -803,3 +803,16 @@ CPU Temperature: 57.3
 2024-06-04 21:46:42,608 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 1080.02 seconds
 2024-06-04 21:47:42,608 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 1140.02 seconds
 2024-06-04 21:48:42,609 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 1200.02 seconds
+2024-06-04 22:27:31,541 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-04 22:37:31,542 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-04 22:39:53,037 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-04 22:39:53,058 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------4ILldzAXPy8vXJBposKbEh
+2024-06-04 22:40:01,789 [application.py:post()] - Processing Uploaded File: RTT9 endcap 4.17.23.step_10h20m_0.20mm_245C_ASA_.gcode
+2024-06-04 22:40:01,884 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-04 22:40:01,940 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "RTT9 endcap 4.17.23.step_10h20m_0.20mm_245C_ASA_.gcode") successfully finished
+2024-06-04 22:40:01,940 [klippy_apis.py:start_print()] - Requesting Job Start, filename = RTT9 endcap 4.17.23.step_10h20m_0.20mm_245C_ASA_.gcode
+2024-06-04 22:40:01,946 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 8888.47ms
+2024-06-04 22:40:02,024 [job_state.py:_status_update()] - Job Started: RTT9 endcap 4.17.23.step_10h20m_0.20mm_245C_ASA_.gcode
+2024-06-04 22:59:40,283 [klippy_apis.py:pause_print()] - Requesting job pause...
