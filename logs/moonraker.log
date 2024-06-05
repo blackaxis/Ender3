@@ -216,3 +216,15 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-05 01:11:20,678 [websockets.py:on_close()] - Websocket Closed: ID: 140732344017168 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.20
 2024-06-05 01:11:53,126 [websockets.py:on_close()] - Websocket Closed: ID: 140732324063888 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.33
 2024-06-05 01:27:48,745 [websockets.py:on_close()] - Websocket Closed: ID: 140732344010320 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.42
+2024-06-05 07:21:17,645 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-05 07:21:17,683 [application.py:log_request()] - 101 GET /websocket?token=WVDYQEZAMBD4ZQIDQGMK2TIPUB7NI5JC (192.168.0.181) [_TRUSTED_USER_] 0.40ms
+2024-06-05 07:21:17,683 [websockets.py:open()] - Websocket Opened: ID: 140732324440528, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-05 07:21:17,691 [websockets.py:_handle_identify()] - Websocket 140732324440528 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-05 07:21:17,691 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-05 07:21:19,392 [application.py:log_request()] - 101 GET /websocket?token=FQ52U3F32I7I7WJ4SP4SYMXU65VAPS4L (192.168.0.181) [_TRUSTED_USER_] 0.45ms
+2024-06-05 07:21:19,392 [websockets.py:open()] - Websocket Opened: ID: 140732323424400, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-05 07:21:19,405 [websockets.py:_handle_identify()] - Websocket 140732323424400 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-05 07:21:19,405 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-05 07:22:20,121 [websockets.py:on_close()] - Websocket Closed: ID: 140732342779472 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.09
+2024-06-05 07:47:03,662 [websockets.py:on_close()] - Websocket Closed: ID: 140732323424400 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.26
+2024-06-05 07:47:03,663 [websockets.py:on_close()] - Websocket Closed: ID: 140732324440528 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.96
