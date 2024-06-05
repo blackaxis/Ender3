@@ -291,3 +291,13 @@ Content-Type: multipart/form-data; boundary=------------------------LLxDFO86HzzF
 2024-06-05 12:19:01,215 [websockets.py:on_close()] - Websocket Closed: ID: 140732345158224 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.76
 2024-06-05 13:02:31,689 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
 2024-06-05 13:17:31,692 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-05 16:38:48,193 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-05 16:38:48,209 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------dyRANvR43k6H5sFHeZP7FG
+2024-06-05 16:38:49,083 [application.py:post()] - Processing Uploaded File: Califlower v29_2h22m_0.20mm_245C_ASA_.gcode
+2024-06-05 16:38:49,149 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-05 16:38:49,191 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Califlower v29_2h22m_0.20mm_245C_ASA_.gcode") successfully finished
+2024-06-05 16:38:49,191 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Califlower v29_2h22m_0.20mm_245C_ASA_.gcode
+2024-06-05 16:38:49,198 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 989.46ms
+2024-06-05 16:38:49,227 [job_state.py:_status_update()] - Job Started: Califlower v29_2h22m_0.20mm_245C_ASA_.gcode
