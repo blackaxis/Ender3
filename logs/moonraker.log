@@ -246,3 +246,24 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-05 10:33:46,007 [websockets.py:open()] - Websocket Opened: ID: 140732347256336, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
 2024-06-05 10:33:46,015 [websockets.py:_handle_identify()] - Websocket 140732347256336 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-05 10:33:46,015 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-05 11:35:54,841 [websockets.py:on_close()] - Websocket Closed: ID: 140732347256336 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.83
+2024-06-05 11:37:31,676 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-05 11:44:34,756 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-05 11:44:35,398 [application.py:log_request()] - 101 GET /websocket?token=C57ENXNCSHTP4JBIBC5ARWUEMMXS2226 (192.168.0.181) [_TRUSTED_USER_] 0.61ms
+2024-06-05 11:44:35,399 [websockets.py:open()] - Websocket Opened: ID: 140732345158224, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-05 11:44:35,407 [websockets.py:_handle_identify()] - Websocket 140732345158224 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-05 11:44:35,407 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-05 11:44:35,982 [application.py:log_request()] - 101 GET /websocket?token=MNSLYGTJGGA7HU3X3YQPSMTUJBE7CNTJ (192.168.0.181) [_TRUSTED_USER_] 0.33ms
+2024-06-05 11:44:35,982 [websockets.py:open()] - Websocket Opened: ID: 140732325377744, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-05 11:44:35,988 [websockets.py:_handle_identify()] - Websocket 140732325377744 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-05 11:44:35,989 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-05 11:54:06,036 [websockets.py:on_close()] - Websocket Closed: ID: 140732325377744 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.02
+2024-06-05 11:58:59,879 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------LLxDFO86HzzFlqR0IygPYT
+2024-06-05 11:59:01,812 [application.py:post()] - Processing Uploaded File: GT2_Belt_Holder_X_Left_2h18m_0.20mm_245C_ASA_.gcode
+2024-06-05 11:59:01,944 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-05 11:59:02,010 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "GT2_Belt_Holder_X_Left_2h18m_0.20mm_245C_ASA_.gcode") successfully finished
+2024-06-05 11:59:02,010 [klippy_apis.py:start_print()] - Requesting Job Start, filename = GT2_Belt_Holder_X_Left_2h18m_0.20mm_245C_ASA_.gcode
+2024-06-05 11:59:02,023 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 2144.19ms
+2024-06-05 11:59:02,251 [job_state.py:_status_update()] - Job Started: GT2_Belt_Holder_X_Left_2h18m_0.20mm_245C_ASA_.gcode
