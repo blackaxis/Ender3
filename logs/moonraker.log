@@ -302,3 +302,15 @@ Content-Type: multipart/form-data; boundary=------------------------dyRANvR43k6H
 2024-06-05 16:38:49,198 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 989.46ms
 2024-06-05 16:38:49,227 [job_state.py:_status_update()] - Job Started: Califlower v29_2h22m_0.20mm_245C_ASA_.gcode
 2024-06-05 17:42:31,741 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-05 19:17:10,255 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-05 19:17:10,311 [application.py:log_request()] - 101 GET /websocket?token=55PAGLGSTOQBGW5DZS3CAWVFXSEOEYMX (192.168.0.181) [_TRUSTED_USER_] 0.82ms
+2024-06-05 19:17:10,311 [websockets.py:open()] - Websocket Opened: ID: 140732324658832, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-05 19:17:10,318 [websockets.py:_handle_identify()] - Websocket 140732324658832 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-05 19:17:10,319 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-05 19:17:11,967 [application.py:log_request()] - 101 GET /websocket?token=P5QHCLOUZ5DFZQXYK5RFG5472424Q7G4 (192.168.0.181) [_TRUSTED_USER_] 0.44ms
+2024-06-05 19:17:11,967 [websockets.py:open()] - Websocket Opened: ID: 140732323371344, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-05 19:17:11,975 [websockets.py:_handle_identify()] - Websocket 140732323371344 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-05 19:17:11,976 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-05 19:20:58,576 [websockets.py:on_close()] - Websocket Closed: ID: 140732323371344 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.60
+2024-06-05 19:59:30,560 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732324658832
+2024-06-05 19:59:35,314 [websockets.py:on_close()] - Websocket Closed: ID: 140732324658832 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
