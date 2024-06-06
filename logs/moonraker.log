@@ -416,3 +416,4 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-06 07:33:57,222 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732345519952
 2024-06-06 07:34:02,088 [websockets.py:on_close()] - Websocket Closed: ID: 140732345519952 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
 2024-06-06 07:57:31,903 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-06 08:37:31,907 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
