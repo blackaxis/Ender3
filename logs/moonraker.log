@@ -363,3 +363,48 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-06 05:51:10,694 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732324035664
 2024-06-06 05:51:15,284 [websockets.py:on_close()] - Websocket Closed: ID: 140732324042832 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.93
 2024-06-06 05:51:15,492 [websockets.py:on_close()] - Websocket Closed: ID: 140732324035664 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2024-06-06 06:06:56,506 [application.py:log_request()] - 101 GET /websocket?token=MJKCY5IGW2MJTVOCBUXM6ABRFRNJOJJE (192.168.0.181) [_TRUSTED_USER_] 0.56ms
+2024-06-06 06:06:56,506 [websockets.py:open()] - Websocket Opened: ID: 140732344852176, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-06 06:06:56,512 [websockets.py:_handle_identify()] - Websocket 140732344852176 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 06:06:56,513 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 06:06:57,342 [application.py:log_request()] - 101 GET /websocket?token=6SRRJLKTFMALXKFP2FKQC4VFANB2AVVE (192.168.0.181) [_TRUSTED_USER_] 0.62ms
+2024-06-06 06:06:57,342 [websockets.py:open()] - Websocket Opened: ID: 140732346770128, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-06 06:06:57,359 [websockets.py:_handle_identify()] - Websocket 140732346770128 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 06:06:57,359 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 06:09:26,628 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732344852176
+2024-06-06 06:09:27,380 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732346770128
+2024-06-06 06:09:31,507 [websockets.py:on_close()] - Websocket Closed: ID: 140732344852176 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-06-06 06:09:32,344 [websockets.py:on_close()] - Websocket Closed: ID: 140732346770128 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.90
+2024-06-06 06:25:10,929 [application.py:log_request()] - 101 GET /websocket?token=ZPLD44Z24WAS34QBLYGNP35Y6BSAMZ5H (192.168.0.181) [_TRUSTED_USER_] 0.55ms
+2024-06-06 06:25:10,929 [websockets.py:open()] - Websocket Opened: ID: 140732324726800, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-06 06:25:10,939 [websockets.py:_handle_identify()] - Websocket 140732324726800 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 06:25:10,940 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 06:25:11,422 [application.py:log_request()] - 101 GET /websocket?token=GDGBFIH3R3JSV56IVOLE3RCADBT4L7Q2 (192.168.0.181) [_TRUSTED_USER_] 0.60ms
+2024-06-06 06:25:11,423 [websockets.py:open()] - Websocket Opened: ID: 140732344634448, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-06 06:25:11,427 [websockets.py:_handle_identify()] - Websocket 140732344634448 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 06:25:11,427 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 06:28:51,025 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732324726800
+2024-06-06 06:28:51,527 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732344634448
+2024-06-06 06:28:55,931 [websockets.py:on_close()] - Websocket Closed: ID: 140732324726800 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-06-06 06:28:56,425 [websockets.py:on_close()] - Websocket Closed: ID: 140732344634448 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.98
+2024-06-06 06:44:19,387 [application.py:log_request()] - 101 GET /websocket?token=Y5QCKKBROFVU2LR3VJZ7IGJOBAOWI7EF (192.168.0.181) [_TRUSTED_USER_] 0.50ms
+2024-06-06 06:44:19,387 [websockets.py:open()] - Websocket Opened: ID: 140732345228496, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-06 06:44:19,387 [application.py:log_request()] - 101 GET /websocket?token=T3EAEKHFOCSBPD3XNBEP7K2CT2IZDUHW (192.168.0.181) [_TRUSTED_USER_] 0.68ms
+2024-06-06 06:44:19,387 [websockets.py:open()] - Websocket Opened: ID: 140732345225296, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-06 06:44:19,394 [websockets.py:_handle_identify()] - Websocket 140732345228496 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 06:44:19,395 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 06:44:19,406 [websockets.py:_handle_identify()] - Websocket 140732345225296 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 06:44:19,406 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 06:45:29,398 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732345228496
+2024-06-06 06:45:29,398 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732345225296
+2024-06-06 06:45:34,388 [websockets.py:on_close()] - Websocket Closed: ID: 140732345228496 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.89
+2024-06-06 06:45:34,389 [websockets.py:on_close()] - Websocket Closed: ID: 140732345225296 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.89
+2024-06-06 06:52:31,894 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
+2024-06-06 06:57:15,870 [application.py:log_request()] - 101 GET /websocket?token=I4WUN3AYQLPKFOANPH74C4MUCY6XAMLI (192.168.0.181) [_TRUSTED_USER_] 0.51ms
+2024-06-06 06:57:15,870 [websockets.py:open()] - Websocket Opened: ID: 140732325429072, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-06 06:57:15,878 [websockets.py:_handle_identify()] - Websocket 140732325429072 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 06:57:15,878 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 06:57:15,892 [application.py:log_request()] - 101 GET /websocket?token=EUEWAR2IZEJSXRPAB2L2YV5AAKITZ2I3 (192.168.0.181) [_TRUSTED_USER_] 0.70ms
+2024-06-06 06:57:15,892 [websockets.py:open()] - Websocket Opened: ID: 140732345563152, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-06 06:57:15,899 [websockets.py:_handle_identify()] - Websocket 140732345563152 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 06:57:15,899 [file_manager.py:get_file_list()] - Updating File List <config>...
