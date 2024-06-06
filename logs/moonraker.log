@@ -218,3 +218,14 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-06 00:57:47,407 [websockets.py:open()] - Websocket Opened: ID: 140732346939664, Proxied: False, User Agent: Dart/3.3 (dart:io), Host Name: 3dprinters.local
 2024-06-06 00:57:47,414 [websockets.py:_handle_identify()] - Websocket 140732346939664 Client Identified - Name: Mobileraker-ios, Version: 2.6.19-468, Type: mobile
 2024-06-06 00:58:11,243 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.73ms
+2024-06-06 01:00:50,671 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.82ms
+2024-06-06 01:04:06,700 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 1.22ms
+2024-06-06 01:07:21,982 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.80ms
+2024-06-06 01:07:46,185 [application.py:log_request()] - 101 GET /websocket?token=Y2D2XWAY762CNNWRMW5IOLFEBEUIZKF3 (192.168.0.210) [_TRUSTED_USER_] 0.44ms
+2024-06-06 01:07:46,185 [websockets.py:open()] - Websocket Opened: ID: 140732345285712, Proxied: False, User Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/125.0.6422.80 Mobile/15E148 Safari/604.1, Host Name: 3dprinters.local
+2024-06-06 01:07:46,200 [websockets.py:_handle_identify()] - Websocket 140732345285712 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 01:07:46,201 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 01:08:07,526 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732346939664
+2024-06-06 01:08:12,409 [websockets.py:on_close()] - Websocket Closed: ID: 140732346939664 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-06-06 01:12:03,969 [websockets.py:on_close()] - Websocket Closed: ID: 140732345285712 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.78
+2024-06-06 01:22:31,821 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
