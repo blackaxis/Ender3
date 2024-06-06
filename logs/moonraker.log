@@ -417,3 +417,132 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-06 07:34:02,088 [websockets.py:on_close()] - Websocket Closed: ID: 140732345519952 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
 2024-06-06 07:57:31,903 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
 2024-06-06 08:37:31,907 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
+2024-06-06 09:12:39,556 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-06 09:12:39,860 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------vssFADdBSvfBsxQ5yQCLUJ
+2024-06-06 09:12:46,944 [application.py:post()] - Processing Uploaded File: AR-15_A2_Grip_M3_screw_3h21m_0.20mm_245C_ASA_.gcode
+2024-06-06 09:12:47,027 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-06 09:12:47,080 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "AR-15_A2_Grip_M3_screw_3h21m_0.20mm_245C_ASA_.gcode") successfully finished
+2024-06-06 09:12:47,080 [klippy_apis.py:start_print()] - Requesting Job Start, filename = AR-15_A2_Grip_M3_screw_3h21m_0.20mm_245C_ASA_.gcode
+2024-06-06 09:12:47,087 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 7227.60ms
+2024-06-06 09:12:47,110 [job_state.py:_status_update()] - Job Started: AR-15_A2_Grip_M3_screw_3h21m_0.20mm_245C_ASA_.gcode
+2024-06-06 09:15:34,629 [application.py:log_request()] - 101 GET /websocket?token=CVE3A4BPNDOJ4M5VGM4IQZBNYZGOJC2O (192.168.0.181) [_TRUSTED_USER_] 0.66ms
+2024-06-06 09:15:34,630 [websockets.py:open()] - Websocket Opened: ID: 140732344674192, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-06 09:15:34,634 [websockets.py:_handle_identify()] - Websocket 140732344674192 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 09:15:34,634 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 09:15:36,021 [application.py:log_request()] - 101 GET /websocket?token=RBIIVUZEBDYOZ5VWVCEQPB7MITO4VDSF (192.168.0.181) [_TRUSTED_USER_] 0.63ms
+2024-06-06 09:15:36,021 [websockets.py:open()] - Websocket Opened: ID: 140732344743696, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-06 09:15:36,027 [websockets.py:_handle_identify()] - Websocket 140732344743696 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 09:15:36,028 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 09:15:37,718 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-06 09:16:05,193 [websockets.py:on_close()] - Websocket Closed: ID: 140732344674192 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.55
+2024-06-06 09:16:05,193 [websockets.py:on_close()] - Websocket Closed: ID: 140732344743696 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 9.15
+2024-06-06 09:16:05,513 [application.py:log_request()] - 101 GET /websocket?token=L3YGTKENRU3HFBXUXYTVMUNFV4FSV7XD (192.168.0.181) [_TRUSTED_USER_] 0.35ms
+2024-06-06 09:16:05,513 [websockets.py:open()] - Websocket Opened: ID: 140732324291984, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-06 09:16:05,520 [websockets.py:_handle_identify()] - Websocket 140732324291984 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 09:16:05,520 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 09:16:08,269 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-06 09:16:37,718 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 60.00 seconds
+2024-06-06 09:17:08,270 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 60.00 seconds
+2024-06-06 09:17:37,719 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 120.00 seconds
+2024-06-06 09:18:08,272 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 120.00 seconds
+2024-06-06 09:18:37,719 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 180.00 seconds
+2024-06-06 09:19:08,273 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 180.00 seconds
+2024-06-06 09:19:37,721 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 240.00 seconds
+2024-06-06 09:20:08,274 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 240.00 seconds
+2024-06-06 09:20:37,721 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 300.00 seconds
+2024-06-06 09:21:08,275 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 300.01 seconds
+2024-06-06 09:21:37,722 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 360.00 seconds
+2024-06-06 09:22:08,276 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 360.01 seconds
+2024-06-06 09:22:37,723 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 420.00 seconds
+2024-06-06 09:23:08,277 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 420.01 seconds
+2024-06-06 09:23:37,723 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 480.01 seconds
+2024-06-06 09:24:08,277 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 480.01 seconds
+2024-06-06 09:24:37,724 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 540.01 seconds
+2024-06-06 09:25:08,278 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 540.01 seconds
+2024-06-06 09:25:37,725 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 600.01 seconds
+2024-06-06 09:26:08,280 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 600.01 seconds
+2024-06-06 09:26:37,726 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 660.01 seconds
+2024-06-06 09:27:08,280 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 660.01 seconds
+2024-06-06 09:27:37,727 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 720.01 seconds
+2024-06-06 09:27:46,322 [websockets.py:on_close()] - Websocket Closed: ID: 140732324291984 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.74
+2024-06-06 09:27:47,190 [application.py:log_request()] - 101 GET /websocket?token=PMJHRDZMN7T4JESVNRKF5YD6JFBBAFNG (192.168.0.181) [_TRUSTED_USER_] 0.78ms
+2024-06-06 09:27:47,190 [websockets.py:open()] - Websocket Opened: ID: 140732344117840, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-06 09:27:47,194 [websockets.py:_handle_identify()] - Websocket 140732344117840 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 09:27:47,195 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 09:28:08,281 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 720.01 seconds
+2024-06-06 09:28:37,728 [klippy_connection.py:wait()] - Request 'pause_resume/pause' pending: 780.01 seconds
+2024-06-06 09:29:04,427 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-06 09:29:04,429 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1717680514.770681, Usage: 2.4%, Memory: 65360 kB
+System Time: 1717680515.772066, Usage: 0.73%, Memory: 65360 kB
+System Time: 1717680516.772714, Usage: 1.32%, Memory: 65360 kB
+System Time: 1717680517.773558, Usage: 0.53%, Memory: 65360 kB
+System Time: 1717680518.774001, Usage: 0.41%, Memory: 65360 kB
+System Time: 1717680519.774730, Usage: 0.43%, Memory: 65360 kB
+System Time: 1717680520.775721, Usage: 0.4%, Memory: 65360 kB
+System Time: 1717680521.776393, Usage: 0.54%, Memory: 65360 kB
+System Time: 1717680522.777897, Usage: 0.44%, Memory: 65360 kB
+System Time: 1717680523.778783, Usage: 0.56%, Memory: 65360 kB
+System Time: 1717680524.779958, Usage: 2.3%, Memory: 65360 kB
+System Time: 1717680525.779794, Usage: 0.78%, Memory: 65360 kB
+System Time: 1717680526.781475, Usage: 2.37%, Memory: 65360 kB
+System Time: 1717680527.783380, Usage: 0.75%, Memory: 65360 kB
+System Time: 1717680528.784649, Usage: 1.21%, Memory: 65360 kB
+System Time: 1717680529.786317, Usage: 0.45%, Memory: 65360 kB
+System Time: 1717680530.788360, Usage: 0.42%, Memory: 65360 kB
+System Time: 1717680531.789823, Usage: 0.54%, Memory: 65360 kB
+System Time: 1717680532.791358, Usage: 0.4%, Memory: 65360 kB
+System Time: 1717680533.791982, Usage: 0.41%, Memory: 65360 kB
+System Time: 1717680534.793259, Usage: 0.44%, Memory: 65360 kB
+System Time: 1717680535.794244, Usage: 0.59%, Memory: 65360 kB
+System Time: 1717680536.794897, Usage: 2.15%, Memory: 65360 kB
+System Time: 1717680537.795916, Usage: 0.81%, Memory: 65360 kB
+System Time: 1717680538.796390, Usage: 2.29%, Memory: 65360 kB
+System Time: 1717680539.798048, Usage: 0.7%, Memory: 65360 kB
+System Time: 1717680540.798749, Usage: 1.18%, Memory: 65360 kB
+System Time: 1717680541.799344, Usage: 0.59%, Memory: 65360 kB
+System Time: 1717680542.799884, Usage: 0.44%, Memory: 65360 kB
+System Time: 1717680543.801054, Usage: 0.46%, Memory: 65360 kB
+CPU Temperature: 56.2
+2024-06-06 09:29:04,431 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-06 09:29:04,952 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.pause, Code: 400, Message: Lost communication with MCU 'mcu'
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-06-06 09:29:04,952 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.print.pause, Code: 400, Message: Lost communication with MCU 'mcu'
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+2024-06-06 09:31:11,647 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-06 09:31:11,703 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-06 09:31:11,716 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-06 09:31:11,721 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-06 09:31:11,834 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-06 09:31:12,904 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-06 09:31:12,917 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-06 09:32:43,086 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-06 09:32:43,086 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-06 09:32:43,087 [klippy_connection.py:_check_ready()] - 
+mcu 'mcu': Unable to connect
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-06-06 09:34:21,616 [websockets.py:on_close()] - Websocket Closed: ID: 140732344117840 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.37
+2024-06-06 09:35:01,251 [application.py:log_request()] - 101 GET /websocket?token=HVV7EEYP4PSMFTUENR4ISQZG6BH3UAEO (192.168.0.181) [_TRUSTED_USER_] 0.35ms
+2024-06-06 09:35:01,251 [websockets.py:open()] - Websocket Opened: ID: 140732344114448, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-06 09:35:01,255 [websockets.py:_handle_identify()] - Websocket 140732344114448 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 09:35:01,255 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 09:35:02,465 [application.py:log_request()] - 101 GET /websocket?token=JIQ4CUSGBFH3VGA7ELNQLX36FTTLZWIA (192.168.0.181) [_TRUSTED_USER_] 0.47ms
+2024-06-06 09:35:02,466 [websockets.py:open()] - Websocket Opened: ID: 140732343667152, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-06 09:35:02,510 [websockets.py:_handle_identify()] - Websocket 140732343667152 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-06 09:35:02,510 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-06 09:43:59,208 [websockets.py:on_close()] - Websocket Closed: ID: 140732343667152 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.66
