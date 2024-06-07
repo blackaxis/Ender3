@@ -213,3 +213,4 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-07 01:24:43,110 [websockets.py:open()] - Websocket Opened: ID: 140732345317712, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
 2024-06-07 01:24:43,128 [websockets.py:_handle_identify()] - Websocket 140732345317712 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-07 01:24:43,128 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-07 02:27:32,082 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
