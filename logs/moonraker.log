@@ -237,3 +237,5 @@ Content-Type: multipart/form-data; boundary=------------------------6PZLCpnnNzKg
 2024-06-07 03:32:10,936 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Flow calibration_13m_0.20mm_240C_PET_.gcode
 2024-06-07 03:32:10,941 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 316.82ms
 2024-06-07 03:32:11,176 [job_state.py:_status_update()] - Job Started: Flow calibration_13m_0.20mm_240C_PET_.gcode
+2024-06-07 04:07:32,098 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-07 04:32:32,103 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
