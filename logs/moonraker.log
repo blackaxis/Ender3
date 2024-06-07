@@ -214,3 +214,26 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-07 01:24:43,128 [websockets.py:_handle_identify()] - Websocket 140732345317712 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-07 01:24:43,128 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-07 02:27:32,082 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-07 03:04:53,979 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-07 03:04:54,122 [application.py:log_request()] - 101 GET /websocket?token=2GGWOTVWVF3WB3GSD3W6LIBXNANVCUK3 (192.168.0.100) [_TRUSTED_USER_] 0.46ms
+2024-06-07 03:04:54,123 [websockets.py:open()] - Websocket Opened: ID: 140732323365456, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-07 03:04:54,130 [websockets.py:_handle_identify()] - Websocket 140732323365456 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-07 03:04:54,131 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-07 03:12:07,799 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-07 03:12:07,878 [application.py:log_request()] - 101 GET /websocket?token=KY33VXSRVNDUOO53XAFRTXKFF4WJGZLV (192.168.0.181) [_TRUSTED_USER_] 0.41ms
+2024-06-07 03:12:07,878 [websockets.py:open()] - Websocket Opened: ID: 140732324009808, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-07 03:12:07,886 [websockets.py:_handle_identify()] - Websocket 140732324009808 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-07 03:12:07,886 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-07 03:12:09,343 [application.py:log_request()] - 101 GET /websocket?token=F3E2ONNMXO5UMBKG46Q5GFFHOVG7FOY2 (192.168.0.181) [_TRUSTED_USER_] 0.42ms
+2024-06-07 03:12:09,343 [websockets.py:open()] - Websocket Opened: ID: 140732345225616, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-07 03:12:09,348 [websockets.py:_handle_identify()] - Websocket 140732345225616 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-07 03:12:09,348 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-07 03:32:10,625 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------6PZLCpnnNzKgf4M3ZYVlm4
+2024-06-07 03:32:10,808 [application.py:post()] - Processing Uploaded File: Flow calibration_13m_0.20mm_240C_PET_.gcode
+2024-06-07 03:32:10,899 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-07 03:32:10,936 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Flow calibration_13m_0.20mm_240C_PET_.gcode") successfully finished
+2024-06-07 03:32:10,936 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Flow calibration_13m_0.20mm_240C_PET_.gcode
+2024-06-07 03:32:10,941 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 316.82ms
+2024-06-07 03:32:11,176 [job_state.py:_status_update()] - Job Started: Flow calibration_13m_0.20mm_240C_PET_.gcode
