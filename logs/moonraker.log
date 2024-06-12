@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Jun  9 15:29:06 2024 --------------------
+-------------------- Log Start | Wed Jun 12 01:25:48 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -208,26 +208,39 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-207-g6cd17420
-2024-06-09 11:29:06,314 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.210
-2024-06-09 11:29:06,314 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.55ms
-2024-06-09 11:29:06,314 [websockets.py:open()] - Websocket Opened: ID: 140732345613968, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-06-09 11:29:06,324 [websockets.py:_handle_identify()] - Websocket 140732345613968 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
-2024-06-09 11:29:06,372 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.79ms
-2024-06-09 11:33:18,898 [websockets.py:on_close()] - Websocket Closed: ID: 140732345613968 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.58
-2024-06-09 11:33:47,199 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 1.42ms
-2024-06-09 11:33:47,200 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 1.30ms
-2024-06-09 11:33:47,200 [websockets.py:open()] - Websocket Opened: ID: 140732344645392, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-06-09 11:33:47,207 [websockets.py:_handle_identify()] - Websocket 140732344645392 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
-2024-06-09 11:34:23,650 [websockets.py:on_close()] - Websocket Closed: ID: 140732344645392 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.38
-2024-06-09 11:34:34,092 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 1.39ms
-2024-06-09 11:34:34,092 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 1.28ms
-2024-06-09 11:34:34,092 [websockets.py:open()] - Websocket Opened: ID: 140732344894864, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-06-09 11:34:34,100 [websockets.py:_handle_identify()] - Websocket 140732344894864 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
-2024-06-09 11:38:35,274 [websockets.py:on_close()] - Websocket Closed: ID: 140732344894864 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.08
-2024-06-09 12:00:43,933 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.77ms
-2024-06-09 12:00:43,933 [websockets.py:open()] - Websocket Opened: ID: 140732324720784, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-06-09 12:00:43,934 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 1.20ms
-2024-06-09 12:00:43,941 [websockets.py:_handle_identify()] - Websocket 140732324720784 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
-2024-06-09 12:01:14,047 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732324720784
-2024-06-09 12:01:18,935 [websockets.py:on_close()] - Websocket Closed: ID: 140732324720784 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
-2024-06-09 13:02:32,652 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
+2024-06-11 21:25:48,488 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.210
+2024-06-11 21:25:48,488 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 1.33ms
+2024-06-11 21:25:48,489 [websockets.py:open()] - Websocket Opened: ID: 140732344637072, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-06-11 21:25:48,494 [websockets.py:_handle_identify()] - Websocket 140732344637072 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-06-11 21:26:11,327 [websockets.py:on_close()] - Websocket Closed: ID: 140732344637072 Close Code: None, Close Reason: None, Pong Time Elapsed: 12.83
+2024-06-11 21:42:42,570 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-11 21:42:42,627 [application.py:log_request()] - 101 GET /websocket?token=DEE6QLIXYCUAZNV2XB2FI5HLMQVKYMJE (192.168.0.181) [_TRUSTED_USER_] 0.39ms
+2024-06-11 21:42:42,628 [websockets.py:open()] - Websocket Opened: ID: 140732345602512, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-11 21:42:42,632 [websockets.py:_handle_identify()] - Websocket 140732345602512 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-11 21:42:42,632 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-11 21:42:44,250 [application.py:log_request()] - 101 GET /websocket?token=VI6DBX6MSLWKLFYDKNBLLWY7WFBCK7Y5 (192.168.0.181) [_TRUSTED_USER_] 0.43ms
+2024-06-11 21:42:44,250 [websockets.py:open()] - Websocket Opened: ID: 140732346765520, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-11 21:42:44,259 [websockets.py:_handle_identify()] - Websocket 140732346765520 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-11 21:42:44,259 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-11 21:42:45,367 [websockets.py:on_close()] - Websocket Closed: ID: 140732346765520 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.12
+2024-06-11 21:43:04,430 [websockets.py:on_close()] - Websocket Closed: ID: 140732345602512 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.79
+2024-06-11 21:43:45,134 [application.py:log_request()] - 101 GET /websocket?token=YCEPM4OICWSCBS5V27B7VFBZXBZM6NMM (192.168.0.181) [_TRUSTED_USER_] 0.55ms
+2024-06-11 21:43:45,135 [websockets.py:open()] - Websocket Opened: ID: 140732344882896, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-11 21:43:45,139 [websockets.py:_handle_identify()] - Websocket 140732344882896 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-11 21:43:45,139 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-11 21:43:47,140 [websockets.py:on_close()] - Websocket Closed: ID: 140732344882896 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.01
+2024-06-11 21:43:49,376 [application.py:log_request()] - 101 GET /websocket?token=PHUNVHQEGSEOGL73FCR7XDSAP5WVDF5D (192.168.0.181) [_TRUSTED_USER_] 0.68ms
+2024-06-11 21:43:49,376 [websockets.py:open()] - Websocket Opened: ID: 140732344649552, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-11 21:43:49,381 [websockets.py:_handle_identify()] - Websocket 140732344649552 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-11 21:43:49,381 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-11 21:43:56,259 [websockets.py:on_close()] - Websocket Closed: ID: 140732344649552 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.88
+2024-06-11 21:43:56,492 [application.py:log_request()] - 101 GET /websocket?token=N633CIPJ34AHV6XBUCBS3BL5CU27FRBO (192.168.0.181) [_TRUSTED_USER_] 0.59ms
+2024-06-11 21:43:56,493 [websockets.py:open()] - Websocket Opened: ID: 140732324817168, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-11 21:43:56,497 [websockets.py:_handle_identify()] - Websocket 140732324817168 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-11 21:43:56,497 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-11 21:43:58,355 [application.py:log_request()] - 101 GET /websocket?token=IS7WUVWKGL4EZCP5XROQFOCIJLHNDDR5 (192.168.0.181) [_TRUSTED_USER_] 0.68ms
+2024-06-11 21:43:58,356 [websockets.py:open()] - Websocket Opened: ID: 140732324809104, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-11 21:43:58,362 [websockets.py:_handle_identify()] - Websocket 140732324809104 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-11 21:43:58,362 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-11 21:43:58,421 [websockets.py:on_close()] - Websocket Closed: ID: 140732324809104 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.07
+2024-06-11 21:45:28,427 [websockets.py:on_close()] - Websocket Closed: ID: 140732324817168 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.93
