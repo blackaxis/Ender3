@@ -1009,3 +1009,14 @@ Pinned Commit: None
 2024-06-12 17:48:32,933 [klippy_apis.py:cancel_print()] - Requesting job cancel...
 2024-06-12 17:48:41,077 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
 2024-06-12 17:48:41,196 [job_state.py:_status_update()] - Job Started: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 18:06:47,948 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-12 18:08:33,411 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-12 18:08:38,288 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 18:08:38,428 [job_state.py:_status_update()] - Job Started: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 18:09:26,935 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-12 18:09:31,434 [websockets.py:on_close()] - Websocket Closed: ID: 140732393760336 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.92
+2024-06-12 18:13:03,781 [application.py:log_request()] - 101 GET /websocket?token=GBX7GAQR2EGABX5GEXNFK72NDBPH53GV (192.168.0.100) [_TRUSTED_USER_] 0.54ms
+2024-06-12 18:13:03,781 [websockets.py:open()] - Websocket Opened: ID: 140732439878352, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-12 18:13:03,791 [websockets.py:_handle_identify()] - Websocket 140732439878352 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 18:13:03,791 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 18:14:26,937 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
