@@ -249,3 +249,14 @@ Content-Type: multipart/form-data; boundary=------------------------mHPU63humcc2
 2024-06-12 04:52:20,122 [websockets.py:_handle_identify()] - Websocket 140732324664912 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
 2024-06-12 04:54:10,190 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732324664912
 2024-06-12 04:54:15,119 [websockets.py:on_close()] - Websocket Closed: ID: 140732324664912 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.89
+2024-06-12 05:22:33,335 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-12 05:40:08,480 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.45ms
+2024-06-12 05:40:08,480 [websockets.py:open()] - Websocket Opened: ID: 140732345498384, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-06-12 05:40:08,484 [websockets.py:_handle_identify()] - Websocket 140732345498384 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-06-12 05:40:30,235 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.74ms
+2024-06-12 05:40:46,059 [websockets.py:on_close()] - Websocket Closed: ID: 140732345498384 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.57
+2024-06-12 05:58:30,544 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-12 05:58:30,742 [application.py:log_request()] - 101 GET /websocket?token=X4AKPDJ4QRFGDC5PGK3FHCGOICPKPHGE (192.168.0.100) [_TRUSTED_USER_] 0.47ms
+2024-06-12 05:58:30,742 [websockets.py:open()] - Websocket Opened: ID: 140732345567440, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-12 05:58:30,747 [websockets.py:_handle_identify()] - Websocket 140732345567440 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 05:58:30,747 [file_manager.py:get_file_list()] - Updating File List <config>...
