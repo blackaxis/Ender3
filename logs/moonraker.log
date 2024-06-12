@@ -953,3 +953,26 @@ Pinned Commit: None
 2024-06-12 13:44:26,891 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
 2024-06-12 13:44:26,891 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
 2024-06-12 14:44:26,902 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-12 16:04:43,275 [websockets.py:on_close()] - Websocket Closed: ID: 140732430248656 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.59
+2024-06-12 16:17:42,785 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-12 16:17:42,928 [application.py:log_request()] - 101 GET /websocket?token=V44KUTKDVSO3L62EVMKLW6HR5RGEHV47 (192.168.0.100) [_TRUSTED_USER_] 0.86ms
+2024-06-12 16:17:42,929 [websockets.py:open()] - Websocket Opened: ID: 140732393553360, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-12 16:17:42,946 [websockets.py:_handle_identify()] - Websocket 140732393553360 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 16:17:42,946 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 16:37:08,933 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 16:37:09,070 [job_state.py:_status_update()] - Job Started: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 16:38:55,086 [websockets.py:on_close()] - Websocket Closed: ID: 140732393553360 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.15
+2024-06-12 16:39:09,474 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-12 16:40:09,475 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-12 16:41:09,476 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-06-12 16:42:09,477 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2024-06-12 16:43:09,478 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
+2024-06-12 16:44:09,478 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.00 seconds
+2024-06-12 16:45:09,480 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.01 seconds
+2024-06-12 16:46:09,482 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 480.01 seconds
+2024-06-12 16:47:09,483 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 540.01 seconds
+2024-06-12 16:48:09,484 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 600.01 seconds
+2024-06-12 16:49:09,486 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 660.01 seconds
+2024-06-12 16:50:09,488 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 720.01 seconds
+2024-06-12 16:51:09,490 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 780.02 seconds
+2024-06-12 16:52:09,492 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 840.02 seconds
