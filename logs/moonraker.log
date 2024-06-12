@@ -260,3 +260,21 @@ Content-Type: multipart/form-data; boundary=------------------------mHPU63humcc2
 2024-06-12 05:58:30,742 [websockets.py:open()] - Websocket Opened: ID: 140732345567440, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
 2024-06-12 05:58:30,747 [websockets.py:_handle_identify()] - Websocket 140732345567440 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-12 05:58:30,747 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 06:19:09,387 [websockets.py:on_close()] - Websocket Closed: ID: 140732323491920 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.90
+2024-06-12 06:34:12,039 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.60ms
+2024-06-12 06:34:12,039 [websockets.py:open()] - Websocket Opened: ID: 140732345226448, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-06-12 06:34:12,044 [websockets.py:_handle_identify()] - Websocket 140732345226448 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-06-12 06:34:12,098 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.93ms
+2024-06-12 06:35:02,122 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732345226448
+2024-06-12 06:35:07,040 [websockets.py:on_close()] - Websocket Closed: ID: 140732345226448 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.96
+2024-06-12 06:39:50,171 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-12 06:39:50,188 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------b1Kxbs6h7rGFK5qlHYh9Ae
+2024-06-12 06:39:51,001 [application.py:post()] - Processing Uploaded File: Glock Mag Spring Base_18m_0.20mm_240C_ASA_.gcode
+2024-06-12 06:39:51,094 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-12 06:39:51,149 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Glock Mag Spring Base_18m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-06-12 06:39:51,150 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Glock Mag Spring Base_18m_0.20mm_240C_ASA_.gcode
+2024-06-12 06:39:51,157 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 969.02ms
+2024-06-12 06:39:51,179 [job_state.py:_status_update()] - Job Started: Glock Mag Spring Base_18m_0.20mm_240C_ASA_.gcode
+2024-06-12 06:43:10,490 [websockets.py:on_close()] - Websocket Closed: ID: 140732344732624 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.82
