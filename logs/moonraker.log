@@ -976,3 +976,36 @@ Pinned Commit: None
 2024-06-12 16:50:09,488 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 720.01 seconds
 2024-06-12 16:51:09,490 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 780.02 seconds
 2024-06-12 16:52:09,492 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 840.02 seconds
+2024-06-12 17:06:57,778 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-12 17:06:57,839 [application.py:log_request()] - 101 GET /websocket?token=ZZ4TWJR7DU2F3ORCGC6DSJCF3TGCFTS3 (192.168.0.181) [_TRUSTED_USER_] 0.42ms
+2024-06-12 17:06:57,840 [websockets.py:open()] - Websocket Opened: ID: 140732430402576, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-12 17:06:57,846 [websockets.py:_handle_identify()] - Websocket 140732430402576 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 17:06:57,846 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 17:06:59,247 [application.py:log_request()] - 101 GET /websocket?token=D3GQ4ZWEROOZDIHLSAG4RZRK7Y3JFGFS (192.168.0.181) [_TRUSTED_USER_] 0.43ms
+2024-06-12 17:06:59,247 [websockets.py:open()] - Websocket Opened: ID: 140732393763344, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-12 17:06:59,251 [websockets.py:_handle_identify()] - Websocket 140732393763344 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 17:06:59,252 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 17:07:22,265 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: BLTouch failed to deploy
+2024-06-12 17:11:41,241 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.210
+2024-06-12 17:11:41,242 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 1.07ms
+2024-06-12 17:11:41,242 [websockets.py:open()] - Websocket Opened: ID: 140732429468560, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-06-12 17:11:41,246 [websockets.py:_handle_identify()] - Websocket 140732429468560 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-06-12 17:12:31,326 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732429468560
+2024-06-12 17:12:36,244 [websockets.py:on_close()] - Websocket Closed: ID: 140732429468560 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.88
+2024-06-12 17:13:13,035 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.44ms
+2024-06-12 17:13:13,036 [websockets.py:open()] - Websocket Opened: ID: 140732429664848, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-06-12 17:13:13,054 [websockets.py:_handle_identify()] - Websocket 140732429664848 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-06-12 17:13:16,820 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 7.32ms
+2024-06-12 17:13:30,848 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 17:13:31,097 [job_state.py:_status_update()] - Job Started: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 17:15:12,817 [websockets.py:on_close()] - Websocket Closed: ID: 140732429664848 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.77
+2024-06-12 17:19:26,926 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-12 17:44:29,396 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-12 17:44:29,506 [application.py:log_request()] - 101 GET /websocket?token=BEZ7EEHDVXDNWQNRJOYIQC77NEINDCYT (192.168.0.100) [_TRUSTED_USER_] 0.69ms
+2024-06-12 17:44:29,507 [websockets.py:open()] - Websocket Opened: ID: 140732393760336, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-12 17:44:29,514 [websockets.py:_handle_identify()] - Websocket 140732393760336 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 17:44:29,514 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 17:47:29,965 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-12 17:48:32,933 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-12 17:48:41,077 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 17:48:41,196 [job_state.py:_status_update()] - Job Started: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
