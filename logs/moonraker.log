@@ -210,3 +210,4 @@ Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-207-g6cd17420
 2024-06-12 00:32:33,287 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
 2024-06-12 00:57:33,290 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-12 01:39:05,069 [websockets.py:on_close()] - Websocket Closed: ID: 140732324456848 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.03
