@@ -216,3 +216,20 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-12 02:10:52,444 [websockets.py:open()] - Websocket Opened: ID: 140732323491920, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
 2024-06-12 02:10:52,450 [websockets.py:_handle_identify()] - Websocket 140732323491920 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-12 02:10:52,450 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 03:12:33,314 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-12 03:45:14,602 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-12 03:45:14,721 [application.py:log_request()] - 101 GET /websocket?token=4QX6BLYEJBVUED2L3QLOMB4EYM5WONIJ (192.168.0.100) [_TRUSTED_USER_] 0.38ms
+2024-06-12 03:45:14,721 [websockets.py:open()] - Websocket Opened: ID: 140732345224784, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-12 03:45:14,729 [websockets.py:_handle_identify()] - Websocket 140732345224784 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 03:45:14,729 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 03:51:06,390 [websockets.py:on_close()] - Websocket Closed: ID: 140732345224784 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.66
+2024-06-12 03:55:44,787 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-12 03:55:44,801 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------mHPU63humcc2Y03pv5U4L0
+2024-06-12 03:55:49,227 [application.py:post()] - Processing Uploaded File: Glock Mag Frame Supported_1h53m_0.20mm_240C_ASA_.gcode
+2024-06-12 03:55:49,313 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-12 03:55:49,374 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Glock Mag Frame Supported_1h53m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-06-12 03:55:49,374 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Glock Mag Frame Supported_1h53m_0.20mm_240C_ASA_.gcode
+2024-06-12 03:55:49,382 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4581.24ms
+2024-06-12 03:55:49,411 [job_state.py:_status_update()] - Job Started: Glock Mag Frame Supported_1h53m_0.20mm_240C_ASA_.gcode
