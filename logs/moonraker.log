@@ -386,3 +386,562 @@ Content-Type: multipart/form-data; boundary=------------------------049pbgql8bt2
 2024-06-12 10:31:13,874 [websockets.py:on_close()] - Websocket Closed: ID: 140732345629648 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
 2024-06-12 11:22:33,396 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
 2024-06-12 11:32:33,398 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+-------------------- Log Start | Wed Jun 12 16:37:39 2024 --------------------
+platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
+data_path: /home/blackaxis/Ender3_data
+is_default_data_path: False
+config_file: /home/blackaxis/Ender3_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: 5f9d5402db9a40248e3d1a5c01ed37ed
+unix_socket_path: /home/blackaxis/Ender3_data/comms/moonraker.sock
+software_version: v0.8.0-379-g346a3d7
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/blackaxis/Ender3_data/logs/moonraker.log
+python_version: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+launch_args: /home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/moonraker.py -d /home/blackaxis/Ender3_data
+msgspec_enabled: False
+uvloop_enabled: False
+2024-06-12 12:37:39,811 [confighelper.py:read_file()] - Configuration File '/home/blackaxis/Ender3_data/config/moonraker.conf' parsed, total size: 1632 B
+2024-06-12 12:37:39,811 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7126
+klippy_uds_address = /home/blackaxis/Ender3_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager canboot]
+type = git_repo
+origin = https://github.com/Arksine/Katapult.git
+path = ~/Katapult
+is_system_service = False
+
+[update_manager moonraker-telegram-bot]
+type = git_repo
+path = ~/moonraker-telegram-bot
+origin = https://github.com/nlef/moonraker-telegram-bot.git
+env = ~/moonraker-telegram-bot-env/bin/python
+requirements = scripts/requirements.txt
+install_script = scripts/install.sh
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+[update_manager mobileraker]
+type = git_repo
+path = /home/blackaxis/mobileraker_companion
+origin = https://github.com/Clon1998/mobileraker_companion.git
+primary_branch = main
+managed_services = mobileraker
+env = /home/blackaxis/mobileraker-env/bin/python
+requirements = scripts/mobileraker-requirements.txt
+install_script = scripts/install.sh
+
+#################################################################
+All Configuration Files:
+/home/blackaxis/Ender3_data/config/moonraker.conf
+#################################################################
+2024-06-12 12:37:41,023 [server.py:load_component()] - Component (secrets) loaded
+2024-06-12 12:37:41,032 [server.py:load_component()] - Component (template) loaded
+2024-06-12 12:37:41,034 [server.py:load_component()] - Component (klippy_connection) loaded
+2024-06-12 12:39:22,455 [server.py:load_component()] - Component (application) loaded
+2024-06-12 12:39:22,604 [server.py:load_component()] - Component (websockets) loaded
+2024-06-12 12:39:23,469 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-06-12 12:39:23,690 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2024-06-12 12:39:23,973 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 56
+2024-06-12 12:39:24,058 [server.py:load_component()] - Component (database) loaded
+2024-06-12 12:39:24,180 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-06-12 12:39:24,580 [server.py:load_component()] - Component (file_manager) loaded
+2024-06-12 12:39:24,651 [database.py:register_table()] - Found registered table authorized_users
+2024-06-12 12:39:24,652 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-06-12 12:39:24,653 [server.py:load_component()] - Component (authorization) loaded
+2024-06-12 12:39:24,659 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-06-12 12:39:25,365 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: dddf145f114e1876
+  hardware_desc: 
+  model: Raspberry Pi 5 Model B Rev 1.0
+  total_memory: 8245712
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 6f
+  manufacturer: Unknown
+  oem_id: 0303
+  product_name: SDABC
+  product_revision: 1.0
+  serial_number: aa0001c7
+  manufacturer_date: 5/2023
+  capacity: 58.3 GiB
+  total_bytes: 62550179840
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.6.28+rpt-rpi-2712
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+  mobileraker
+2024-06-12 12:39:25,371 [server.py:load_component()] - Component (shell_command) loaded
+2024-06-12 12:39:25,372 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-06-12 12:39:25,373 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-06-12 12:39:25,373 [server.py:load_component()] - Component (machine) loaded
+2024-06-12 12:39:25,377 [server.py:load_component()] - Component (data_store) loaded
+2024-06-12 12:39:25,380 [proc_stats.py:__init__()] - Detected 'vcgencmd', throttle checking enabled
+2024-06-12 12:39:25,381 [server.py:load_component()] - Component (proc_stats) loaded
+2024-06-12 12:39:25,389 [server.py:load_component()] - Component (job_state) loaded
+2024-06-12 12:39:25,401 [server.py:load_component()] - Component (job_queue) loaded
+2024-06-12 12:39:25,407 [database.py:register_table()] - Found registered table job_history
+2024-06-12 12:39:25,407 [database.py:register_table()] - Found registered table job_totals
+2024-06-12 12:39:25,408 [server.py:load_component()] - Component (history) loaded
+2024-06-12 12:39:25,534 [server.py:load_component()] - Component (http_client) loaded
+2024-06-12 12:39:25,550 [server.py:load_component()] - Component (announcements) loaded
+2024-06-12 12:39:25,634 [server.py:load_component()] - Component (webcam) loaded
+2024-06-12 12:39:25,639 [server.py:load_component()] - Component (extensions) loaded
+2024-06-12 12:39:25,990 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/blackaxis/moonraker-env
+2024-06-12 12:39:26,079 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/blackaxis/klippy-env
+2024-06-12 12:39:26,086 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Option 'env' is deprecated, use 'virtualenv' instead.
+2024-06-12 12:39:26,087 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Detected virtualenv: /home/blackaxis/moonraker-telegram-bot-env
+2024-06-12 12:39:26,092 [base_deploy.py:log_info()] - Git Repo mobileraker: Option 'env' is deprecated, use 'virtualenv' instead.
+2024-06-12 12:39:26,092 [base_deploy.py:log_info()] - Git Repo mobileraker: Detected virtualenv: /home/blackaxis/mobileraker-env
+2024-06-12 12:39:26,093 [server.py:load_component()] - Component (update_manager) loaded
+2024-06-12 12:39:26,100 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-06-12 12:39:26,100 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-06-12 12:39:26,331 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2024-06-12 12:39:26,385 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-06-12 12:39:26,843 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-06-12 12:39:26,879 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-06-12 12:39:26,882 [machine.py:validation_init()] - Installation version in database up to date
+2024-06-12 12:39:27,662 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-06-12 12:39:27,673 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.119
+2024-06-12 12:39:27,673 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.119
+2024-06-12 12:39:27,696 [machine.py:extract_service_info()] - Detected alternate unit name for moonraker: moonraker-Ender3.service
+2024-06-12 12:39:27,707 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker-Ender3.service:
+unit_name: moonraker-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'network-online.target', '-.mount', 'system.slice']
+**After=['basic.target', 'systemd-journald.socket', '-.mount', 'network-online.target', 'system.slice', 'sysinit.target']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/moonraker.env
+**ExecStart=/home/blackaxis/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/blackaxis/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3.service
+**Description=API Server for Klipper SV1 Ender3
+**User=blackaxis
+2024-06-12 12:39:27,707 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-06-12 12:39:27,707 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-06-12 12:39:27,812 [server.py:add_log_rollover_item()] - The following jobs were detected as interrupted: [521]
+2024-06-12 12:39:27,812 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-06-12 12:39:27,813 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-06-12 12:39:27,814 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.119
+2024-06-12 12:39:27,815 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-06-12 12:39:27,815 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-06-12 12:39:27,816 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', '-.mount', 'system.slice']
+**After=['network-online.target', 'sysinit.target', 'basic.target', 'system.slice', 'systemd-journald.socket', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/klipper.env
+**ExecStart=/home/blackaxis/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/blackaxis/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=blackaxis
+2024-06-12 12:39:27,817 [server.py:add_log_rollover_item()] - Multiple instances of Moonraker have the update manager enabled.
+moonraker-Anet:83d87f5306c34384bf99cf2651794966:895
+moonraker-klipper:4ff8a650a7e54d1dabd02b580bb58403:899
+moonraker-Ender5Plus:2c83ed81882d4673aaad84dbff75b7c8:897
+moonraker-Ender3:5f9d5402db9a40248e3d1a5c01ed37ed:896
+2024-06-12 12:39:28,139 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-06-12 12:39:28,151 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/blackaxis/Ender3_data/comms/moonraker.sock'
+2024-06-12 12:39:28,151 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7126), Hostname: 3dprinters
+2024-06-12 12:39:28,151 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-06-12 12:39:28,402 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-12 12:39:28,421 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-12 12:39:28,430 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', '-.mount', 'system.slice']
+**After=['basic.target', 'system.slice', 'systemd-journald.socket', 'network-online.target', '-.mount', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/klipper.env
+**ExecStart=/home/blackaxis/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/blackaxis/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=blackaxis
+2024-06-12 12:39:28,682 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-207-g6cd17420
+2024-06-12 12:39:28,686 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-12 12:39:28,686 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-12 12:39:28,937 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-12 12:39:29,192 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-12 12:39:29,688 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-12 12:39:29,987 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-06-12 12:39:29,987 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 0.80ms
+2024-06-12 12:39:29,987 [websockets.py:open()] - Websocket Opened: ID: 140732429525712, Proxied: False, User Agent: Python/3.11 websockets/10.1, Host Name: 127.0.0.1
+2024-06-12 12:39:35,979 [base_deploy.py:log_info()] - PackageKit: Detected 0 package updates:
+
+2024-06-12 12:39:35,982 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker status --porcelain -b) successfully finished
+2024-06-12 12:39:35,984 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker branch --list --no-color) successfully finished
+2024-06-12 12:39:35,987 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker remote get-url origin) successfully finished
+2024-06-12 12:39:38,523 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker fetch origin --prune --progress) successfully finished
+2024-06-12 12:39:38,604 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-06-12 12:39:38,613 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker rev-parse HEAD) successfully finished
+2024-06-12 12:39:38,623 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-06-12 12:39:38,628 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker rev-parse origin/master) successfully finished
+2024-06-12 12:39:38,641 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-06-12 12:39:38,647 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker rev-list HEAD..346a3d7c9dca6499bdef2957ca39a23c702b0268 --count) successfully finished
+2024-06-12 12:39:38,648 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/blackaxis/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 346a3d7c9dca6499bdef2957ca39a23c702b0268
+Upstream Commit SHA: 346a3d7c9dca6499bdef2957ca39a23c702b0268
+Current Version: v0.8.0-379-g346a3d7c
+Upstream Version: v0.8.0-379-g346a3d7c
+Rollback Commit: 73df63db1f1c636cf66d5ae03def705c2880b799
+Rollback Branch: master
+Rollback Version: v0.8.0-359-g73df63db
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-12 12:39:38,648 [base_deploy.py:log_info()] - Git Repo moonraker: Channel: dev
+2024-06-12 12:39:38,648 [base_deploy.py:log_info()] - Git Repo moonraker: Validity check for git repo passed
+2024-06-12 12:39:38,661 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper status --porcelain -b) successfully finished
+2024-06-12 12:39:38,666 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper branch --list --no-color) successfully finished
+2024-06-12 12:39:38,672 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper remote get-url origin) successfully finished
+2024-06-12 12:39:40,542 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper fetch origin --prune --progress) exited with return code 1
+2024-06-12 12:39:41,745 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper fetch origin --prune --progress) successfully finished
+2024-06-12 12:39:41,747 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-06-12 12:39:41,749 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper rev-parse HEAD) successfully finished
+2024-06-12 12:39:41,817 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-06-12 12:39:41,821 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper rev-parse origin/master) successfully finished
+2024-06-12 12:39:41,869 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-06-12 12:39:41,871 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper rev-list HEAD..0d87bec159eba63744d820b5beaef5da20388ba4 --count) successfully finished
+2024-06-12 12:39:41,874 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper log 6cd174208bd9bbd51dc0d519a26661fb926d038a..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-06-12 12:39:41,918 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/klipper for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-06-12 12:39:41,918 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/blackaxis/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 6cd174208bd9bbd51dc0d519a26661fb926d038a
+Upstream Commit SHA: 0d87bec159eba63744d820b5beaef5da20388ba4
+Current Version: v0.12.0-207-g6cd17420
+Upstream Version: v0.12.0-230-g0d87bec1
+Rollback Commit: b7f7b8a346388cc32d80b6e6f60e5fdb4cbd3ce6
+Rollback Branch: master
+Rollback Version: v0.12.0-192-gb7f7b8a3
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 23
+Diverged: False
+Pinned Commit: None
+2024-06-12 12:39:41,918 [base_deploy.py:log_info()] - Git Repo klipper: Channel: dev
+2024-06-12 12:39:41,918 [base_deploy.py:log_info()] - Git Repo klipper: Validity check for git repo passed
+2024-06-12 12:39:41,920 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config status --porcelain -b) successfully finished
+2024-06-12 12:39:41,922 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config branch --list --no-color) successfully finished
+2024-06-12 12:39:41,925 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config remote get-url origin) successfully finished
+2024-06-12 12:39:42,153 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config fetch origin --prune --progress) successfully finished
+2024-06-12 12:39:42,156 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-06-12 12:39:42,157 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config rev-parse HEAD) successfully finished
+2024-06-12 12:39:42,160 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-06-12 12:39:42,162 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config rev-parse origin/master) successfully finished
+2024-06-12 12:39:42,164 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-06-12 12:39:42,166 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mainsail-config rev-list HEAD..e57810d51b5c634aadaca4db923bfcba269ae4b3 --count) successfully finished
+2024-06-12 12:39:42,166 [git_deploy.py:log_repo_info()] - Git Repo mainsail-config Detected:
+Owner: mainsail-crew
+Repository Name: mainsail-config
+Path: /home/blackaxis/mainsail-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/mainsail-config.git
+Recovery URL: https://github.com/mainsail-crew/mainsail-config.git
+Current Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Upstream Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Current Version: v1.2.1-0-ge57810d5
+Upstream Version: v1.2.1-0-ge57810d5
+Rollback Commit: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Rollback Branch: master
+Rollback Version: v1.2.1-0-ge57810d5
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-12 12:39:42,166 [base_deploy.py:log_info()] - Git Repo mainsail-config: Channel: dev
+2024-06-12 12:39:42,166 [base_deploy.py:log_info()] - Git Repo mainsail-config: Validity check for git repo passed
+2024-06-12 12:39:42,391 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult status --porcelain -b) successfully finished
+2024-06-12 12:39:42,393 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult branch --list --no-color) successfully finished
+2024-06-12 12:39:42,396 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult remote get-url origin) successfully finished
+2024-06-12 12:39:42,990 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult fetch origin --prune --progress) successfully finished
+2024-06-12 12:39:42,993 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-06-12 12:39:42,995 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult rev-parse HEAD) successfully finished
+2024-06-12 12:39:43,004 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-06-12 12:39:43,007 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult rev-parse origin/master) successfully finished
+2024-06-12 12:39:43,011 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-06-12 12:39:43,015 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/Katapult rev-list HEAD..3e23332eb188244e88f5ff60aecf077cd32bcd0c --count) successfully finished
+2024-06-12 12:39:43,016 [git_deploy.py:log_repo_info()] - Git Repo canboot Detected:
+Owner: Arksine
+Repository Name: Katapult
+Path: /home/blackaxis/Katapult
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/Katapult
+Recovery URL: https://github.com/Arksine/Katapult
+Current Commit SHA: 3e23332eb188244e88f5ff60aecf077cd32bcd0c
+Upstream Commit SHA: 3e23332eb188244e88f5ff60aecf077cd32bcd0c
+Current Version: v0.0.1-64-g3e23332e
+Upstream Version: v0.0.1-64-g3e23332e
+Rollback Commit: 6a7ca81e4f593832ff0335d267ab007bd200a6bf
+Rollback Branch: master
+Rollback Version: v0.0.1-62-g6a7ca81e
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-12 12:39:43,016 [base_deploy.py:log_info()] - Git Repo canboot: Channel: dev
+2024-06-12 12:39:43,016 [base_deploy.py:log_info()] - Git Repo canboot: Validity check for git repo passed
+2024-06-12 12:39:43,020 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot status --porcelain -b) successfully finished
+2024-06-12 12:39:43,022 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot branch --list --no-color) successfully finished
+2024-06-12 12:39:43,025 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot remote get-url origin) successfully finished
+2024-06-12 12:39:43,244 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot fetch origin --prune --progress) successfully finished
+2024-06-12 12:39:43,246 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-06-12 12:39:43,248 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot rev-parse HEAD) successfully finished
+2024-06-12 12:39:43,252 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-06-12 12:39:43,255 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot rev-parse origin/master) successfully finished
+2024-06-12 12:39:43,257 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-06-12 12:39:43,260 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/moonraker-telegram-bot rev-list HEAD..b9b47003e13b8a23af696594aac8ba53c777f5a7 --count) successfully finished
+2024-06-12 12:39:43,261 [git_deploy.py:log_repo_info()] - Git Repo moonraker-telegram-bot Detected:
+Owner: nlef
+Repository Name: moonraker-telegram-bot
+Path: /home/blackaxis/moonraker-telegram-bot
+Remote: origin
+Branch: master
+Remote URL: https://github.com/nlef/moonraker-telegram-bot.git
+Recovery URL: https://github.com/nlef/moonraker-telegram-bot.git
+Current Commit SHA: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Upstream Commit SHA: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Current Version: v1.5-0-gb9b47003
+Upstream Version: v1.5-0-gb9b47003
+Rollback Commit: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Rollback Branch: master
+Rollback Version: v1.5-0-gb9b47003
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-12 12:39:43,261 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Channel: dev
+2024-06-12 12:39:43,261 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Validity check for git repo passed
+2024-06-12 12:39:43,264 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config status --porcelain -b) successfully finished
+2024-06-12 12:39:43,267 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config branch --list --no-color) successfully finished
+2024-06-12 12:39:43,271 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config remote get-url origin) successfully finished
+2024-06-12 12:39:43,496 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config fetch origin --prune --progress) successfully finished
+2024-06-12 12:39:43,498 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config merge-base --is-ancestor HEAD origin/master) successfully finished
+2024-06-12 12:39:43,501 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config rev-parse HEAD) successfully finished
+2024-06-12 12:39:43,503 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-06-12 12:39:43,506 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config rev-parse origin/master) successfully finished
+2024-06-12 12:39:43,508 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config describe origin/master --always --tags --long --abbrev=8) successfully finished
+2024-06-12 12:39:43,510 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/fluidd-config rev-list HEAD..ce48c5854e9ca3ca72b63d0327069fac20e94c7c --count) successfully finished
+2024-06-12 12:39:43,510 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/blackaxis/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Upstream Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Current Version: v1.2.0-0-gce48c585
+Upstream Version: v1.2.0-0-gce48c585
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-12 12:39:43,510 [base_deploy.py:log_info()] - Git Repo fluidd-config: Channel: dev
+2024-06-12 12:39:43,510 [base_deploy.py:log_info()] - Git Repo fluidd-config: Validity check for git repo passed
+2024-06-12 12:39:43,680 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/blackaxis/fluidd
+Local Version: v1.30.0
+Remote Version: v1.30.0
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.30.0/fluidd.zip
+Download Size: 3715088
+Content Type: application/zip
+Rollback Version: v1.30.0
+Rollback Repo: fluidd-core/fluidd
+2024-06-12 12:39:43,715 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion status --porcelain -b) successfully finished
+2024-06-12 12:39:43,717 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion branch --list --no-color) successfully finished
+2024-06-12 12:39:43,720 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion remote get-url origin) successfully finished
+2024-06-12 12:39:44,255 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion fetch origin --prune --progress) successfully finished
+2024-06-12 12:39:44,257 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion merge-base --is-ancestor HEAD origin/main) successfully finished
+2024-06-12 12:39:44,259 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion rev-parse HEAD) successfully finished
+2024-06-12 12:39:44,262 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion describe --always --tags --long --dirty --abbrev=8) successfully finished
+2024-06-12 12:39:44,265 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion rev-parse origin/main) successfully finished
+2024-06-12 12:39:44,269 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion describe origin/main --always --tags --long --abbrev=8) successfully finished
+2024-06-12 12:39:44,272 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion rev-list HEAD..ea7277eea3062a43f4668f6b8f108d0d40c62688 --count) successfully finished
+2024-06-12 12:39:44,274 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion log 3be97bf2166721da43d508bdfb0fd68bd2c93138..origin/main --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2024-06-12 12:39:44,280 [shell_command.py:_check_proc_success()] - Command (git -C /home/blackaxis/mobileraker_companion for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/main --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2024-06-12 12:39:44,280 [git_deploy.py:log_repo_info()] - Git Repo mobileraker Detected:
+Owner: Clon1998
+Repository Name: mobileraker_companion
+Path: /home/blackaxis/mobileraker_companion
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Clon1998/mobileraker_companion.git
+Recovery URL: https://github.com/Clon1998/mobileraker_companion.git
+Current Commit SHA: 3be97bf2166721da43d508bdfb0fd68bd2c93138
+Upstream Commit SHA: ea7277eea3062a43f4668f6b8f108d0d40c62688
+Current Version: v0.4.0-60-g3be97bf2
+Upstream Version: v0.4.0-63-gea7277ee
+Rollback Commit: 828e9a8c35ca000f977d77ab01d9ab7fc6a5df0f
+Rollback Branch: main
+Rollback Version: v0.4.0-58-g828e9a8c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 3
+Diverged: False
+Pinned Commit: None
+2024-06-12 12:39:44,280 [base_deploy.py:log_info()] - Git Repo mobileraker: Channel: dev
+2024-06-12 12:39:44,280 [base_deploy.py:log_info()] - Git Repo mobileraker: Validity check for git repo passed
+2024-06-12 12:39:59,553 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-12 12:39:59,665 [application.py:log_request()] - 101 GET /websocket?token=CR2OPIAQSQYNUJ6PLP7FFPJ35W47ZOX4 (192.168.0.100) [_TRUSTED_USER_] 0.52ms
+2024-06-12 12:39:59,665 [websockets.py:open()] - Websocket Opened: ID: 140732430248656, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-12 12:39:59,675 [websockets.py:_handle_identify()] - Websocket 140732430248656 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 12:39:59,675 [file_manager.py:get_file_list()] - Updating File List <config>...
