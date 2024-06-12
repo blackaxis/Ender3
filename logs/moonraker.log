@@ -306,3 +306,47 @@ Content-Type: multipart/form-data; boundary=------------------------eCblOjPrLVsK
 2024-06-12 08:49:41,681 [websockets.py:open()] - Websocket Opened: ID: 140732344635792, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
 2024-06-12 08:49:41,685 [websockets.py:_handle_identify()] - Websocket 140732344635792 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-12 08:49:41,686 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 09:04:03,331 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-12 09:06:42,729 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-12 09:07:03,683 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 176.361 230.000 53.155 [48377.608]
+2024-06-12 09:07:04,602 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 176.361 230.000 53.155 [48377.608]
+2024-06-12 09:07:07,073 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 176.361 230.000 53.155 [48377.608]
+2024-06-12 09:07:07,661 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 176.361 230.000 53.155 [48377.608]
+2024-06-12 09:07:18,060 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 174.882 -20.000 53.146 [48377.608]
+2024-06-12 09:21:58,737 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.210
+2024-06-12 09:21:58,737 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.55ms
+2024-06-12 09:21:58,737 [websockets.py:open()] - Websocket Opened: ID: 140732345282768, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-06-12 09:21:58,744 [websockets.py:_handle_identify()] - Websocket 140732345282768 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-06-12 09:21:58,794 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 0.72ms
+2024-06-12 09:23:51,046 [websockets.py:on_close()] - Websocket Closed: ID: 140732345282768 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.20
+2024-06-12 09:25:38,157 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.59ms
+2024-06-12 09:25:38,158 [websockets.py:open()] - Websocket Opened: ID: 140732351098256, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-06-12 09:25:38,162 [websockets.py:_handle_identify()] - Websocket 140732351098256 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-06-12 09:27:04,640 [websockets.py:on_close()] - Websocket Closed: ID: 140732351098256 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.48
+2024-06-12 09:37:32,542 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------7Dltqo0vI8SZhTnDQQVc0r
+2024-06-12 09:37:34,746 [application.py:post()] - Processing Uploaded File: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 09:37:34,813 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-12 09:37:34,856 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-06-12 09:37:34,857 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 09:37:34,862 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 2319.77ms
+2024-06-12 09:37:35,084 [job_state.py:_status_update()] - Job Started: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 09:55:40,673 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------Mh6DBAzo8DK9sWHZ3PJUeS
+2024-06-12 09:55:42,894 [application.py:post()] - Processing Uploaded File: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 09:55:42,895 [web.py:log_exception()] - 403 POST /api/files/local (192.168.0.181): File is loaded, upload not permitted
+2024-06-12 09:55:42,898 [application.py:log_request()] - 403 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 2225.87ms
+2024-06-12 09:55:49,236 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------049pbgql8bt22v2ruMZZ61
+2024-06-12 09:55:51,107 [application.py:post()] - Processing Uploaded File: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-12 09:55:51,108 [web.py:log_exception()] - 403 POST /api/files/local (192.168.0.181): File is loaded, upload not permitted
+2024-06-12 09:55:51,110 [application.py:log_request()] - 403 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 1873.63ms
+2024-06-12 09:56:55,408 [application.py:log_request()] - 101 GET /websocket?token=M6UNTQCHAFQZXWLZV32YOADT5ILZUSFM (192.168.0.181) [_TRUSTED_USER_] 0.65ms
+2024-06-12 09:56:55,408 [websockets.py:open()] - Websocket Opened: ID: 140732323448592, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-12 09:56:55,413 [websockets.py:_handle_identify()] - Websocket 140732323448592 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 09:56:55,413 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 09:56:57,223 [application.py:log_request()] - 101 GET /websocket?token=XQNCG73NX7KPT2EG3ZLDWFWMF3X63QAW (192.168.0.181) [_TRUSTED_USER_] 0.50ms
+2024-06-12 09:56:57,223 [websockets.py:open()] - Websocket Opened: ID: 140732345561488, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-12 09:56:57,312 [websockets.py:_handle_identify()] - Websocket 140732345561488 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 09:56:57,312 [file_manager.py:get_file_list()] - Updating File List <config>...
