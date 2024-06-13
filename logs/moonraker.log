@@ -1020,3 +1020,188 @@ Pinned Commit: None
 2024-06-12 18:13:03,791 [websockets.py:_handle_identify()] - Websocket 140732439878352 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-12 18:13:03,791 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-12 18:14:26,937 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
+2024-06-12 19:01:56,965 [websockets.py:on_close()] - Websocket Closed: ID: 140732439878352 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.18
+2024-06-12 19:05:39,660 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-12 19:05:39,667 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1718233509.719846, Usage: 1.15%, Memory: 55728 kB
+System Time: 1718233510.720035, Usage: 1.08%, Memory: 55728 kB
+System Time: 1718233511.721294, Usage: 0.43%, Memory: 55728 kB
+System Time: 1718233512.722268, Usage: 0.46%, Memory: 55728 kB
+System Time: 1718233513.723650, Usage: 0.48%, Memory: 55728 kB
+System Time: 1718233514.724396, Usage: 0.6%, Memory: 55728 kB
+System Time: 1718233515.726257, Usage: 2.31%, Memory: 55728 kB
+System Time: 1718233516.726767, Usage: 0.88%, Memory: 55728 kB
+System Time: 1718233517.726520, Usage: 0.98%, Memory: 55728 kB
+System Time: 1718233518.727691, Usage: 0.49%, Memory: 55728 kB
+System Time: 1718233519.728249, Usage: 0.61%, Memory: 55728 kB
+System Time: 1718233520.730257, Usage: 2.55%, Memory: 55728 kB
+System Time: 1718233521.731195, Usage: 0.65%, Memory: 55728 kB
+System Time: 1718233522.731204, Usage: 1.14%, Memory: 55728 kB
+System Time: 1718233523.732242, Usage: 0.49%, Memory: 55728 kB
+System Time: 1718233524.732510, Usage: 0.46%, Memory: 55728 kB
+System Time: 1718233525.733221, Usage: 0.49%, Memory: 55728 kB
+System Time: 1718233526.733676, Usage: 0.62%, Memory: 55728 kB
+System Time: 1718233527.734269, Usage: 2.52%, Memory: 55728 kB
+System Time: 1718233528.735762, Usage: 0.98%, Memory: 55728 kB
+System Time: 1718233529.735370, Usage: 1.64%, Memory: 55728 kB
+System Time: 1718233530.736362, Usage: 0.49%, Memory: 55728 kB
+System Time: 1718233531.737215, Usage: 0.44%, Memory: 55728 kB
+System Time: 1718233532.739504, Usage: 1.88%, Memory: 55728 kB
+System Time: 1718233533.739649, Usage: 0.75%, Memory: 55728 kB
+System Time: 1718233534.740383, Usage: 1.07%, Memory: 55728 kB
+System Time: 1718233535.741259, Usage: 0.49%, Memory: 55728 kB
+System Time: 1718233536.741657, Usage: 0.45%, Memory: 55728 kB
+System Time: 1718233537.742288, Usage: 0.48%, Memory: 55728 kB
+System Time: 1718233538.743081, Usage: 0.62%, Memory: 55728 kB
+CPU Temperature: 60.6
+2024-06-12 19:05:39,669 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-12 19:05:40,424 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-12 19:06:05,921 [application.py:log_request()] - 101 GET /websocket?token=MJYUWCMXAZ5PD4VYQUQ3O55GYEDFD2H2 (192.168.0.100) [_TRUSTED_USER_] 0.45ms
+2024-06-12 19:06:05,921 [websockets.py:open()] - Websocket Opened: ID: 140732428364688, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-12 19:06:05,925 [websockets.py:_handle_identify()] - Websocket 140732428364688 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 19:06:05,925 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 19:06:14,307 [klippy_connection.py:close()] - Error closing Klippy Unix Socket
+Traceback (most recent call last):
+  File "/home/blackaxis/moonraker/moonraker/components/klippy_connection.py", line 202, in _write_request
+    await self.writer.drain()
+  File "/usr/lib/python3.11/asyncio/streams.py", line 378, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib/python3.11/asyncio/streams.py", line 167, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/blackaxis/moonraker/moonraker/components/klippy_connection.py", line 769, in close
+    await self.writer.wait_closed()
+  File "/usr/lib/python3.11/asyncio/streams.py", line 350, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 1057, in write
+    n = self._sock.send(data)
+        ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2024-06-12 19:06:14,308 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-12 19:06:14,312 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Write Request Error
+2024-06-12 19:06:14,317 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:06:14,445 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:06:14,776 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:06:14,896 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:06:15,077 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:06:15,573 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-12 19:06:15,596 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-12 19:06:18,171 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-12 19:06:18,172 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-12 19:06:18,422 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-12 19:06:18,676 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-12 19:06:19,174 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-12 19:13:17,365 [websockets.py:on_close()] - Websocket Closed: ID: 140732430402576 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 9.51
+2024-06-12 19:13:17,366 [websockets.py:on_close()] - Websocket Closed: ID: 140732393763344 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.11
+2024-06-12 19:13:18,104 [application.py:log_request()] - 101 GET /websocket?token=XTXRNZI6MGGHOGI67ULP7SQUPM56IV7K (192.168.0.181) [_TRUSTED_USER_] 0.66ms
+2024-06-12 19:13:18,104 [websockets.py:open()] - Websocket Opened: ID: 140732429992720, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-12 19:13:18,222 [websockets.py:_handle_identify()] - Websocket 140732429992720 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-12 19:13:18,222 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-12 19:15:13,699 [websockets.py:on_close()] - Websocket Closed: ID: 140732393481680 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.91
+2024-06-12 19:23:45,255 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-12 19:23:45,554 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:23:45,696 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:23:46,513 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-12 19:23:46,566 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-12 19:23:46,827 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-12 19:23:46,827 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-12 19:23:46,828 [klippy_connection.py:_check_ready()] - 
+Option 'z_offset' in section 'bltouch' must have minimum of 0.0
+
+Once the underlying issue is corrected, use the "RESTART"
+command to reload the config and restart the host software.
+Printer is halted
+
+2024-06-12 19:23:55,227 [klippy_connection.py:close()] - Error closing Klippy Unix Socket
+Traceback (most recent call last):
+  File "/home/blackaxis/moonraker/moonraker/components/klippy_connection.py", line 769, in close
+    await self.writer.wait_closed()
+  File "/usr/lib/python3.11/asyncio/streams.py", line 350, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 995, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+2024-06-12 19:23:55,227 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-12 19:23:55,228 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Disconnected
+2024-06-12 19:23:55,389 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:23:55,785 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:23:56,481 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-12 19:23:56,492 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-12 19:23:56,748 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-12 19:23:56,749 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-12 19:23:56,749 [klippy_connection.py:_check_ready()] - 
+Option 'z_offset' in section 'bltouch' must have minimum of 0.0
+
+Once the underlying issue is corrected, use the "RESTART"
+command to reload the config and restart the host software.
+Printer is halted
+
+2024-06-12 19:24:27,831 [application.py:prepare()] - Upload Request Received from 192.168.0.100
+Content-Type: 
+2024-06-12 19:24:27,942 [application.py:prepare()] - Upload Request Received from 192.168.0.100
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary5HhypmmaIjvuPxU9
+2024-06-12 19:24:27,947 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-12 19:24:27,949 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.100) [_TRUSTED_USER_] 8.26ms
+2024-06-12 19:24:28,341 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-12 19:24:28,373 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:24:28,603 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:24:28,826 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:24:29,600 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-12 19:24:29,626 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-12 19:24:31,150 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-12 19:24:31,150 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-12 19:24:31,150 [klippy_connection.py:_check_ready()] - 
+Failed automated reset of MCU 'mcu'
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Error configuring printer
+
+2024-06-12 19:24:34,606 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:24:34,607 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-12 19:24:34,885 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:24:35,459 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:24:35,805 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-12 19:24:35,867 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-12 19:24:35,884 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-12 19:24:38,661 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-12 19:24:38,661 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-12 19:24:38,911 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-12 19:24:39,165 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-12 19:24:39,666 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-12 19:25:19,306 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------Xj6JGfoeb6nkxiDlp5ia4i
+2024-06-12 19:25:20,268 [application.py:post()] - Processing Uploaded File: MOD9V2_Charging_Handle_Final.stp_ASM Body__Main_2024-06-08 11-06-59_27m_0.20mm_240C_ASA_.gcode
+2024-06-12 19:25:20,633 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-12 19:25:20,722 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "MOD9V2_Charging_Handle_Final.stp_ASM Body__Main_2024-06-08 11-06-59_27m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-06-12 19:25:20,722 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Charging_Handle_Final.stp_ASM Body__Main_2024-06-08 11-06-59_27m_0.20mm_240C_ASA_.gcode
+2024-06-12 19:25:20,730 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 1424.16ms
+2024-06-12 19:25:20,784 [job_state.py:_status_update()] - Job Started: MOD9V2_Charging_Handle_Final.stp_ASM Body__Main_2024-06-08 11-06-59_27m_0.20mm_240C_ASA_.gcode
+2024-06-12 19:26:28,868 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-12 19:26:34,166 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-12 19:27:28,869 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-12 19:27:34,166 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-12 19:28:28,870 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-06-12 19:28:34,168 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-06-12 19:29:03,879 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-12 19:29:28,872 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2024-06-12 19:29:34,169 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2024-06-12 19:30:03,880 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-12 19:30:28,873 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2024-06-12 19:30:34,170 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
+2024-06-12 19:31:03,880 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-06-12 19:31:28,874 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.01 seconds
+2024-06-12 19:31:34,172 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.01 seconds
+2024-06-12 19:52:11,796 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.210
+2024-06-12 19:52:11,797 [application.py:log_request()] - 101 GET /websocket (192.168.0.210) [_TRUSTED_USER_] 0.75ms
+2024-06-12 19:52:11,797 [websockets.py:open()] - Websocket Opened: ID: 140732391525136, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-06-12 19:52:11,802 [websockets.py:_handle_identify()] - Websocket 140732391525136 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-06-12 19:52:11,854 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.210) [_TRUSTED_USER_] 1.02ms
+2024-06-12 19:52:35,569 [websockets.py:on_close()] - Websocket Closed: ID: 140732391525136 Close Code: None, Close Reason: None, Pong Time Elapsed: 13.77
