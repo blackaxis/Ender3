@@ -458,3 +458,80 @@ CPU Temperature: 57.85
 2024-06-16 03:54:24,824 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-16 03:57:39,695 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-16 03:59:22,345 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-16 04:00:50,403 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-16 04:02:59,489 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-16 04:05:16,842 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-16 04:06:41,486 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-16 04:13:55,650 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-16 04:13:55,911 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-16 04:13:56,908 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-16 04:13:56,929 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-16 04:13:59,711 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-16 04:13:59,711 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-16 04:13:59,962 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-16 04:14:00,218 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-16 04:14:00,715 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-16 04:14:09,593 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-16 04:14:09,744 [job_state.py:_status_update()] - Job Started: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-16 04:23:59,854 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-16 04:23:59,855 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1718526209.845427, Usage: 2.66%, Memory: 58848 kB
+System Time: 1718526210.846529, Usage: 1.21%, Memory: 58848 kB
+System Time: 1718526211.846900, Usage: 1.0%, Memory: 58848 kB
+System Time: 1718526212.847037, Usage: 0.35%, Memory: 58848 kB
+System Time: 1718526213.847893, Usage: 0.33%, Memory: 58848 kB
+System Time: 1718526214.849928, Usage: 0.35%, Memory: 58848 kB
+System Time: 1718526215.850060, Usage: 0.33%, Memory: 58848 kB
+System Time: 1718526216.850829, Usage: 0.36%, Memory: 58848 kB
+System Time: 1718526217.851930, Usage: 0.47%, Memory: 58848 kB
+System Time: 1718526218.852772, Usage: 0.45%, Memory: 58848 kB
+System Time: 1718526219.853577, Usage: 1.87%, Memory: 58848 kB
+System Time: 1718526220.854820, Usage: 0.69%, Memory: 58848 kB
+System Time: 1718526221.855723, Usage: 2.39%, Memory: 58848 kB
+System Time: 1718526222.856060, Usage: 0.64%, Memory: 58848 kB
+System Time: 1718526223.856553, Usage: 1.06%, Memory: 58848 kB
+System Time: 1718526224.856652, Usage: 0.36%, Memory: 58848 kB
+System Time: 1718526225.858604, Usage: 0.34%, Memory: 58848 kB
+System Time: 1718526226.860242, Usage: 0.37%, Memory: 58848 kB
+System Time: 1718526227.860495, Usage: 0.47%, Memory: 58848 kB
+System Time: 1718526228.860826, Usage: 0.33%, Memory: 58848 kB
+System Time: 1718526229.861271, Usage: 0.37%, Memory: 58848 kB
+System Time: 1718526230.861869, Usage: 0.52%, Memory: 58848 kB
+System Time: 1718526231.862526, Usage: 2.01%, Memory: 58848 kB
+System Time: 1718526232.863776, Usage: 0.6%, Memory: 58848 kB
+System Time: 1718526233.864532, Usage: 2.15%, Memory: 58848 kB
+System Time: 1718526234.865832, Usage: 0.63%, Memory: 58848 kB
+System Time: 1718526235.866093, Usage: 1.03%, Memory: 58848 kB
+System Time: 1718526236.867945, Usage: 0.37%, Memory: 58848 kB
+System Time: 1718526237.869806, Usage: 0.48%, Memory: 58848 kB
+System Time: 1718526238.869969, Usage: 0.36%, Memory: 58848 kB
+CPU Temperature: 56.75
+2024-06-16 04:23:59,857 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-16 04:24:52,360 [klippy_connection.py:close()] - Error closing Klippy Unix Socket
+Traceback (most recent call last):
+  File "/home/blackaxis/moonraker/moonraker/components/klippy_connection.py", line 769, in close
+    await self.writer.wait_closed()
+  File "/usr/lib/python3.11/asyncio/streams.py", line 350, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 995, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+2024-06-16 04:24:52,361 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-16 04:24:52,363 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Disconnected
+2024-06-16 04:24:53,053 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-16 04:24:53,621 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-16 04:24:53,746 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-16 04:24:56,270 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-16 04:24:56,270 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-16 04:24:56,520 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-16 04:24:56,774 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-16 04:24:57,272 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-16 04:25:14,273 [klippy_apis.py:start_print()] - Requesting Job Start, filename = MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-16 04:25:14,325 [job_state.py:_status_update()] - Job Started: MOD9V2_Ejector_Arm_Final.stp_ASM Body__Main_2024-06-08 11-04-01_1h2m_0.20mm_240C_ASA_.gcode
+2024-06-16 04:35:18,720 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-16 04:35:18,927 [application.py:log_request()] - 101 GET /websocket?token=2TAY6HAOHWQI2KERD7UV7WIRSTCUBF2M (192.168.0.181) [_TRUSTED_USER_] 0.46ms
+2024-06-16 04:35:18,927 [websockets.py:open()] - Websocket Opened: ID: 140732393843856, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-16 04:35:18,939 [websockets.py:_handle_identify()] - Websocket 140732393843856 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-16 04:35:18,940 [file_manager.py:get_file_list()] - Updating File List <config>...
