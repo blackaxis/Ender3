@@ -535,3 +535,5 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2024-06-16 04:35:18,927 [websockets.py:open()] - Websocket Opened: ID: 140732393843856, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
 2024-06-16 04:35:18,939 [websockets.py:_handle_identify()] - Websocket 140732393843856 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-16 04:35:18,940 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-16 05:29:27,803 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-16 05:39:27,803 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
