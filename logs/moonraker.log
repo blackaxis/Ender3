@@ -537,3 +537,4 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2024-06-16 04:35:18,940 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-16 05:29:27,803 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
 2024-06-16 05:39:27,803 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-16 06:38:43,859 [websockets.py:on_close()] - Websocket Closed: ID: 140732393843856 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.92
