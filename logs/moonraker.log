@@ -593,3 +593,5 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 2024-06-16 19:41:51,960 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732429694672
 2024-06-16 19:41:56,862 [websockets.py:on_close()] - Websocket Closed: ID: 140732429694672 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
 2024-06-16 20:44:27,969 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.210
+2024-06-16 22:30:49,729 [websockets.py:write_to_socket()] - Websocket closed while writing: 140732393589008
+2024-06-16 22:30:54,647 [websockets.py:on_close()] - Websocket Closed: ID: 140732393589008 Close Code: None, Close Reason: None, Pong Time Elapsed: 39.45
