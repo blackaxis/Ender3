@@ -252,3 +252,5 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryc6BBcCAQ14qJx2
 2024-06-17 03:35:21,343 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-17 03:35:28,079 [websockets.py:on_close()] - Websocket Closed: ID: 140732392048208 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.12
 2024-06-17 04:39:28,047 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-17 05:10:31,135 [websockets.py:on_close()] - Websocket Closed: ID: 140732393825040 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.02
+2024-06-17 05:10:31,136 [websockets.py:on_close()] - Websocket Closed: ID: 140732391801424 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.28
