@@ -254,3 +254,485 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryc6BBcCAQ14qJx2
 2024-06-17 04:39:28,047 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
 2024-06-17 05:10:31,135 [websockets.py:on_close()] - Websocket Closed: ID: 140732393825040 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.02
 2024-06-17 05:10:31,136 [websockets.py:on_close()] - Websocket Closed: ID: 140732391801424 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.28
+-------------------- Log Start | Mon Jun 17 10:04:40 2024 --------------------
+platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
+data_path: /home/blackaxis/Ender3_data
+is_default_data_path: False
+config_file: /home/blackaxis/Ender3_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: 5f9d5402db9a40248e3d1a5c01ed37ed
+unix_socket_path: /home/blackaxis/Ender3_data/comms/moonraker.sock
+software_version: v0.8.0-379-g346a3d7
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/blackaxis/Ender3_data/logs/moonraker.log
+python_version: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+launch_args: /home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/moonraker.py -d /home/blackaxis/Ender3_data
+msgspec_enabled: False
+uvloop_enabled: False
+2024-06-17 06:04:40,714 [confighelper.py:read_file()] - Configuration File '/home/blackaxis/Ender3_data/config/moonraker.conf' parsed, total size: 1632 B
+2024-06-17 06:04:40,715 [server.py:add_log_rollover_item()] - 
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7126
+klippy_uds_address = /home/blackaxis/Ender3_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager canboot]
+type = git_repo
+origin = https://github.com/Arksine/Katapult.git
+path = ~/Katapult
+is_system_service = False
+
+[update_manager moonraker-telegram-bot]
+type = git_repo
+path = ~/moonraker-telegram-bot
+origin = https://github.com/nlef/moonraker-telegram-bot.git
+env = ~/moonraker-telegram-bot-env/bin/python
+requirements = scripts/requirements.txt
+install_script = scripts/install.sh
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+[update_manager mobileraker]
+type = git_repo
+path = /home/blackaxis/mobileraker_companion
+origin = https://github.com/Clon1998/mobileraker_companion.git
+primary_branch = main
+managed_services = mobileraker
+env = /home/blackaxis/mobileraker-env/bin/python
+requirements = scripts/mobileraker-requirements.txt
+install_script = scripts/install.sh
+
+#################################################################
+All Configuration Files:
+/home/blackaxis/Ender3_data/config/moonraker.conf
+#################################################################
+2024-06-17 06:04:41,517 [server.py:load_component()] - Component (secrets) loaded
+2024-06-17 06:04:41,607 [server.py:load_component()] - Component (template) loaded
+2024-06-17 06:04:41,609 [server.py:load_component()] - Component (klippy_connection) loaded
+2024-06-17 06:04:44,582 [server.py:load_component()] - Component (application) loaded
+2024-06-17 06:04:44,778 [server.py:load_component()] - Component (websockets) loaded
+2024-06-17 06:04:45,580 [server.py:load_component()] - Component (dbus_manager) loaded
+2024-06-17 06:04:45,811 [server.py:add_log_rollover_item()] - Loading Sqlite database provider. Sqlite Version: 3.40.1
+2024-06-17 06:04:45,943 [server.py:add_log_rollover_item()] - Unsafe Shutdown Count: 57
+2024-06-17 06:04:46,039 [server.py:load_component()] - Component (database) loaded
+2024-06-17 06:04:46,136 [file_manager.py:__init__()] - Using File System Observer: inotify
+2024-06-17 06:04:46,367 [server.py:load_component()] - Component (file_manager) loaded
+2024-06-17 06:04:46,653 [database.py:register_table()] - Found registered table authorized_users
+2024-06-17 06:04:46,654 [authorization.py:__init__()] - Authorization Configuration Loaded
+Trusted Clients:
+10.0.0.0/8
+127.0.0.0/8
+169.254.0.0/16
+172.16.0.0/12
+192.168.0.0/16
+fe80::/10
+::1/128
+CORS Domains:
+.*\.lan
+.*\.local
+.*://localhost
+.*://localhost:.*
+.*://my\.mainsail\.xyz
+.*://app\.fluidd\.xyz
+2024-06-17 06:04:46,655 [server.py:load_component()] - Component (authorization) loaded
+2024-06-17 06:04:46,744 [server.py:load_component()] - Component (klippy_apis) loaded
+2024-06-17 06:04:47,749 [server.py:add_log_rollover_item()] - 
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: dddf145f114e1876
+  hardware_desc: 
+  model: Raspberry Pi 5 Model B Rev 1.0
+  total_memory: 8245712
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 6f
+  manufacturer: Unknown
+  oem_id: 0303
+  product_name: SDABC
+  product_revision: 1.0
+  serial_number: aa0001c7
+  manufacturer_date: 5/2023
+  capacity: 58.3 GiB
+  total_bytes: 62550179840
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.6.28+rpt-rpi-2712
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+  mobileraker
+2024-06-17 06:04:47,833 [server.py:load_component()] - Component (shell_command) loaded
+2024-06-17 06:04:47,833 [machine.py:__init__()] - Using System Provider: systemd_dbus
+2024-06-17 06:04:47,835 [server.py:add_log_rollover_item()] - Module libcamera unavailble, import failed
+2024-06-17 06:04:47,835 [server.py:load_component()] - Component (machine) loaded
+2024-06-17 06:04:47,836 [server.py:load_component()] - Component (data_store) loaded
+2024-06-17 06:04:47,840 [proc_stats.py:__init__()] - Detected 'vcgencmd', throttle checking enabled
+2024-06-17 06:04:47,840 [server.py:load_component()] - Component (proc_stats) loaded
+2024-06-17 06:04:47,841 [server.py:load_component()] - Component (job_state) loaded
+2024-06-17 06:04:47,932 [server.py:load_component()] - Component (job_queue) loaded
+2024-06-17 06:04:48,033 [database.py:register_table()] - Found registered table job_history
+2024-06-17 06:04:48,034 [database.py:register_table()] - Found registered table job_totals
+2024-06-17 06:04:48,036 [server.py:load_component()] - Component (history) loaded
+2024-06-17 06:04:48,208 [server.py:load_component()] - Component (http_client) loaded
+2024-06-17 06:04:48,214 [server.py:load_component()] - Component (announcements) loaded
+2024-06-17 06:04:48,219 [server.py:load_component()] - Component (webcam) loaded
+2024-06-17 06:04:48,220 [server.py:load_component()] - Component (extensions) loaded
+2024-06-17 06:04:48,224 [server.py:load_component()] - Component (octoprint_compat) loaded
+2024-06-17 06:04:48,421 [base_deploy.py:log_info()] - Git Repo moonraker: Detected virtualenv: /home/blackaxis/moonraker-env
+2024-06-17 06:04:48,503 [base_deploy.py:log_info()] - Git Repo klipper: Detected virtualenv: /home/blackaxis/klippy-env
+2024-06-17 06:04:48,511 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Option 'env' is deprecated, use 'virtualenv' instead.
+2024-06-17 06:04:48,511 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Detected virtualenv: /home/blackaxis/moonraker-telegram-bot-env
+2024-06-17 06:04:48,513 [base_deploy.py:log_info()] - Git Repo mobileraker: Option 'env' is deprecated, use 'virtualenv' instead.
+2024-06-17 06:04:48,513 [base_deploy.py:log_info()] - Git Repo mobileraker: Detected virtualenv: /home/blackaxis/mobileraker-env
+2024-06-17 06:04:48,514 [server.py:load_component()] - Component (update_manager) loaded
+2024-06-17 06:04:48,515 [server.py:_initialize_component()] - Performing Component Post Init: [dbus_manager]
+2024-06-17 06:04:49,087 [server.py:_initialize_component()] - Performing Component Post Init: [database]
+2024-06-17 06:04:49,189 [server.py:_initialize_component()] - Performing Component Post Init: [file_manager]
+2024-06-17 06:04:49,579 [server.py:_initialize_component()] - Performing Component Post Init: [authorization]
+2024-06-17 06:04:49,625 [server.py:_initialize_component()] - Performing Component Post Init: [machine]
+2024-06-17 06:04:49,678 [machine.py:validation_init()] - Installation version in database up to date
+2024-06-17 06:04:50,196 [machine.py:check_virt_status()] - No Virtualization Detected
+2024-06-17 06:04:50,236 [machine.py:extract_service_info()] - Detected alternate unit name for moonraker: moonraker-Ender3.service
+2024-06-17 06:04:50,242 [server.py:add_log_rollover_item()] - 
+Systemd unit moonraker-Ender3.service:
+unit_name: moonraker-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['network-online.target', 'sysinit.target', 'system.slice', '-.mount']
+**After=['system.slice', 'sysinit.target', 'network-online.target', 'basic.target', '-.mount', 'systemd-journald.socket']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/moonraker.env
+**ExecStart=/home/blackaxis/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/blackaxis/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3.service
+**Description=API Server for Klipper SV1 Ender3
+**User=blackaxis
+2024-06-17 06:04:50,242 [server.py:_initialize_component()] - Performing Component Post Init: [proc_stats]
+2024-06-17 06:04:50,242 [server.py:_initialize_component()] - Performing Component Post Init: [history]
+2024-06-17 06:04:50,270 [server.py:_initialize_component()] - Performing Component Post Init: [announcements]
+2024-06-17 06:04:50,271 [server.py:_initialize_component()] - Performing Component Post Init: [webcam]
+2024-06-17 06:04:50,272 [server.py:_initialize_component()] - Performing Component Post Init: [klippy_connection]
+2024-06-17 06:04:50,272 [server.py:_initialize_component()] - Performing Component Post Init: [update_manager]
+2024-06-17 06:04:50,273 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', '-.mount', 'system.slice']
+**After=['basic.target', 'system.slice', 'systemd-journald.socket', 'network-online.target', '-.mount', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/klipper.env
+**ExecStart=/home/blackaxis/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/blackaxis/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=blackaxis
+2024-06-17 06:04:50,274 [server.py:add_log_rollover_item()] - Multiple instances of Moonraker have the update manager enabled.
+moonraker-Spare:cf1bd642409e4c7eb69cbf6a6650e64d:876
+moonraker-Anet:83d87f5306c34384bf99cf2651794966:873
+moonraker-Ender3:5f9d5402db9a40248e3d1a5c01ed37ed:874
+2024-06-17 06:04:50,549 [base_deploy.py:log_info()] - PackageDeploy: PackageKit Provider Configured
+2024-06-17 06:04:50,549 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/blackaxis/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 346a3d7c9dca6499bdef2957ca39a23c702b0268
+Upstream Commit SHA: 346a3d7c9dca6499bdef2957ca39a23c702b0268
+Current Version: v0.8.0-379-g346a3d7c
+Upstream Version: v0.8.0-379-g346a3d7c
+Rollback Commit: 73df63db1f1c636cf66d5ae03def705c2880b799
+Rollback Branch: master
+Rollback Version: v0.8.0-359-g73df63db
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-17 06:04:50,551 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/blackaxis/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper
+Recovery URL: https://github.com/Klipper3d/klipper
+Current Commit SHA: 6cd174208bd9bbd51dc0d519a26661fb926d038a
+Upstream Commit SHA: 0d87bec159eba63744d820b5beaef5da20388ba4
+Current Version: v0.12.0-207-g6cd17420
+Upstream Version: v0.12.0-230-g0d87bec1
+Rollback Commit: b7f7b8a346388cc32d80b6e6f60e5fdb4cbd3ce6
+Rollback Branch: master
+Rollback Version: v0.12.0-192-gb7f7b8a3
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 23
+Diverged: False
+Pinned Commit: None
+2024-06-17 06:04:50,631 [git_deploy.py:log_repo_info()] - Git Repo mainsail-config Detected:
+Owner: mainsail-crew
+Repository Name: mainsail-config
+Path: /home/blackaxis/mainsail-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/mainsail-crew/mainsail-config.git
+Recovery URL: https://github.com/mainsail-crew/mainsail-config.git
+Current Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Upstream Commit SHA: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Current Version: v1.2.1-0-ge57810d5
+Upstream Version: v1.2.1-0-ge57810d5
+Rollback Commit: e57810d51b5c634aadaca4db923bfcba269ae4b3
+Rollback Branch: master
+Rollback Version: v1.2.1-0-ge57810d5
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-17 06:04:50,632 [git_deploy.py:log_repo_info()] - Git Repo canboot Detected:
+Owner: Arksine
+Repository Name: Katapult
+Path: /home/blackaxis/Katapult
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/Katapult
+Recovery URL: https://github.com/Arksine/Katapult
+Current Commit SHA: 3e23332eb188244e88f5ff60aecf077cd32bcd0c
+Upstream Commit SHA: 3e23332eb188244e88f5ff60aecf077cd32bcd0c
+Current Version: v0.0.1-64-g3e23332e
+Upstream Version: v0.0.1-64-g3e23332e
+Rollback Commit: 6a7ca81e4f593832ff0335d267ab007bd200a6bf
+Rollback Branch: master
+Rollback Version: v0.0.1-62-g6a7ca81e
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-17 06:04:50,634 [git_deploy.py:log_repo_info()] - Git Repo moonraker-telegram-bot Detected:
+Owner: nlef
+Repository Name: moonraker-telegram-bot
+Path: /home/blackaxis/moonraker-telegram-bot
+Remote: origin
+Branch: master
+Remote URL: https://github.com/nlef/moonraker-telegram-bot.git
+Recovery URL: https://github.com/nlef/moonraker-telegram-bot.git
+Current Commit SHA: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Upstream Commit SHA: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Current Version: v1.5-0-gb9b47003
+Upstream Version: v1.5-0-gb9b47003
+Rollback Commit: b9b47003e13b8a23af696594aac8ba53c777f5a7
+Rollback Branch: master
+Rollback Version: v1.5-0-gb9b47003
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-17 06:04:50,636 [git_deploy.py:log_repo_info()] - Git Repo fluidd-config Detected:
+Owner: fluidd-core
+Repository Name: fluidd-config
+Path: /home/blackaxis/fluidd-config
+Remote: origin
+Branch: master
+Remote URL: https://github.com/fluidd-core/fluidd-config.git
+Recovery URL: https://github.com/fluidd-core/fluidd-config.git
+Current Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Upstream Commit SHA: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Current Version: v1.2.0-0-gce48c585
+Upstream Version: v1.2.0-0-gce48c585
+Rollback Commit: ce48c5854e9ca3ca72b63d0327069fac20e94c7c
+Rollback Branch: master
+Rollback Version: v1.2.0-0-gce48c585
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Pinned Commit: None
+2024-06-17 06:04:50,640 [base_deploy.py:log_info()] - Web Client fluidd: Detected
+Repo: fluidd-core/fluidd
+Channel: stable
+Path: /home/blackaxis/fluidd
+Local Version: v1.30.0
+Remote Version: v1.30.0
+Valid: True
+Fallback Detected: False
+Pre-release: False
+Download Url: https://github.com/fluidd-core/fluidd/releases/download/v1.30.0/fluidd.zip
+Download Size: 3715088
+Content Type: application/zip
+Rollback Version: v1.30.0
+Rollback Repo: fluidd-core/fluidd
+2024-06-17 06:04:50,642 [git_deploy.py:log_repo_info()] - Git Repo mobileraker Detected:
+Owner: Clon1998
+Repository Name: mobileraker_companion
+Path: /home/blackaxis/mobileraker_companion
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Clon1998/mobileraker_companion.git
+Recovery URL: https://github.com/Clon1998/mobileraker_companion.git
+Current Commit SHA: 3be97bf2166721da43d508bdfb0fd68bd2c93138
+Upstream Commit SHA: ea7277eea3062a43f4668f6b8f108d0d40c62688
+Current Version: v0.4.0-60-g3be97bf2
+Upstream Version: v0.4.0-63-gea7277ee
+Rollback Commit: 828e9a8c35ca000f977d77ab01d9ab7fc6a5df0f
+Rollback Branch: main
+Rollback Version: v0.4.0-58-g828e9a8c
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 3
+Diverged: False
+Pinned Commit: None
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - PackageKit: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 45 Seconds
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - Git Repo moonraker: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 48 Seconds
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - Git Repo klipper: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 51 Seconds
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - Git Repo mainsail-config: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 52 Seconds
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - Git Repo canboot: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 52 Seconds
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - Git Repo moonraker-telegram-bot: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 53 Seconds
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - Git Repo fluidd-config: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 53 Seconds
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - Web Client fluidd: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 53 Seconds
+2024-06-17 06:04:50,642 [base_deploy.py:log_info()] - Git Repo mobileraker: Next refresh in: 2 Days, 6 Hours, 34 Minutes, 54 Seconds
+2024-06-17 06:04:50,644 [extensions.py:start_unix_server()] - Creating Unix Domain Socket at '/home/blackaxis/Ender3_data/comms/moonraker.sock'
+2024-06-17 06:04:50,644 [server.py:start_server()] - Starting Moonraker on (0.0.0.0, 7126), Hostname: 3dprinters
+2024-06-17 06:04:50,644 [application.py:listen()] - SSL Certificate/Key not configured, aborting HTTPS Server startup
+2024-06-17 06:04:50,895 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-17 06:04:50,917 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-17 06:04:50,924 [server.py:add_log_rollover_item()] - 
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['basic.target', 'system.slice', '-.mount', 'systemd-journald.socket', 'network-online.target', 'sysinit.target']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/klipper.env
+**ExecStart=/home/blackaxis/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/blackaxis/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=blackaxis
+2024-06-17 06:04:51,176 [server.py:add_log_rollover_item()] - Klipper Version: v0.12.0-207-g6cd17420
+2024-06-17 06:04:51,180 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-17 06:04:51,181 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-17 06:04:51,432 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-17 06:04:51,686 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-17 06:04:52,195 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-17 06:04:52,288 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': [Errno -3] Temporary failure in name resolution
+2024-06-17 06:04:54,295 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': [Errno -3] Temporary failure in name resolution
+2024-06-17 06:04:55,541 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-06-17 06:04:55,541 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 0.71ms
+2024-06-17 06:04:55,541 [websockets.py:open()] - Websocket Opened: ID: 140734221702480, Proxied: False, User Agent: Python/3.11 websockets/10.1, Host Name: 127.0.0.1
+2024-06-17 06:05:10,261 [machine.py:_find_public_ip()] - Failed to detect local IP address
+2024-06-17 06:05:20,270 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.119
+2024-06-17 06:05:20,270 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.119
+2024-06-17 06:05:59,243 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-17 06:05:59,274 [application.py:log_request()] - 101 GET /websocket?token=KF6KMGAIJB5ZURM3WRH54VD4V22SQSQF (192.168.0.100) [_TRUSTED_USER_] 1.11ms
+2024-06-17 06:05:59,274 [websockets.py:open()] - Websocket Opened: ID: 140734221685904, Proxied: False, User Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-17 06:05:59,294 [websockets.py:_handle_identify()] - Websocket 140734221685904 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-17 06:05:59,294 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-17 06:06:13,585 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-17 06:06:13,615 [application.py:log_request()] - 101 GET /websocket?token=T5LN6GUK3ZAMSCJM6MO5DDBBG5SZCF3C (192.168.0.181) [_TRUSTED_USER_] 0.85ms
+2024-06-17 06:06:13,615 [websockets.py:open()] - Websocket Opened: ID: 140734221482704, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-17 06:06:13,622 [websockets.py:_handle_identify()] - Websocket 140734221482704 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-17 06:06:13,622 [file_manager.py:get_file_list()] - Updating File List <config>...
