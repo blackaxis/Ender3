@@ -373,3 +373,10 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundarySitzEihCdaaiqN
 2024-06-18 10:53:16,374 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-18 10:56:40,702 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-18 10:59:07,053 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 11:02:10,284 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 11:07:49,411 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 11:09:46,061 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 11:11:33,773 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 11:13:29,945 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 11:54:06,398 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-18 11:54:06,398 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
