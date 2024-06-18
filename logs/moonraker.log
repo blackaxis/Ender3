@@ -298,3 +298,33 @@ Content-Type: multipart/form-data; boundary=------------------------pSQcYHPMfUEJ
 2024-06-18 04:47:46,311 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
 2024-06-18 05:44:06,342 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
 2024-06-18 05:44:06,342 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-18 06:23:45,067 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-18 06:24:12,361 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-18 06:24:22,682 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode
+2024-06-18 06:24:22,776 [job_state.py:_status_update()] - Job Started: Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode
+2024-06-18 06:35:25,527 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-18 06:35:50,282 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-18 06:36:22,487 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-18 06:46:19,904 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-18 06:46:20,201 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-18 06:46:21,160 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-18 06:46:21,221 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-18 06:46:23,490 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-18 06:46:23,745 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-18 06:46:23,746 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-18 06:46:23,996 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-18 06:46:24,250 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-18 06:46:24,748 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-18 06:48:28,188 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------wDW387WYK3SWXZzojmfE53
+2024-06-18 06:48:30,270 [application.py:post()] - Processing Uploaded File: Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode
+2024-06-18 06:48:30,356 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-18 06:48:30,405 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-06-18 06:48:30,405 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode
+2024-06-18 06:48:30,411 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 2223.51ms
+2024-06-18 06:48:30,627 [job_state.py:_status_update()] - Job Started: Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode
+2024-06-18 06:54:40,812 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-18 06:54:51,415 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-18 06:55:32,231 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode
+2024-06-18 06:55:32,461 [job_state.py:_status_update()] - Job Started: Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode
