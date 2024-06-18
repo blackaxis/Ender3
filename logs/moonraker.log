@@ -980,3 +980,82 @@ Properties:
 2024-06-18 13:58:58,556 [websockets.py:open()] - Websocket Opened: ID: 140732554107024, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
 2024-06-18 13:58:58,561 [websockets.py:_handle_identify()] - Websocket 140732554107024 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-18 13:58:58,561 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-18 14:00:12,030 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 14:02:37,924 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 14:03:00,232 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: 
+2024-06-18 14:03:00,242 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryAJpIB963D0HX9Cle
+2024-06-18 14:03:00,246 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-18 14:03:00,247 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.181) [_TRUSTED_USER_] 5.09ms
+2024-06-18 14:03:34,841 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: 
+2024-06-18 14:03:34,846 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryTCCS2awopbA6MvIQ
+2024-06-18 14:03:34,850 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-18 14:03:34,852 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.181) [_TRUSTED_USER_] 5.54ms
+2024-06-18 14:03:35,963 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-18 14:03:35,979 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-18 14:03:37,219 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-18 14:03:37,232 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-18 14:03:39,749 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-18 14:03:39,750 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-18 14:03:40,001 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-18 14:03:40,254 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-18 14:03:40,752 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-18 14:04:49,152 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 14:07:07,051 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 14:09:23,438 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 14:13:20,108 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-06-18 14:13:20,110 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1718734370.674853, Usage: 1.15%, Memory: 53904 kB
+System Time: 1718734371.676026, Usage: 0.79%, Memory: 53904 kB
+System Time: 1718734372.676831, Usage: 1.43%, Memory: 53904 kB
+System Time: 1718734373.678284, Usage: 1.35%, Memory: 53904 kB
+System Time: 1718734374.678349, Usage: 0.88%, Memory: 53904 kB
+System Time: 1718734375.679193, Usage: 0.61%, Memory: 53904 kB
+System Time: 1718734376.680026, Usage: 0.38%, Memory: 53904 kB
+System Time: 1718734377.681574, Usage: 0.4%, Memory: 53904 kB
+System Time: 1718734378.682731, Usage: 0.4%, Memory: 53904 kB
+System Time: 1718734379.683436, Usage: 0.38%, Memory: 53904 kB
+System Time: 1718734380.683809, Usage: 0.45%, Memory: 53904 kB
+System Time: 1718734381.683908, Usage: 1.28%, Memory: 53904 kB
+System Time: 1718734382.685277, Usage: 1.23%, Memory: 53904 kB
+System Time: 1718734383.685599, Usage: 0.74%, Memory: 53904 kB
+System Time: 1718734384.685903, Usage: 1.21%, Memory: 53904 kB
+System Time: 1718734385.688284, Usage: 1.12%, Memory: 53904 kB
+System Time: 1718734386.689809, Usage: 0.86%, Memory: 53904 kB
+System Time: 1718734387.689922, Usage: 0.63%, Memory: 53904 kB
+System Time: 1718734388.690552, Usage: 0.44%, Memory: 53904 kB
+System Time: 1718734389.691365, Usage: 0.38%, Memory: 53904 kB
+System Time: 1718734390.691738, Usage: 0.37%, Memory: 53904 kB
+System Time: 1718734391.693069, Usage: 0.4%, Memory: 53904 kB
+System Time: 1718734392.694233, Usage: 0.61%, Memory: 53904 kB
+System Time: 1718734393.695218, Usage: 1.31%, Memory: 53904 kB
+System Time: 1718734394.696885, Usage: 1.29%, Memory: 53904 kB
+System Time: 1718734395.696719, Usage: 0.79%, Memory: 53904 kB
+System Time: 1718734396.696928, Usage: 1.2%, Memory: 53904 kB
+System Time: 1718734397.697911, Usage: 1.25%, Memory: 53904 kB
+System Time: 1718734398.699948, Usage: 0.88%, Memory: 53904 kB
+System Time: 1718734399.699386, Usage: 0.66%, Memory: 53904 kB
+CPU Temperature: 61.7
+2024-06-18 14:13:20,111 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-06-18 14:19:13,484 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-18 14:19:13,643 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-18 14:19:14,746 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-18 14:19:14,816 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-18 14:19:17,591 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-18 14:19:17,591 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-18 14:19:17,844 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-18 14:19:18,099 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-18 14:19:18,597 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-18 14:20:29,850 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 14:22:53,162 [websockets.py:on_close()] - Websocket Closed: ID: 140732554107024 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.52
+2024-06-18 14:22:53,748 [application.py:log_request()] - 101 GET /websocket?token=2HYQU45YSYNZ6R26DEJ66Y4XLVVBRQ3U (192.168.0.181) [_TRUSTED_USER_] 0.43ms
+2024-06-18 14:22:53,749 [websockets.py:open()] - Websocket Opened: ID: 140732525599952, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-18 14:22:53,753 [websockets.py:_handle_identify()] - Websocket 140732525599952 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-18 14:22:53,754 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-18 14:22:56,107 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 14:25:13,654 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 14:54:39,858 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
