@@ -1059,3 +1059,27 @@ CPU Temperature: 61.7
 2024-06-18 14:22:56,107 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-18 14:25:13,654 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-18 14:54:39,858 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2024-06-18 15:24:39,862 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-18 15:29:39,036 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-18 15:34:44,978 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 15:34:54,492 [application.py:log_request()] - 101 GET /websocket?token=UHBNGBREZRO6HBBLIGHNDKRHT7E7XRE5 (192.168.0.181) [_TRUSTED_USER_] 0.47ms
+2024-06-18 15:34:54,492 [websockets.py:open()] - Websocket Opened: ID: 140732525607312, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-18 15:34:54,503 [websockets.py:_handle_identify()] - Websocket 140732525607312 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-18 15:34:54,504 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-18 15:35:03,099 [websockets.py:on_close()] - Websocket Closed: ID: 140732525607312 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.61
+2024-06-18 15:37:30,414 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 15:39:21,601 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 15:42:54,077 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 15:45:57,408 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 15:46:24,549 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Error during homing z: Communication timeout during homing
+2024-06-18 15:48:31,039 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-18 15:49:23,782 [application.py:log_request()] - 101 GET /websocket?token=Z72LDJN6C7O5TRQSD57K35U5BWIVRXTQ (192.168.0.181) [_TRUSTED_USER_] 0.66ms
+2024-06-18 15:49:23,782 [websockets.py:open()] - Websocket Opened: ID: 140732553375056, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-18 15:49:23,829 [websockets.py:_handle_identify()] - Websocket 140732553375056 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-18 15:49:23,830 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-18 15:49:25,750 [application.py:log_request()] - 101 GET /websocket?token=Z4VNF6H63SNDJHTA2KMWSBNJ4TGQBYV3 (192.168.0.181) [_TRUSTED_USER_] 0.97ms
+2024-06-18 15:49:25,750 [websockets.py:open()] - Websocket Opened: ID: 140732553124560, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-18 15:49:25,865 [websockets.py:_handle_identify()] - Websocket 140732553124560 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-18 15:49:25,866 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-18 15:50:22,809 [websockets.py:on_close()] - Websocket Closed: ID: 140732525599952 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 9.01
+2024-06-18 15:53:52,324 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
