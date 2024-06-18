@@ -296,3 +296,5 @@ Content-Type: multipart/form-data; boundary=------------------------pSQcYHPMfUEJ
 2024-06-18 04:46:46,310 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
 2024-06-18 04:47:29,852 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
 2024-06-18 04:47:46,311 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2024-06-18 05:44:06,342 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-18 05:44:06,342 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
