@@ -224,3 +224,12 @@ Content-Type: multipart/form-data; boundary=------------------------Ltwn6pLAH7XC
 
 2024-06-18 02:12:52,753 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode") successfully finished
 2024-06-18 02:12:52,754 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 2663.11ms
+2024-06-18 03:14:06,317 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-18 03:37:29,855 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-18 03:37:29,887 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------PU2snNQwt7EuQlmM4B5e14
+2024-06-18 03:37:32,092 [application.py:post()] - Processing Uploaded File: Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode
+2024-06-18 03:37:32,315 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-18 03:37:32,370 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Motor_Mount_2h48m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-06-18 03:37:32,372 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 2484.65ms
