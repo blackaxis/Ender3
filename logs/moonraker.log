@@ -1250,3 +1250,4 @@ Properties:
 2024-06-17 14:38:05,424 [websockets.py:_handle_identify()] - Websocket 140732824179344 Client Identified - Name: fluidd, Version: 0.0.0-unknown, Type: web
 2024-06-17 14:38:05,424 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-17 15:39:06,201 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-17 22:54:12,056 [websockets.py:on_close()] - Websocket Closed: ID: 140732824143952 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.57
