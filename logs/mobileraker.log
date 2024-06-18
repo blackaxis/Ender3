@@ -11953,3 +11953,178 @@ ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 7126)
 2024-06-18 10:51:19,275 mobileraker.cam ERROR - Error while trying to process image request: 502 Server Error: Bad Gateway for url: http://127.0.0.1/webcam/?action=snapshot
 2024-06-18 10:51:19,275 mobileraker.fcm INFO - Submitting 1 notifications to mobileraker server
 2024-06-18 10:51:20,219 mobileraker.default INFO - ---- Completed Evaluations Task! ----
+2024-06-18 13:45:59,783 mobileraker.default.sync INFO - Moonraker's connection to Klippy has terminated/disconnected
+2024-06-18 13:45:59,783 mobileraker.default INFO - State changed. Evaluating!
+2024-06-18 13:45:59,783 mobileraker.default INFO - Snapshot passed threshold. LastSnap: PrinterSnapshot(klippy_ready=True, print_state=standby, m117=None, m117_hash=, virtual_sdcard=VirtualSDCard (progress: 0.000000, file_position: 0), print_stats=PrintStats (filename: , total_duration: 0.0, print_duration: 0.0, state: standby, message: ), current_file=None, toolhead=<mobileraker.data.dtos.moonraker.printer_objects.Toolhead object at 0x7fff8e023b50>, gcode_move=<mobileraker.data.dtos.moonraker.printer_objects.GCodeMove object at 0x7fff8e044a90>, gcode_response=None, gcode_response_hash=, timelapse_pause=None, filament_sensors=), NewSnap: PrinterSnapshot(klippy_ready=False, print_state=error, m117=None, m117_hash=, virtual_sdcard=VirtualSDCard (progress: 0.000000, file_position: 0), print_stats=PrintStats (filename: , total_duration: 0.0, print_duration: 0.0, state: standby, message: ), current_file=None, toolhead=<mobileraker.data.dtos.moonraker.printer_objects.Toolhead object at 0x7fff8e039150>, gcode_move=<mobileraker.data.dtos.moonraker.printer_objects.GCodeMove object at 0x7fff8e05fad0>, gcode_response=Klipper state: Disconnect, gcode_response_hash=b52d262c5102573d0930a152bf300b9b02af316eda660d308f62b504fc4eb11f, timelapse_pause=None, filament_sensors=)
+2024-06-18 13:45:59,784 mobileraker.default INFO - Fetched 2 app Cfgs!
+2024-06-18 13:45:59,784 mobileraker.default INFO - Evaluate for machineID 4bad763c-8322-4863-ba07-d35902354265, cfg.version: 2.6.11-ios , cfg.snap: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=standby, m117=, gcode_response=, filament_sensors=[]), cfg.settings: NotificationSettings(progress_config=20, state_config=['printing', 'paused', 'complete', 'error', 'standby'], android_progressbar=True, created=2024-02-12T22:05:24.093643, last_modified=2024-02-12T22:05:24.093643)
+2024-06-18 13:45:59,784 mobileraker.default INFO - 0 Notifications for machineID: 4bad763c-8322-4863-ba07-d35902354265: state: False, proggress(text): False, M117 False, GcodeResponse: False, LiveActivity: False, FilamentSensor: 0, progressbar(android): False
+2024-06-18 13:45:59,784 mobileraker.default INFO - Updating snap in FCM Cfg for 4bad763c-8322-4863-ba07-d35902354265: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=error, m117=, gcode_response=b52d262c5102573d0930a152bf300b9b02af316eda660d308f62b504fc4eb11f, filament_sensors=[])
+2024-06-18 13:45:59,794 mobileraker.default INFO - Updated snap in FCM Cfg for 4bad763c-8322-4863-ba07-d35902354265: {'jsonrpc': '2.0', 'result': {'namespace': 'mobileraker', 'key': 'fcm.4bad763c-8322-4863-ba07-d35902354265.snap', 'value': {'progress': 0.0, 'progress_live_activity': 0.0, 'progress_progressbar': 0.0, 'state': 'error', 'm117': '', 'filament_sensors': [], 'gcode_response': 'b52d262c5102573d0930a152bf300b9b02af316eda660d308f62b504fc4eb11f'}}, 'id': 1857}
+2024-06-18 13:45:59,794 mobileraker.default INFO - Evaluate for machineID b765fa1e-0fdf-4372-99ab-750b82b53752, cfg.version: 2.6.20-ios , cfg.snap: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=standby, m117=, gcode_response=, filament_sensors=[]), cfg.settings: NotificationSettings(progress_config=25, state_config=['complete', 'error'], android_progressbar=True, created=2024-05-27T14:06:58.530856, last_modified=2024-06-11T23:13:36.503762)
+2024-06-18 13:45:59,794 mobileraker.default INFO - 0 Notifications for machineID: b765fa1e-0fdf-4372-99ab-750b82b53752: state: False, proggress(text): False, M117 False, GcodeResponse: False, LiveActivity: False, FilamentSensor: 0, progressbar(android): False
+2024-06-18 13:45:59,794 mobileraker.default INFO - Updating snap in FCM Cfg for b765fa1e-0fdf-4372-99ab-750b82b53752: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=error, m117=, gcode_response=b52d262c5102573d0930a152bf300b9b02af316eda660d308f62b504fc4eb11f, filament_sensors=[])
+2024-06-18 13:45:59,802 mobileraker.default INFO - Updated snap in FCM Cfg for b765fa1e-0fdf-4372-99ab-750b82b53752: {'jsonrpc': '2.0', 'result': {'namespace': 'mobileraker', 'key': 'fcm.b765fa1e-0fdf-4372-99ab-750b82b53752.snap', 'value': {'progress': 0.0, 'progress_live_activity': 0.0, 'progress_progressbar': 0.0, 'state': 'error', 'm117': '', 'filament_sensors': [], 'gcode_response': 'b52d262c5102573d0930a152bf300b9b02af316eda660d308f62b504fc4eb11f'}}, 'id': 2586}
+2024-06-18 13:45:59,802 mobileraker.default INFO - ---- Completed Evaluations Task! ----
+2024-06-18 13:46:04,072 mobileraker.default.sync INFO - Klippy has reported a ready state
+2024-06-18 13:46:04,072 mobileraker.default.sync INFO - Doing a (Re)Sync with moonraker
+2024-06-18 13:46:04,073 mobileraker.default.sync INFO - Syncing klippy Objects
+2024-06-18 13:46:04,074 mobileraker.default.sync INFO - Received server info: {'jsonrpc': '2.0', 'result': {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'octoprint_compat', 'update_manager'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 3, 'moonraker_version': 'v0.8.0-379-g346a3d7', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}, 'id': 853}
+2024-06-18 13:46:04,074 mobileraker.default.sync INFO - Syncing printer Objects
+2024-06-18 13:46:04,075 mobileraker.default.sync INFO - Subscribing to printer Objects: dict_keys(['gcode_move', 'print_stats', 'virtual_sdcard', 'display_status', 'toolhead'])
+2024-06-18 13:46:04,320 mobileraker.default.sync INFO - Subscribing to printer Objects
+2024-06-18 13:46:04,320 mobileraker.default.sync INFO - Subscribed to printer Objects
+2024-06-18 13:46:04,320 mobileraker.default.sync INFO - (Re)Sync completed
+2024-06-18 13:46:04,320 mobileraker.default INFO - State changed. Evaluating!
+2024-06-18 13:46:04,320 mobileraker.default INFO - Snapshot passed threshold. LastSnap: PrinterSnapshot(klippy_ready=False, print_state=error, m117=None, m117_hash=, virtual_sdcard=VirtualSDCard (progress: 0.000000, file_position: 0), print_stats=PrintStats (filename: , total_duration: 0.0, print_duration: 0.0, state: standby, message: ), current_file=None, toolhead=<mobileraker.data.dtos.moonraker.printer_objects.Toolhead object at 0x7fff8e039150>, gcode_move=<mobileraker.data.dtos.moonraker.printer_objects.GCodeMove object at 0x7fff8e05fad0>, gcode_response=Klipper state: Disconnect, gcode_response_hash=b52d262c5102573d0930a152bf300b9b02af316eda660d308f62b504fc4eb11f, timelapse_pause=None, filament_sensors=), NewSnap: PrinterSnapshot(klippy_ready=True, print_state=standby, m117=None, m117_hash=, virtual_sdcard=VirtualSDCard (progress: 0.000000, file_position: 0), print_stats=PrintStats (filename: , total_duration: 0.0, print_duration: 0.0, state: standby, message: ), current_file=None, toolhead=<mobileraker.data.dtos.moonraker.printer_objects.Toolhead object at 0x7fff8e023a90>, gcode_move=<mobileraker.data.dtos.moonraker.printer_objects.GCodeMove object at 0x7fff8e052e50>, gcode_response=None, gcode_response_hash=, timelapse_pause=None, filament_sensors=)
+2024-06-18 13:46:04,322 mobileraker.default INFO - Fetched 2 app Cfgs!
+2024-06-18 13:46:04,322 mobileraker.default INFO - Evaluate for machineID 4bad763c-8322-4863-ba07-d35902354265, cfg.version: 2.6.11-ios , cfg.snap: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=error, m117=, gcode_response=b52d262c5102573d0930a152bf300b9b02af316eda660d308f62b504fc4eb11f, filament_sensors=[]), cfg.settings: NotificationSettings(progress_config=20, state_config=['printing', 'paused', 'complete', 'error', 'standby'], android_progressbar=True, created=2024-02-12T22:05:24.093643, last_modified=2024-02-12T22:05:24.093643)
+2024-06-18 13:46:04,322 mobileraker.default INFO - StateNoti: State of ender 3 changed - Printer is in Standby
+2024-06-18 13:46:04,322 mobileraker.default INFO - 1 Notifications for machineID: 4bad763c-8322-4863-ba07-d35902354265: state: True, proggress(text): False, M117 False, GcodeResponse: False, LiveActivity: False, FilamentSensor: 0, progressbar(android): False
+2024-06-18 13:46:04,322 mobileraker.default INFO - Updating snap in FCM Cfg for 4bad763c-8322-4863-ba07-d35902354265: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=standby, m117=, gcode_response=, filament_sensors=[])
+2024-06-18 13:46:04,340 mobileraker.default INFO - Updated snap in FCM Cfg for 4bad763c-8322-4863-ba07-d35902354265: {'jsonrpc': '2.0', 'result': {'namespace': 'mobileraker', 'key': 'fcm.4bad763c-8322-4863-ba07-d35902354265.snap', 'value': {'progress': 0.0, 'progress_live_activity': 0.0, 'progress_progressbar': 0.0, 'state': 'standby', 'm117': '', 'filament_sensors': [], 'gcode_response': ''}}, 'id': 1518}
+2024-06-18 13:46:04,340 mobileraker.default INFO - Evaluate for machineID b765fa1e-0fdf-4372-99ab-750b82b53752, cfg.version: 2.6.20-ios , cfg.snap: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=error, m117=, gcode_response=b52d262c5102573d0930a152bf300b9b02af316eda660d308f62b504fc4eb11f, filament_sensors=[]), cfg.settings: NotificationSettings(progress_config=25, state_config=['complete', 'error'], android_progressbar=True, created=2024-05-27T14:06:58.530856, last_modified=2024-06-11T23:13:36.503762)
+2024-06-18 13:46:04,340 mobileraker.default INFO - 0 Notifications for machineID: b765fa1e-0fdf-4372-99ab-750b82b53752: state: False, proggress(text): False, M117 False, GcodeResponse: False, LiveActivity: False, FilamentSensor: 0, progressbar(android): False
+2024-06-18 13:46:04,340 mobileraker.default INFO - Updating snap in FCM Cfg for b765fa1e-0fdf-4372-99ab-750b82b53752: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=standby, m117=, gcode_response=, filament_sensors=[])
+2024-06-18 13:46:04,347 mobileraker.default INFO - Updated snap in FCM Cfg for b765fa1e-0fdf-4372-99ab-750b82b53752: {'jsonrpc': '2.0', 'result': {'namespace': 'mobileraker', 'key': 'fcm.b765fa1e-0fdf-4372-99ab-750b82b53752.snap', 'value': {'progress': 0.0, 'progress_live_activity': 0.0, 'progress_progressbar': 0.0, 'state': 'standby', 'm117': '', 'filament_sensors': [], 'gcode_response': ''}}, 'id': 3942}
+2024-06-18 13:46:04,348 mobileraker.cam INFO - Trying to take a snapshot from URI: http://127.0.0.1/webcam/?action=snapshot
+2024-06-18 13:46:04,350 mobileraker.cam ERROR - Error while trying to process image request: 502 Server Error: Bad Gateway for url: http://127.0.0.1/webcam/?action=snapshot
+2024-06-18 13:46:04,350 mobileraker.fcm INFO - Submitting 1 notifications to mobileraker server
+2024-06-18 13:46:05,272 mobileraker.default INFO - ---- Completed Evaluations Task! ----
+2024-06-18 13:46:19,613 mobileraker.default.sync INFO - Klippy has reported a shutdown state
+2024-06-18 13:46:19,613 mobileraker.default INFO - State changed. Evaluating!
+2024-06-18 13:46:19,613 mobileraker.default INFO - Snapshot passed threshold. LastSnap: PrinterSnapshot(klippy_ready=True, print_state=standby, m117=None, m117_hash=, virtual_sdcard=VirtualSDCard (progress: 0.000000, file_position: 0), print_stats=PrintStats (filename: , total_duration: 0.0, print_duration: 0.0, state: standby, message: ), current_file=None, toolhead=<mobileraker.data.dtos.moonraker.printer_objects.Toolhead object at 0x7fff8e023a90>, gcode_move=<mobileraker.data.dtos.moonraker.printer_objects.GCodeMove object at 0x7fff8e052e50>, gcode_response=None, gcode_response_hash=, timelapse_pause=None, filament_sensors=), NewSnap: PrinterSnapshot(klippy_ready=False, print_state=error, m117=None, m117_hash=, virtual_sdcard=VirtualSDCard (progress: 0.000000, file_position: 0), print_stats=PrintStats (filename: , total_duration: 0.0, print_duration: 0.0, state: standby, message: ), current_file=None, toolhead=<mobileraker.data.dtos.moonraker.printer_objects.Toolhead object at 0x7fff8e193350>, gcode_move=<mobileraker.data.dtos.moonraker.printer_objects.GCodeMove object at 0x7fff8e05c210>, gcode_response=Klipper state: Shutdown, gcode_response_hash=cdf2989f37836af7475f86c35c1b0f031fdd6c1eb9707ef06db12da2167e967a, timelapse_pause=None, filament_sensors=)
+2024-06-18 13:46:19,623 mobileraker.default INFO - Fetched 2 app Cfgs!
+2024-06-18 13:46:19,624 mobileraker.default INFO - Evaluate for machineID 4bad763c-8322-4863-ba07-d35902354265, cfg.version: 2.6.11-ios , cfg.snap: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=standby, m117=, gcode_response=, filament_sensors=[]), cfg.settings: NotificationSettings(progress_config=20, state_config=['printing', 'paused', 'complete', 'error', 'standby'], android_progressbar=True, created=2024-02-12T22:05:24.093643, last_modified=2024-02-12T22:05:24.093643)
+2024-06-18 13:46:19,624 mobileraker.default INFO - 0 Notifications for machineID: 4bad763c-8322-4863-ba07-d35902354265: state: False, proggress(text): False, M117 False, GcodeResponse: False, LiveActivity: False, FilamentSensor: 0, progressbar(android): False
+2024-06-18 13:46:19,624 mobileraker.default INFO - Updating snap in FCM Cfg for 4bad763c-8322-4863-ba07-d35902354265: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=error, m117=, gcode_response=cdf2989f37836af7475f86c35c1b0f031fdd6c1eb9707ef06db12da2167e967a, filament_sensors=[])
+2024-06-18 13:46:19,640 mobileraker.default INFO - Updated snap in FCM Cfg for 4bad763c-8322-4863-ba07-d35902354265: {'jsonrpc': '2.0', 'result': {'namespace': 'mobileraker', 'key': 'fcm.4bad763c-8322-4863-ba07-d35902354265.snap', 'value': {'progress': 0.0, 'progress_live_activity': 0.0, 'progress_progressbar': 0.0, 'state': 'error', 'm117': '', 'filament_sensors': [], 'gcode_response': 'cdf2989f37836af7475f86c35c1b0f031fdd6c1eb9707ef06db12da2167e967a'}}, 'id': 3051}
+2024-06-18 13:46:19,640 mobileraker.default INFO - Evaluate for machineID b765fa1e-0fdf-4372-99ab-750b82b53752, cfg.version: 2.6.20-ios , cfg.snap: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=standby, m117=, gcode_response=, filament_sensors=[]), cfg.settings: NotificationSettings(progress_config=25, state_config=['complete', 'error'], android_progressbar=True, created=2024-05-27T14:06:58.530856, last_modified=2024-06-11T23:13:36.503762)
+2024-06-18 13:46:19,640 mobileraker.default INFO - 0 Notifications for machineID: b765fa1e-0fdf-4372-99ab-750b82b53752: state: False, proggress(text): False, M117 False, GcodeResponse: False, LiveActivity: False, FilamentSensor: 0, progressbar(android): False
+2024-06-18 13:46:19,640 mobileraker.default INFO - Updating snap in FCM Cfg for b765fa1e-0fdf-4372-99ab-750b82b53752: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=error, m117=, gcode_response=cdf2989f37836af7475f86c35c1b0f031fdd6c1eb9707ef06db12da2167e967a, filament_sensors=[])
+2024-06-18 13:46:19,654 mobileraker.default INFO - Updated snap in FCM Cfg for b765fa1e-0fdf-4372-99ab-750b82b53752: {'jsonrpc': '2.0', 'result': {'namespace': 'mobileraker', 'key': 'fcm.b765fa1e-0fdf-4372-99ab-750b82b53752.snap', 'value': {'progress': 0.0, 'progress_live_activity': 0.0, 'progress_progressbar': 0.0, 'state': 'error', 'm117': '', 'filament_sensors': [], 'gcode_response': 'cdf2989f37836af7475f86c35c1b0f031fdd6c1eb9707ef06db12da2167e967a'}}, 'id': 9451}
+2024-06-18 13:46:19,654 mobileraker.default INFO - ---- Completed Evaluations Task! ----
+--------------------MobilerakerCompanion Log Start--------------------
+Git Version: v0.4.0-60-g3be97bf
+2024-06-18 13:49:34,050 root INFO - MobilerakerCompanion version: v0.4.0-60-g3be97bf
+2024-06-18 13:49:34,054 root INFO - Checking if passed config exists: /home/blackaxis/Ender3_data/config/mobileraker.conf
+2024-06-18 13:49:34,054 root INFO - Found configuration file at: /home/blackaxis/Ender3_data/config/mobileraker.conf
+2024-06-18 13:49:34,056 root INFO - Read 1 printer config sections
+2024-06-18 13:49:34,154 root INFO - Main section read, language:"en", timezone:"EDT", eta_format:"%d.%m.%Y, %H:%M:%S", include_snapshot:"True"
+2024-06-18 13:49:34,155 mobileraker.default INFO - MobilerakerCompanion client created for default, it will ignore the following sensors: []
+2024-06-18 13:49:34,155 mobileraker.default.jrpc INFO - Trying to connect to: ws://127.0.0.1:7126/websocket api key <NO API KEY>
+2024-06-18 13:49:34,155 websockets.client INFO - ! connect failed; reconnecting in 2.5 seconds
+Traceback (most recent call last):
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 598, in __aiter__
+    async with self as protocol:
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 633, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 650, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 654, in __await_impl__
+    transport, protocol = await self._create_connection()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1085, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1069, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 973, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 634, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 674, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 7126)
+2024-06-18 13:49:36,664 websockets.client INFO - ! connect failed again; retrying in 3 seconds
+Traceback (most recent call last):
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 598, in __aiter__
+    async with self as protocol:
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 633, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 650, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 654, in __await_impl__
+    transport, protocol = await self._create_connection()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1085, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1069, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 973, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 634, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 674, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 7126)
+2024-06-18 13:49:39,672 websockets.client INFO - ! connect failed again; retrying in 5 seconds
+Traceback (most recent call last):
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 598, in __aiter__
+    async with self as protocol:
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 633, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 650, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/tasks.py", line 479, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "/home/blackaxis/mobileraker-env/lib/python3.11/site-packages/websockets/legacy/client.py", line 654, in __await_impl__
+    transport, protocol = await self._create_connection()
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1085, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 1069, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 973, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 634, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/selector_events.py", line 674, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 7126)
+2024-06-18 13:49:44,678 mobileraker.default.jrpc INFO - WebSocket connected
+2024-06-18 13:49:44,678 mobileraker.default.jrpc INFO - Notifying listeners about connection state True
+2024-06-18 13:49:44,678 mobileraker.default.sync INFO - Doing a (Re)Sync with moonraker
+2024-06-18 13:49:44,679 mobileraker.default.sync INFO - Syncing klippy Objects
+2024-06-18 13:49:44,683 mobileraker.default.sync INFO - Received server info: {'jsonrpc': '2.0', 'result': {'klippy_connected': True, 'klippy_state': 'ready', 'components': ['secrets', 'template', 'klippy_connection', 'jsonrpc', 'internal_transport', 'application', 'websockets', 'dbus_manager', 'database', 'file_manager', 'authorization', 'klippy_apis', 'shell_command', 'machine', 'data_store', 'proc_stats', 'job_state', 'job_queue', 'history', 'http_client', 'announcements', 'webcam', 'extensions', 'update_manager', 'octoprint_compat'], 'failed_components': [], 'registered_directories': ['config', 'logs', 'gcodes', 'config_examples', 'docs'], 'warnings': [], 'websocket_count': 1, 'moonraker_version': 'v0.8.0-379-g346a3d7', 'missing_klippy_requirements': [], 'api_version': [1, 4, 0], 'api_version_string': '1.4.0'}, 'id': 6541}
+2024-06-18 13:49:44,683 mobileraker.default.sync INFO - Syncing printer Objects
+2024-06-18 13:49:44,684 mobileraker.default.sync INFO - Subscribing to printer Objects: dict_keys(['gcode_move', 'print_stats', 'virtual_sdcard', 'display_status', 'toolhead'])
+2024-06-18 13:49:44,866 mobileraker.default.sync INFO - Subscribing to printer Objects
+2024-06-18 13:49:44,867 mobileraker.default.sync INFO - Subscribed to printer Objects
+2024-06-18 13:49:44,867 mobileraker.default.sync INFO - (Re)Sync completed
+2024-06-18 13:49:44,867 mobileraker.default INFO - No last snapshot available. Evaluating!
+2024-06-18 13:49:44,867 mobileraker.default INFO - Snapshot passed threshold. LastSnap: None, NewSnap: PrinterSnapshot(klippy_ready=True, print_state=standby, m117=None, m117_hash=, virtual_sdcard=VirtualSDCard (progress: 0.000000, file_position: 0), print_stats=PrintStats (filename: , total_duration: 0.0, print_duration: 0.0, state: standby, message: ), current_file=None, toolhead=<mobileraker.data.dtos.moonraker.printer_objects.Toolhead object at 0x7fff72532790>, gcode_move=<mobileraker.data.dtos.moonraker.printer_objects.GCodeMove object at 0x7fff7254bad0>, gcode_response=None, gcode_response_hash=, timelapse_pause=None, filament_sensors=)
+2024-06-18 13:49:45,114 mobileraker.default.jrpc ERROR - Received a response to unknown request: 7754
+2024-06-18 13:49:45,359 mobileraker.default INFO - Updated companion meta data in moonraker database
+2024-06-18 13:49:45,360 mobileraker.default INFO - Fetched 2 app Cfgs!
+2024-06-18 13:49:45,360 mobileraker.default INFO - Evaluate for machineID 4bad763c-8322-4863-ba07-d35902354265, cfg.version: 2.6.11-ios , cfg.snap: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=error, m117=, gcode_response=cdf2989f37836af7475f86c35c1b0f031fdd6c1eb9707ef06db12da2167e967a, filament_sensors=[]), cfg.settings: NotificationSettings(progress_config=20, state_config=['printing', 'paused', 'complete', 'error', 'standby'], android_progressbar=True, created=2024-02-12T22:05:24.093643, last_modified=2024-02-12T22:05:24.093643)
+2024-06-18 13:49:45,360 mobileraker.default INFO - StateNoti: State of ender 3 changed - Printer is in Standby
+2024-06-18 13:49:45,360 mobileraker.default INFO - 1 Notifications for machineID: 4bad763c-8322-4863-ba07-d35902354265: state: True, proggress(text): False, M117 False, GcodeResponse: False, LiveActivity: False, FilamentSensor: 0, progressbar(android): False
+2024-06-18 13:49:45,360 mobileraker.default INFO - Updating snap in FCM Cfg for 4bad763c-8322-4863-ba07-d35902354265: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=standby, m117=, gcode_response=, filament_sensors=[])
+2024-06-18 13:49:45,687 mobileraker.default INFO - Updated snap in FCM Cfg for 4bad763c-8322-4863-ba07-d35902354265: {'jsonrpc': '2.0', 'result': {'namespace': 'mobileraker', 'key': 'fcm.4bad763c-8322-4863-ba07-d35902354265.snap', 'value': {'progress': 0.0, 'progress_live_activity': 0.0, 'progress_progressbar': 0.0, 'state': 'standby', 'm117': '', 'filament_sensors': [], 'gcode_response': ''}}, 'id': 108}
+2024-06-18 13:49:45,687 mobileraker.default INFO - Evaluate for machineID b765fa1e-0fdf-4372-99ab-750b82b53752, cfg.version: 2.6.20-ios , cfg.snap: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=error, m117=, gcode_response=cdf2989f37836af7475f86c35c1b0f031fdd6c1eb9707ef06db12da2167e967a, filament_sensors=[]), cfg.settings: NotificationSettings(progress_config=25, state_config=['complete', 'error'], android_progressbar=True, created=2024-05-27T14:06:58.530856, last_modified=2024-06-11T23:13:36.503762)
+2024-06-18 13:49:45,687 mobileraker.default INFO - 0 Notifications for machineID: b765fa1e-0fdf-4372-99ab-750b82b53752: state: False, proggress(text): False, M117 False, GcodeResponse: False, LiveActivity: False, FilamentSensor: 0, progressbar(android): False
+2024-06-18 13:49:45,687 mobileraker.default INFO - Updating snap in FCM Cfg for b765fa1e-0fdf-4372-99ab-750b82b53752: NotificationSnap(progress=0, progress_live_activity=0, progress_progressbar=0, state=standby, m117=, gcode_response=, filament_sensors=[])
+2024-06-18 13:49:45,709 mobileraker.default INFO - Updated snap in FCM Cfg for b765fa1e-0fdf-4372-99ab-750b82b53752: {'jsonrpc': '2.0', 'result': {'namespace': 'mobileraker', 'key': 'fcm.b765fa1e-0fdf-4372-99ab-750b82b53752.snap', 'value': {'progress': 0.0, 'progress_live_activity': 0.0, 'progress_progressbar': 0.0, 'state': 'standby', 'm117': '', 'filament_sensors': [], 'gcode_response': ''}}, 'id': 1646}
+2024-06-18 13:49:45,710 mobileraker.cam INFO - Trying to take a snapshot from URI: http://127.0.0.1/webcam/?action=snapshot
+2024-06-18 13:49:46,390 mobileraker.cam INFO - Took webcam snapshot! Rotating it using rotation 0°
+2024-06-18 13:49:46,397 mobileraker.fcm INFO - Submitting 1 notifications to mobileraker server
+2024-06-18 13:49:47,676 mobileraker.default INFO - ---- Completed Evaluations Task! ----
