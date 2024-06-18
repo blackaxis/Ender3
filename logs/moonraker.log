@@ -342,3 +342,4 @@ Content-Type: multipart/form-data; boundary=------------------------wDW387WYK3SW
 2024-06-18 07:25:20,430 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Move out of range: 133.000 110.000 255.000 [0.000]
 2024-06-18 08:19:06,366 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
 2024-06-18 08:19:06,366 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-18 09:59:29,419 [websockets.py:on_close()] - Websocket Closed: ID: 140732835268048 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.45
