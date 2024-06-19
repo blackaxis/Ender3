@@ -291,3 +291,42 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-19 10:14:40,046 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
 2024-06-19 12:11:08,413 [websockets.py:on_close()] - Websocket Closed: ID: 140732525779984 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.79
 2024-06-19 12:18:34,388 [websockets.py:on_close()] - Websocket Closed: ID: 140732552529040 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.73
+2024-06-19 13:09:01,144 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 13:12:29,497 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-19 13:12:29,609 [application.py:log_request()] - 101 GET /websocket?token=5V55TRTGALZBLNEL5Q7SYVBT3QL7X5VR (192.168.0.181) [_TRUSTED_USER_] 0.75ms
+2024-06-19 13:12:29,609 [websockets.py:open()] - Websocket Opened: ID: 140732554109328, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-19 13:12:29,616 [websockets.py:_handle_identify()] - Websocket 140732554109328 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 13:12:29,616 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-19 13:14:22,213 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: 
+2024-06-19 13:14:22,220 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary9wXmPBQOPYgSD5Ya
+2024-06-19 13:14:22,225 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-19 13:14:22,226 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.181) [_TRUSTED_USER_] 6.88ms
+2024-06-19 13:14:23,292 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-19 13:14:23,307 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-19 13:14:23,386 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-19 13:14:23,538 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-19 13:14:24,549 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-19 13:14:24,568 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-19 13:14:27,341 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-19 13:14:27,341 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-19 13:14:27,592 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-19 13:14:27,845 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-19 13:14:28,343 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-19 13:15:43,321 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: 
+2024-06-19 13:15:43,348 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryQ0msgDdWIH9mWSwB
+2024-06-19 13:15:43,356 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-19 13:15:43,359 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.181) [_TRUSTED_USER_] 11.41ms
+2024-06-19 13:15:48,027 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-19 13:15:48,072 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-19 13:15:48,187 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-19 13:15:49,283 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-19 13:15:49,363 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-19 13:15:52,139 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-19 13:15:52,140 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-19 13:15:52,390 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-19 13:15:52,644 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-19 13:15:53,145 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
