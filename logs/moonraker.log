@@ -275,3 +275,9 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-19 06:35:10,532 [websockets.py:_handle_identify()] - Websocket 140732553923600 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-19 06:35:10,533 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-19 06:35:15,221 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 07:39:40,018 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-19 07:55:52,591 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-19 07:55:53,368 [application.py:log_request()] - 101 GET /websocket?token=3GVTEVTJY342MVECBIWZPC3FXJQE456C (192.168.0.181) [_TRUSTED_USER_] 0.55ms
+2024-06-19 07:55:53,368 [websockets.py:open()] - Websocket Opened: ID: 140732525779984, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-19 07:55:53,539 [websockets.py:_handle_identify()] - Websocket 140732525779984 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 07:55:53,539 [file_manager.py:get_file_list()] - Updating File List <config>...
