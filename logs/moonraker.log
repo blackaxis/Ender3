@@ -230,3 +230,20 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-19 04:24:51,591 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-19 04:25:51,591 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
 2024-06-19 04:34:13,413 [websockets.py:on_close()] - Websocket Closed: ID: 140732525667088 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.12
+2024-06-19 05:14:47,721 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-19 05:14:48,074 [application.py:log_request()] - 101 GET /websocket?token=UIRJGHL4VJINEYL762A3RFALFE6A5F27 (192.168.0.181) [_TRUSTED_USER_] 0.62ms
+2024-06-19 05:14:48,074 [websockets.py:open()] - Websocket Opened: ID: 140732553045200, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-19 05:14:48,206 [websockets.py:_handle_identify()] - Websocket 140732553045200 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 05:14:48,206 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-19 05:50:08,982 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 05:50:19,904 [websockets.py:on_close()] - Websocket Closed: ID: 140732525598928 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.87
+2024-06-19 05:50:34,134 [application.py:log_request()] - 101 GET /websocket?token=ZJL4TWEKYXPDLGFLXGTEA2RWSCXN67RI (192.168.0.181) [_TRUSTED_USER_] 0.60ms
+2024-06-19 05:50:34,134 [websockets.py:open()] - Websocket Opened: ID: 140732525803728, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-19 05:50:34,244 [websockets.py:_handle_identify()] - Websocket 140732525803728 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 05:50:34,247 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-19 05:52:23,857 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 05:59:38,437 [websockets.py:on_close()] - Websocket Closed: ID: 140732525803728 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.17
+2024-06-19 05:59:39,649 [application.py:log_request()] - 101 GET /websocket?token=3CKJIQRAYTQARYLC23OUNI3XNOJNYQIO (192.168.0.181) [_TRUSTED_USER_] 0.48ms
+2024-06-19 05:59:39,649 [websockets.py:open()] - Websocket Opened: ID: 140732563521104, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-19 05:59:39,798 [websockets.py:_handle_identify()] - Websocket 140732563521104 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 05:59:39,798 [file_manager.py:get_file_list()] - Updating File List <config>...
