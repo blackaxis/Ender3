@@ -226,3 +226,7 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-19 03:20:05,262 [websockets.py:_handle_identify()] - Websocket 140732525667088 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-19 03:20:05,262 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-19 03:26:28,320 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 04:24:39,986 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-19 04:24:51,591 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 04:25:51,591 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-19 04:34:13,413 [websockets.py:on_close()] - Websocket Closed: ID: 140732525667088 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.12
