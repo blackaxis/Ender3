@@ -209,3 +209,20 @@ Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-207-g6cd17420
 2024-06-19 00:44:39,947 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-19 03:03:31,667 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-19 03:03:31,906 [application.py:log_request()] - 101 GET /websocket?token=A54UCLF5JAGJRJI5T4DTEYTZAN72MLYJ (192.168.0.181) [_TRUSTED_USER_] 0.49ms
+2024-06-19 03:03:31,906 [websockets.py:open()] - Websocket Opened: ID: 140732525598928, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-06-19 03:03:31,966 [websockets.py:_handle_identify()] - Websocket 140732525598928 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 03:03:31,966 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-19 03:05:08,355 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 03:06:08,356 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-19 03:07:08,357 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-06-19 03:08:08,358 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2024-06-19 03:09:20,555 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 03:12:03,157 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 03:14:07,107 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 03:20:05,211 [application.py:log_request()] - 101 GET /websocket?token=6WCF5AECZORMQBY6XABQKGHRT35X2K2L (192.168.0.181) [_TRUSTED_USER_] 0.62ms
+2024-06-19 03:20:05,212 [websockets.py:open()] - Websocket Opened: ID: 140732525667088, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-06-19 03:20:05,262 [websockets.py:_handle_identify()] - Websocket 140732525667088 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 03:20:05,262 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-19 03:26:28,320 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
