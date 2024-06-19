@@ -289,3 +289,5 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-19 09:13:51,258 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-19 09:17:03,099 [websockets.py:on_close()] - Websocket Closed: ID: 140732553923600 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.45
 2024-06-19 10:14:40,046 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-19 12:11:08,413 [websockets.py:on_close()] - Websocket Closed: ID: 140732525779984 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.79
+2024-06-19 12:18:34,388 [websockets.py:on_close()] - Websocket Closed: ID: 140732552529040 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.73
