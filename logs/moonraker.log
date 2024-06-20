@@ -479,3 +479,7 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundarycBBGZHw8XudsbN
 2024-06-19 19:30:26,942 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-06-19 19:31:26,951 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.01 seconds
 2024-06-19 19:32:26,953 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.01 seconds
+2024-06-19 20:19:40,162 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-19 20:19:40,162 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-19 20:32:42,607 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-19 20:50:33,015 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Error during homing y: Communication timeout during homing
