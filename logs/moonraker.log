@@ -422,3 +422,60 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundary2hsAZBPdpbxsBZ
 2024-06-19 18:53:25,166 [websockets.py:_handle_identify()] - Websocket 140732525680976 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-19 18:53:25,166 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-19 18:59:32,211 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 19:01:50,692 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 19:04:40,150 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
+2024-06-19 19:06:02,194 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-19 19:09:39,341 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: 
+2024-06-19 19:09:39,480 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryQZnt4tVEIMJ3jrpb
+2024-06-19 19:09:39,486 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-19 19:09:39,530 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.181) [_TRUSTED_USER_] 49.38ms
+2024-06-19 19:09:40,673 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-19 19:09:40,899 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-19 19:09:41,036 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-19 19:09:41,927 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-19 19:09:41,940 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-19 19:09:44,456 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-19 19:09:44,457 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-19 19:09:44,707 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-19 19:09:44,965 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-19 19:09:45,459 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-19 19:10:00,050 [websockets.py:on_close()] - Websocket Closed: ID: 140732525680976 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.86
+2024-06-19 19:10:00,319 [application.py:log_request()] - 101 GET /websocket?token=MYAN4O5MELEXRIQ572YU4I3E2NEIEBZ2 (192.168.0.181) [_TRUSTED_USER_] 0.37ms
+2024-06-19 19:10:00,319 [websockets.py:open()] - Websocket Opened: ID: 140732563577488, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-19 19:10:00,325 [websockets.py:_handle_identify()] - Websocket 140732563577488 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 19:10:00,325 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-19 19:10:30,191 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: 
+2024-06-19 19:10:30,198 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryPFLMuzcTUu8zwSiu
+2024-06-19 19:10:30,202 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-19 19:10:30,204 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.181) [_TRUSTED_USER_] 5.73ms
+2024-06-19 19:11:10,087 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 19:12:10,087 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-19 19:15:42,286 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 19:15:56,870 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: 
+2024-06-19 19:15:56,901 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarycBBGZHw8XudsbNma
+2024-06-19 19:15:56,903 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-06-19 19:15:56,905 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.181) [_TRUSTED_USER_] 3.90ms
+2024-06-19 19:16:42,287 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-19 19:16:57,048 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 19:17:41,765 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-19 19:17:42,079 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-19 19:17:42,087 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-19 19:17:43,019 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-19 19:17:43,067 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-19 19:17:45,591 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-19 19:17:45,593 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-19 19:17:45,840 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-19 19:17:46,095 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-19 19:17:46,593 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-19 19:25:10,378 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 19:26:10,378 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-19 19:27:10,379 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-06-19 19:30:26,942 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-19 19:31:26,951 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.01 seconds
+2024-06-19 19:32:26,953 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.01 seconds
