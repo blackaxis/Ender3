@@ -483,3 +483,8 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundarycBBGZHw8XudsbN
 2024-06-19 20:19:40,162 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
 2024-06-19 20:32:42,607 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
 2024-06-19 20:50:33,015 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Error during homing y: Communication timeout during homing
+2024-06-19 21:01:49,331 [websockets.py:on_close()] - Websocket Closed: ID: 140732563577488 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.87
+2024-06-19 21:04:17,364 [application.py:log_request()] - 101 GET /websocket?token=HLJQCW4ZTND2XXYLKEK3AKFOXI6H4ICM (192.168.0.181) [_TRUSTED_USER_] 0.64ms
+2024-06-19 21:04:17,364 [websockets.py:open()] - Websocket Opened: ID: 140732553188816, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-19 21:04:17,371 [websockets.py:_handle_identify()] - Websocket 140732553188816 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-19 21:04:17,371 [file_manager.py:get_file_list()] - Updating File List <config>...
