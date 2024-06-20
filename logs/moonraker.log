@@ -222,3 +222,5 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-20 15:58:43,829 [websockets.py:_handle_identify()] - Websocket 140735018630096 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-20 15:58:43,830 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-20 15:58:54,749 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Must home axis first: 40.000 180.000 20.000 [0.000]
+2024-06-20 17:02:15,658 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-20 17:35:22,122 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Must home axis first: 40.000 180.000 20.000 [0.000]
