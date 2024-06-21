@@ -226,3 +226,19 @@ Content-Type: multipart/form-data; boundary=------------------------A8sJnLWNzpiC
 2024-06-21 06:57:22,002 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
 2024-06-21 06:58:22,004 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
 2024-06-21 06:59:22,005 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
+2024-06-21 07:00:22,005 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.00 seconds
+2024-06-21 07:01:22,007 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.01 seconds
+2024-06-21 07:05:02,575 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-21 07:05:15,241 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-21 07:05:19,625 [klippy_apis.py:start_print()] - Requesting Job Start, filename = AR15 Housing (With Supports) V12_1h1m_0.14mm_240C_ASA_.gcode
+2024-06-21 07:05:19,643 [job_state.py:_status_update()] - Job Started: AR15 Housing (With Supports) V12_1h1m_0.14mm_240C_ASA_.gcode
+2024-06-21 07:28:03,113 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-21 07:28:16,649 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-21 07:28:20,983 [klippy_apis.py:start_print()] - Requesting Job Start, filename = AR15 Housing (With Supports) V12_1h1m_0.14mm_240C_ASA_.gcode
+2024-06-21 07:28:21,077 [job_state.py:_status_update()] - Job Started: AR15 Housing (With Supports) V12_1h1m_0.14mm_240C_ASA_.gcode
+2024-06-21 07:30:34,809 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-21 07:31:34,809 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-06-21 07:32:34,810 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-06-21 07:33:34,811 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2024-06-21 07:34:34,812 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
+2024-06-21 07:52:15,817 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
