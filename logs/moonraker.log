@@ -286,3 +286,22 @@ Content-Type: multipart/form-data; boundary=------------------------8M8iKNGATQ74
 2024-06-21 12:40:11,311 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 8223.48ms
 2024-06-21 12:40:11,516 [job_state.py:_status_update()] - Job Started: Loose AR10 (Low Shelf) Legacy DIAS SFFA V2 Housing V5_2h1m_0.14mm_240C_ASA_.gcode
 2024-06-21 13:42:15,873 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-21 15:12:43,097 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
+2024-06-21 15:13:10,106 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': Timeout while connecting
+2024-06-21 15:30:16,521 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-06-21 15:30:16,815 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-21 15:30:17,086 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-06-21 15:30:17,782 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-06-21 15:30:17,849 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
+2024-06-21 15:30:17,850 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-06-21 15:30:18,006 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-21 15:30:20,629 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-06-21 15:30:20,629 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-06-21 15:30:20,880 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-06-21 15:30:21,134 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-06-21 15:30:21,632 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-06-21 15:41:56,255 [websockets.py:on_close()] - Websocket Closed: ID: 140735018185232 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.44
+2024-06-21 15:41:57,096 [application.py:log_request()] - 101 GET /websocket?token=JMTWX4GEAMUOVGEGH3Q4AFEYYLYGB6D3 (192.168.0.181) [_TRUSTED_USER_] 0.51ms
+2024-06-21 15:41:57,096 [websockets.py:open()] - Websocket Opened: ID: 140735017887056, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-21 15:41:57,146 [websockets.py:_handle_identify()] - Websocket 140735017887056 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-21 15:41:57,146 [file_manager.py:get_file_list()] - Updating File List <config>...
