@@ -246,3 +246,16 @@ Content-Type: multipart/form-data; boundary=------------------------A8sJnLWNzpiC
 2024-06-21 08:22:50,709 [klippy_apis.py:cancel_print()] - Requesting job cancel...
 2024-06-21 08:22:55,281 [klippy_apis.py:start_print()] - Requesting Job Start, filename = AR15 Housing (With Supports) V12_1h1m_0.14mm_240C_ASA_.gcode
 2024-06-21 08:22:55,409 [job_state.py:_status_update()] - Job Started: AR15 Housing (With Supports) V12_1h1m_0.14mm_240C_ASA_.gcode
+2024-06-21 10:12:43,092 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
+2024-06-21 10:13:10,102 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': Timeout while connecting
+2024-06-21 10:37:54,658 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-21 10:37:54,969 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------0gD7vmnFHOVP1X19SaKzEi
+2024-06-21 10:37:59,449 [application.py:post()] - Processing Uploaded File: AR15 Housing (With Supports) V12_1h5m_0.14mm_240C_ASA_.gcode
+2024-06-21 10:37:59,532 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-21 10:37:59,579 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "AR15 Housing (With Supports) V12_1h5m_0.14mm_240C_ASA_.gcode") successfully finished
+2024-06-21 10:37:59,579 [klippy_apis.py:start_print()] - Requesting Job Start, filename = AR15 Housing (With Supports) V12_1h5m_0.14mm_240C_ASA_.gcode
+2024-06-21 10:37:59,584 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4615.83ms
+2024-06-21 10:37:59,803 [job_state.py:_status_update()] - Job Started: AR15 Housing (With Supports) V12_1h5m_0.14mm_240C_ASA_.gcode
+2024-06-21 10:42:43,091 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
