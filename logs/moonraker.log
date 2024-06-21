@@ -259,3 +259,17 @@ Content-Type: multipart/form-data; boundary=------------------------0gD7vmnFHOVP
 2024-06-21 10:37:59,584 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4615.83ms
 2024-06-21 10:37:59,803 [job_state.py:_status_update()] - Job Started: AR15 Housing (With Supports) V12_1h5m_0.14mm_240C_ASA_.gcode
 2024-06-21 10:42:43,091 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
+2024-06-21 11:31:08,798 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735018161744
+2024-06-21 11:31:09,602 [websockets.py:on_close()] - Websocket Closed: ID: 140735018161744 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.00
+2024-06-21 11:31:09,605 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2024-06-21 11:31:09,606 [application.py:log_request()] - 101 GET /websocket (127.0.0.1) [_TRUSTED_USER_] 0.55ms
+2024-06-21 11:31:09,606 [websockets.py:open()] - Websocket Opened: ID: 140735007342480, Proxied: False, User Agent: Python/3.11 websockets/10.1, Host Name: 127.0.0.1
+2024-06-21 11:37:23,857 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-21 11:40:00,368 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-21 11:42:15,854 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-21 11:44:11,665 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-21 11:45:36,300 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-21 11:48:53,173 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-21 11:53:29,500 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-21 11:54:50,329 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-06-21 11:56:19,969 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
