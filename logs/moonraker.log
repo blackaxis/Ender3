@@ -242,3 +242,7 @@ Content-Type: multipart/form-data; boundary=------------------------A8sJnLWNzpiC
 2024-06-21 07:33:34,811 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
 2024-06-21 07:34:34,812 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.00 seconds
 2024-06-21 07:52:15,817 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-21 08:22:23,275 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-06-21 08:22:50,709 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-06-21 08:22:55,281 [klippy_apis.py:start_print()] - Requesting Job Start, filename = AR15 Housing (With Supports) V12_1h1m_0.14mm_240C_ASA_.gcode
+2024-06-21 08:22:55,409 [job_state.py:_status_update()] - Job Started: AR15 Housing (With Supports) V12_1h1m_0.14mm_240C_ASA_.gcode
