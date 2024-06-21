@@ -307,3 +307,14 @@ Content-Type: multipart/form-data; boundary=------------------------8M8iKNGATQ74
 2024-06-21 15:41:57,146 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-21 16:32:15,904 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.100
 2024-06-21 16:42:15,906 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-21 17:25:55,519 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-21 17:25:55,753 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------jAu8vW1xZMImAPsUmLwQSr
+2024-06-21 17:25:56,477 [application.py:post()] - Processing Uploaded File: Select Fire Selector (With Brim) V10_19m_0.14mm_240C_ASA_.gcode
+2024-06-21 17:25:56,631 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-21 17:25:56,709 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Select Fire Selector (With Brim) V10_19m_0.14mm_240C_ASA_.gcode") successfully finished
+2024-06-21 17:25:56,709 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Select Fire Selector (With Brim) V10_19m_0.14mm_240C_ASA_.gcode
+2024-06-21 17:25:56,723 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 969.95ms
+2024-06-21 17:25:56,748 [job_state.py:_status_update()] - Job Started: Select Fire Selector (With Brim) V10_19m_0.14mm_240C_ASA_.gcode
+2024-06-21 17:25:58,182 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.100
