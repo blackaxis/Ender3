@@ -303,3 +303,26 @@ Content-Type: multipart/form-data; boundary=------------------------HDhKj0Y8wZKy
 2024-06-23 19:42:06,533 [websockets.py:_handle_identify()] - Websocket 140735018166288 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-06-23 19:42:06,534 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-23 19:42:26,838 [websockets.py:on_close()] - Websocket Closed: ID: 140735018843792 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.19
+2024-06-23 20:08:40,268 [websockets.py:on_close()] - Websocket Closed: ID: 140735018166288 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.75
+2024-06-23 20:42:16,502 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-23 20:56:28,452 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-23 20:56:28,453 [application.py:log_request()] - 101 GET /websocket?token=W3UJ3FDA23CA3PVT5RZJFJ67VWDYUI2I (192.168.0.181) [_TRUSTED_USER_] 0.77ms
+2024-06-23 20:56:28,453 [websockets.py:open()] - Websocket Opened: ID: 140735016820560, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-23 20:56:28,457 [websockets.py:_handle_identify()] - Websocket 140735016820560 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-23 20:56:28,457 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-23 20:57:04,278 [websockets.py:on_close()] - Websocket Closed: ID: 140735016820560 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.82
+2024-06-23 20:57:04,314 [application.py:log_request()] - 101 GET /websocket?token=LYKMPSXDHZQWETISBSM4OWD2TQTKQTQR (192.168.0.181) [_TRUSTED_USER_] 0.55ms
+2024-06-23 20:57:04,314 [websockets.py:open()] - Websocket Opened: ID: 140735007925264, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-23 20:57:04,320 [websockets.py:_handle_identify()] - Websocket 140735007925264 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-23 20:57:04,320 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-23 20:57:11,503 [websockets.py:on_close()] - Websocket Closed: ID: 140735007925264 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.19
+2024-06-23 20:57:11,517 [application.py:log_request()] - 101 GET /websocket?token=4FKNIL5EGDOTWGBEVWFJFM37OGEHCM27 (192.168.0.181) [_TRUSTED_USER_] 0.41ms
+2024-06-23 20:57:11,517 [websockets.py:open()] - Websocket Opened: ID: 140735007176464, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-23 20:57:11,523 [websockets.py:_handle_identify()] - Websocket 140735007176464 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-23 20:57:11,523 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-23 20:57:24,773 [websockets.py:on_close()] - Websocket Closed: ID: 140735007176464 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.25
+2024-06-23 20:57:24,820 [application.py:log_request()] - 101 GET /websocket?token=Y3EFF6KHHKONTNVQYH3PAZPDZYYEN2SY (192.168.0.181) [_TRUSTED_USER_] 0.42ms
+2024-06-23 20:57:24,821 [websockets.py:open()] - Websocket Opened: ID: 140735018506320, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-23 20:57:24,931 [websockets.py:_handle_identify()] - Websocket 140735018506320 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-23 20:57:24,931 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-23 20:57:31,637 [websockets.py:on_close()] - Websocket Closed: ID: 140735018506320 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.82
