@@ -234,3 +234,4 @@ Content-Type: multipart/form-data; boundary=------------------------2hwCcoxQCBIM
 2024-06-28 22:02:17,267 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Lathe_bolt_jig_2.3mf_Part 2__Main_2024-06-28 22-01-29_2h59m_0.24mm_240C_ASA_.gcode
 2024-06-28 22:02:17,272 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4111.99ms
 2024-06-28 22:02:17,285 [job_state.py:_status_update()] - Job Started: Lathe_bolt_jig_2.3mf_Part 2__Main_2024-06-28 22-01-29_2h59m_0.24mm_240C_ASA_.gcode
+2024-06-28 23:02:49,171 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
