@@ -224,3 +224,13 @@ Klipper Version: v0.12.0-207-g6cd17420
 2024-06-28 10:30:13,390 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-06-28 10:30:15,803 [websockets.py:on_close()] - Websocket Closed: ID: 140735280521872 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.42
 2024-06-28 11:32:49,059 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.181
+2024-06-28 22:02:13,056 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.181
+2024-06-28 22:02:13,161 [application.py:prepare()] - Upload Request Received from 192.168.0.181
+Content-Type: multipart/form-data; boundary=------------------------2hwCcoxQCBIM2ERK1NZiaE
+2024-06-28 22:02:16,813 [application.py:post()] - Processing Uploaded File: Lathe_bolt_jig_2.3mf_Part 2__Main_2024-06-28 22-01-29_2h59m_0.24mm_240C_ASA_.gcode
+2024-06-28 22:02:17,176 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-06-28 22:02:17,267 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Lathe_bolt_jig_2.3mf_Part 2__Main_2024-06-28 22-01-29_2h59m_0.24mm_240C_ASA_.gcode") successfully finished
+2024-06-28 22:02:17,267 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Lathe_bolt_jig_2.3mf_Part 2__Main_2024-06-28 22-01-29_2h59m_0.24mm_240C_ASA_.gcode
+2024-06-28 22:02:17,272 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.181) [_TRUSTED_USER_] 4111.99ms
+2024-06-28 22:02:17,285 [job_state.py:_status_update()] - Job Started: Lathe_bolt_jig_2.3mf_Part 2__Main_2024-06-28 22-01-29_2h59m_0.24mm_240C_ASA_.gcode
