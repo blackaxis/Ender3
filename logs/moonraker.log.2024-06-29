@@ -1,4 +1,4 @@
--------------------- Log Start | Thu Jun 27 19:08:11 2024 --------------------
+-------------------- Log Start | Sat Jun 29 16:28:03 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -207,4 +207,10 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-207-g6cd17420
-2024-06-27 15:08:11,754 [websockets.py:on_close()] - Websocket Closed: ID: 140735306763664 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 2.28
+2024-06-29 12:28:03,842 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-06-29 12:28:03,933 [application.py:log_request()] - 101 GET /websocket?token=NPYA2IETFR7NAYQ45JG5SMWOOZ6NIPTL (192.168.0.180) [_TRUSTED_USER_] 0.41ms
+2024-06-29 12:28:03,933 [websockets.py:open()] - Websocket Opened: ID: 140735308157904, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-06-29 12:28:03,938 [websockets.py:_handle_identify()] - Websocket 140735308157904 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-06-29 12:28:03,938 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-06-29 12:28:08,017 [websockets.py:on_close()] - Websocket Closed: ID: 140735308157904 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.08
+2024-06-29 13:32:49,304 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
