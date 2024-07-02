@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Jul  1 12:14:24 2024 --------------------
+-------------------- Log Start | Tue Jul  2 14:14:30 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -207,14 +207,51 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-207-g6cd17420
-2024-07-01 08:14:24,295 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.209
-2024-07-01 08:14:24,296 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.63ms
-2024-07-01 08:14:24,296 [websockets.py:open()] - Websocket Opened: ID: 140735308099408, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-07-01 08:14:24,301 [websockets.py:_handle_identify()] - Websocket 140735308099408 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
-2024-07-01 08:14:35,262 [websockets.py:on_close()] - Websocket Closed: ID: 140735308099408 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.96
-2024-07-01 08:18:38,766 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.44ms
-2024-07-01 08:18:38,766 [websockets.py:open()] - Websocket Opened: ID: 140735318241872, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-07-01 08:18:38,773 [websockets.py:_handle_identify()] - Websocket 140735318241872 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
-2024-07-01 08:19:08,835 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735318241872
-2024-07-01 08:19:13,767 [websockets.py:on_close()] - Websocket Closed: ID: 140735318241872 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
-2024-07-01 09:22:49,710 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
+2024-07-02 10:14:30,352 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-02 10:14:30,420 [application.py:prepare()] - Upload Request Received from 192.168.0.180
+Content-Type: multipart/form-data; boundary=------------------------JOT0Qbj51UH4IcpRz4EQfK
+2024-07-02 10:14:32,131 [application.py:post()] - Processing Uploaded File: eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode
+2024-07-02 10:14:32,226 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-02 10:14:32,279 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-07-02 10:14:32,279 [klippy_apis.py:start_print()] - Requesting Job Start, filename = eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode
+2024-07-02 10:14:32,286 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.180) [_TRUSTED_USER_] 1866.46ms
+2024-07-02 10:14:32,431 [job_state.py:_status_update()] - Job Started: eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode
+2024-07-02 10:33:17,884 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.209
+2024-07-02 10:33:17,885 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 1.28ms
+2024-07-02 10:33:17,885 [websockets.py:open()] - Websocket Opened: ID: 140735280288208, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-02 10:33:17,892 [websockets.py:_handle_identify()] - Websocket 140735280288208 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-07-02 10:33:20,940 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 7.76ms
+2024-07-02 10:33:24,285 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-07-02 10:33:45,731 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 0.83ms
+2024-07-02 10:33:47,114 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-07-02 10:34:03,588 [websockets.py:on_close()] - Websocket Closed: ID: 140735280288208 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.69
+2024-07-02 10:35:28,557 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.41ms
+2024-07-02 10:35:28,557 [websockets.py:open()] - Websocket Opened: ID: 140735280786384, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-02 10:35:28,568 [websockets.py:_handle_identify()] - Websocket 140735280786384 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-07-02 10:35:28,624 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 0.81ms
+2024-07-02 10:35:32,228 [application.py:log_request()] - 404 GET /favicon.ico (192.168.0.180) [_TRUSTED_USER_] 1.29ms
+2024-07-02 10:36:17,559 [application.py:log_request()] - 101 GET /websocket?token=MM7QDAVPQWPUP4FAC6YJORVT5IYLMNGO (192.168.0.180) [_TRUSTED_USER_] 0.52ms
+2024-07-02 10:36:17,559 [websockets.py:open()] - Websocket Opened: ID: 140735307932816, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-02 10:36:17,563 [websockets.py:_handle_identify()] - Websocket 140735307932816 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-02 10:36:17,563 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-02 10:36:19,590 [application.py:log_request()] - 101 GET /websocket?token=PMKHN73DHEPPFWW5AWY3VS3WTAZ2FXJB (192.168.0.180) [_TRUSTED_USER_] 1.05ms
+2024-07-02 10:36:19,590 [websockets.py:open()] - Websocket Opened: ID: 140735280222864, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-02 10:36:19,594 [websockets.py:_handle_identify()] - Websocket 140735280222864 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-02 10:36:19,595 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-02 10:36:43,248 [job_state.py:_status_update()] - Job Started: eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode
+2024-07-02 10:36:55,074 [websockets.py:on_close()] - Websocket Closed: ID: 140735280786384 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.50
+2024-07-02 10:51:10,748 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 1.36ms
+2024-07-02 10:51:10,750 [websockets.py:open()] - Websocket Opened: ID: 140735280222544, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-02 10:51:10,768 [websockets.py:_handle_identify()] - Websocket 140735280222544 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-07-02 10:51:10,806 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.10ms
+2024-07-02 10:51:14,519 [klippy_apis.py:start_print()] - Requesting Job Start, filename = eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode
+2024-07-02 10:51:14,696 [job_state.py:_status_update()] - Job Started: eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode
+2024-07-02 10:51:27,781 [websockets.py:on_close()] - Websocket Closed: ID: 140735280222544 Close Code: None, Close Reason: None, Pong Time Elapsed: 7.03
+2024-07-02 10:51:30,564 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.58ms
+2024-07-02 10:51:30,564 [websockets.py:open()] - Websocket Opened: ID: 140735280367056, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-02 10:51:30,687 [websockets.py:_handle_identify()] - Websocket 140735280367056 Client Identified - Name: Mobileraker-ios, Version: 2.6.20-486, Type: mobile
+2024-07-02 10:51:30,743 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.22ms
+2024-07-02 10:51:53,684 [klippy_apis.py:start_print()] - Requesting Job Start, filename = eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode
+2024-07-02 10:51:59,325 [job_state.py:_status_update()] - Job Started: eva-2.2-mk8-hotend_1h5m_0.20mm_240C_ASA_.gcode
+2024-07-02 10:51:59,767 [websockets.py:on_close()] - Websocket Closed: ID: 140735280367056 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.12
