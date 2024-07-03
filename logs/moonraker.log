@@ -305,3 +305,7 @@ Pinned Commit: None
 2024-07-03 12:57:56,211 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
 2024-07-03 13:57:50,221 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
 2024-07-03 14:02:50,222 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-03 17:09:36,346 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735280677520
+2024-07-03 17:09:38,604 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735317978640
+2024-07-03 17:09:41,101 [websockets.py:on_close()] - Websocket Closed: ID: 140735280677520 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.93
+2024-07-03 17:09:43,539 [websockets.py:on_close()] - Websocket Closed: ID: 140735317978640 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.93
