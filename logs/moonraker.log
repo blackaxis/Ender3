@@ -315,3 +315,4 @@ Pinned Commit: None
 2024-07-03 19:27:38,862 [websockets.py:_handle_identify()] - Websocket 140735279262928 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-03 19:27:38,863 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-03 19:27:40,722 [websockets.py:on_close()] - Websocket Closed: ID: 140735279262928 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 1.86
+2024-07-03 20:27:50,289 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
