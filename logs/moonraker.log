@@ -274,3 +274,4 @@ Content-Type: multipart/form-data; boundary=------------------------LzMN0VAoAprB
 2024-07-05 15:32:55,479 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-05 15:34:05,597 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735308059792
 2024-07-05 15:34:10,442 [websockets.py:on_close()] - Websocket Closed: ID: 140735308059792 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2024-07-05 16:37:50,736 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
