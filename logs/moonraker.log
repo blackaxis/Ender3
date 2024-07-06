@@ -308,3 +308,7 @@ CPU Temperature: 57.3
 2024-07-06 05:52:51,548 [websockets.py:open()] - Websocket Opened: ID: 140735318280016, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
 2024-07-06 05:52:51,553 [websockets.py:_handle_identify()] - Websocket 140735318280016 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-06 05:52:51,554 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-06 06:07:50,871 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
+2024-07-06 06:24:31,550 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735318280016
+2024-07-06 06:24:36,550 [websockets.py:on_close()] - Websocket Closed: ID: 140735318280016 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2024-07-06 06:57:50,878 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
