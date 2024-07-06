@@ -397,3 +397,4 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryju2jCHxBYBLiiV
 2024-07-06 15:35:40,197 [websockets.py:_handle_identify()] - Websocket 140735280366992 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
 2024-07-06 15:36:10,292 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735280366992
 2024-07-06 15:36:11,683 [websockets.py:on_close()] - Websocket Closed: ID: 140735280366992 Close Code: None, Close Reason: None, Pong Time Elapsed: 31.50
+2024-07-06 16:37:50,978 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
