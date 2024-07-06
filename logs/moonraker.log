@@ -385,3 +385,4 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryju2jCHxBYBLiiV
 2024-07-06 10:50:55,258 [klippy_connection.py:_check_ready()] - Klippy ready
 2024-07-06 10:50:55,756 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
 2024-07-06 10:51:27,911 [websockets.py:on_close()] - Websocket Closed: ID: 140735306807248 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.39
+2024-07-06 11:52:50,930 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
