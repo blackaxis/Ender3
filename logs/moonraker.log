@@ -300,3 +300,9 @@ Content-Type: multipart/form-data; boundary=------------------------OfV7BSFXpvya
 2024-07-05 18:43:03,532 [websockets.py:on_close()] - Websocket Closed: ID: 140735307828176 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.94
 2024-07-05 18:43:03,532 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735307828176
 2024-07-05 19:42:50,765 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-05 20:50:28,621 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.209
+2024-07-05 20:50:28,622 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.56ms
+2024-07-05 20:50:28,622 [websockets.py:open()] - Websocket Opened: ID: 140735280620816, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-05 20:50:28,633 [websockets.py:_handle_identify()] - Websocket 140735280620816 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-05 20:50:33,498 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.30ms
+2024-07-05 20:51:30,594 [websockets.py:on_close()] - Websocket Closed: ID: 140735280620816 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.96
