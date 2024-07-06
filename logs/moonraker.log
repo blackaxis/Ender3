@@ -306,3 +306,16 @@ Content-Type: multipart/form-data; boundary=------------------------OfV7BSFXpvya
 2024-07-05 20:50:28,633 [websockets.py:_handle_identify()] - Websocket 140735280620816 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
 2024-07-05 20:50:33,498 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.30ms
 2024-07-05 20:51:30,594 [websockets.py:on_close()] - Websocket Closed: ID: 140735280620816 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.96
+2024-07-05 21:02:21,747 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.70ms
+2024-07-05 21:02:21,747 [websockets.py:open()] - Websocket Opened: ID: 140735280302096, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-05 21:02:21,752 [websockets.py:_handle_identify()] - Websocket 140735280302096 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-05 21:02:21,806 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.48ms
+2024-07-05 21:02:22,032 [application.py:log_request()] - 404 GET /webcam?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.06ms
+2024-07-05 21:02:38,755 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.209) [_TRUSTED_USER_] 0.80ms
+2024-07-05 21:02:41,142 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.209) [_TRUSTED_USER_] 0.75ms
+2024-07-05 21:03:34,983 [websockets.py:on_close()] - Websocket Closed: ID: 140735280302096 Close Code: None, Close Reason: None, Pong Time Elapsed: 23.17
+2024-07-05 21:30:07,154 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-05 21:30:07,257 [application.py:log_request()] - 101 GET /websocket?token=RZSNU4PXEKRG6MW74NTGWVFKABX4UCZP (192.168.0.180) [_TRUSTED_USER_] 0.36ms
+2024-07-05 21:30:07,257 [websockets.py:open()] - Websocket Opened: ID: 140735307635984, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-05 21:30:07,261 [websockets.py:_handle_identify()] - Websocket 140735307635984 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-05 21:30:07,266 [file_manager.py:get_file_list()] - Updating File List <config>...
