@@ -386,3 +386,14 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryju2jCHxBYBLiiV
 2024-07-06 10:50:55,756 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
 2024-07-06 10:51:27,911 [websockets.py:on_close()] - Websocket Closed: ID: 140735306807248 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 8.39
 2024-07-06 11:52:50,930 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-06 15:28:14,723 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.209
+2024-07-06 15:28:14,723 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.72ms
+2024-07-06 15:28:14,723 [websockets.py:open()] - Websocket Opened: ID: 140735280376080, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-06 15:28:14,732 [websockets.py:_handle_identify()] - Websocket 140735280376080 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-06 15:28:14,784 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.06ms
+2024-07-06 15:29:24,632 [websockets.py:on_close()] - Websocket Closed: ID: 140735280376080 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.90
+2024-07-06 15:35:40,188 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.46ms
+2024-07-06 15:35:40,188 [websockets.py:open()] - Websocket Opened: ID: 140735280366992, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-06 15:35:40,197 [websockets.py:_handle_identify()] - Websocket 140735280366992 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-06 15:36:10,292 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735280366992
+2024-07-06 15:36:11,683 [websockets.py:on_close()] - Websocket Closed: ID: 140735280366992 Close Code: None, Close Reason: None, Pong Time Elapsed: 31.50
