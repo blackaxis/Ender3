@@ -337,3 +337,4 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundary5yFBprP96NN6Hh
 2024-07-05 22:19:20,796 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
 2024-07-05 22:28:07,396 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735307635984
 2024-07-05 22:28:12,259 [websockets.py:on_close()] - Websocket Closed: ID: 140735307635984 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.91
+2024-07-05 23:22:50,805 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
