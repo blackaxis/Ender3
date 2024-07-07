@@ -228,3 +228,4 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-07 10:22:10,848 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.209) [_TRUSTED_USER_] 0.72ms
 2024-07-07 10:22:40,836 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735308759376
 2024-07-07 10:22:45,770 [websockets.py:on_close()] - Websocket Closed: ID: 140735308759376 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2024-07-07 11:22:51,177 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
