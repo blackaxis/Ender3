@@ -213,3 +213,12 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-07 08:10:41,434 [websockets.py:_handle_identify()] - Websocket 140735307949392 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
 2024-07-07 08:11:31,635 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735307949392
 2024-07-07 08:11:36,418 [websockets.py:on_close()] - Websocket Closed: ID: 140735307949392 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2024-07-07 09:11:52,897 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.76ms
+2024-07-07 09:11:52,898 [websockets.py:open()] - Websocket Opened: ID: 140735280572432, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-07 09:11:52,911 [websockets.py:_handle_identify()] - Websocket 140735280572432 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-07 09:11:58,051 [websockets.py:on_close()] - Websocket Closed: ID: 140735280572432 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.15
+2024-07-07 09:32:56,032 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.45ms
+2024-07-07 09:32:56,032 [websockets.py:open()] - Websocket Opened: ID: 140735318295632, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-07 09:32:56,040 [websockets.py:_handle_identify()] - Websocket 140735318295632 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-07 09:33:06,023 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.209) [_TRUSTED_USER_] 0.74ms
+2024-07-07 09:33:12,062 [websockets.py:on_close()] - Websocket Closed: ID: 140735318295632 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.02
