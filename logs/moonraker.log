@@ -215,3 +215,17 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-08 05:27:37,802 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735279207120
 2024-07-08 05:27:42,793 [websockets.py:on_close()] - Websocket Closed: ID: 140735279207120 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.98
 2024-07-08 06:27:51,343 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
+2024-07-08 16:37:29,686 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-08 16:37:29,994 [application.py:prepare()] - Upload Request Received from 192.168.0.180
+Content-Type: multipart/form-data; boundary=------------------------LXvKeUcarWD7cIY82I2rq2
+2024-07-08 16:37:30,929 [application.py:post()] - Processing Uploaded File: BTT_Pi_2_Bracket_+3mm_28m_0.20mm_240C_ASA_.gcode
+2024-07-08 16:37:30,994 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-08 16:37:31,037 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "BTT_Pi_2_Bracket_+3mm_28m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-07-08 16:37:31,037 [klippy_apis.py:start_print()] - Requesting Job Start, filename = BTT_Pi_2_Bracket_+3mm_28m_0.20mm_240C_ASA_.gcode
+2024-07-08 16:37:31,042 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.180) [_TRUSTED_USER_] 1048.28ms
+2024-07-08 16:37:31,145 [job_state.py:_status_update()] - Job Started: BTT_Pi_2_Bracket_+3mm_28m_0.20mm_240C_ASA_.gcode
+2024-07-08 16:40:30,504 [application.py:log_request()] - 101 GET /websocket?token=QGPK5RQT6FQDYHRVY7ZECEQOHJF33G6O (192.168.0.180) [_TRUSTED_USER_] 0.36ms
+2024-07-08 16:40:30,504 [websockets.py:open()] - Websocket Opened: ID: 140735280678032, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-08 16:40:30,512 [websockets.py:_handle_identify()] - Websocket 140735280678032 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-08 16:40:30,512 [file_manager.py:get_file_list()] - Updating File List <config>...
