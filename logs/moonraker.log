@@ -280,3 +280,4 @@ System Time: 1720555047.506082, Usage: 0.37%, Memory: 62240 kB
 System Time: 1720555048.506685, Usage: 0.42%, Memory: 62240 kB
 CPU Temperature: 60.05
 2024-07-09 15:57:28,530 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-07-09 16:57:51,657 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
