@@ -241,3 +241,6 @@ Content-Type: multipart/form-data; boundary=------------------------LXvKeUcarWD7
 2024-07-08 19:26:07,533 [websockets.py:open()] - Websocket Opened: ID: 140735318125392, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
 2024-07-08 19:26:07,539 [websockets.py:_handle_identify()] - Websocket 140735318125392 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-08 19:26:07,540 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-08 20:15:07,634 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735318125392
+2024-07-08 20:15:08,305 [websockets.py:on_close()] - Websocket Closed: ID: 140735318125392 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.01
+2024-07-08 20:27:51,472 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
