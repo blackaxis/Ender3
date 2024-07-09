@@ -235,3 +235,48 @@ Content-Type: multipart/form-data; boundary=------------------------ZS16rEq0kt0u
 2024-07-09 10:04:21,482 [websockets.py:_handle_identify()] - Websocket 140735280171728 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-09 10:04:21,482 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-09 11:07:51,607 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-09 15:12:04,762 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-09 15:12:05,031 [application.py:prepare()] - Upload Request Received from 192.168.0.180
+Content-Type: multipart/form-data; boundary=------------------------wNefEera4sMxSd2VZFcLm0
+2024-07-09 15:12:08,558 [application.py:post()] - Processing Uploaded File: super8pro_2h42m_0.20mm_240C_ASA_.gcode
+2024-07-09 15:12:08,669 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-09 15:12:08,731 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "super8pro_2h42m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-07-09 15:12:08,732 [klippy_apis.py:start_print()] - Requesting Job Start, filename = super8pro_2h42m_0.20mm_240C_ASA_.gcode
+2024-07-09 15:12:08,742 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.180) [_TRUSTED_USER_] 3711.46ms
+2024-07-09 15:12:08,876 [job_state.py:_status_update()] - Job Started: super8pro_2h42m_0.20mm_240C_ASA_.gcode
+2024-07-09 15:57:28,527 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-07-09 15:57:28,528 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1720555019.480503, Usage: 2.93%, Memory: 62240 kB
+System Time: 1720555020.482022, Usage: 0.67%, Memory: 62240 kB
+System Time: 1720555021.481583, Usage: 1.05%, Memory: 62240 kB
+System Time: 1720555022.482700, Usage: 0.44%, Memory: 62240 kB
+System Time: 1720555023.483461, Usage: 0.4%, Memory: 62240 kB
+System Time: 1720555024.484426, Usage: 0.39%, Memory: 62240 kB
+System Time: 1720555025.485380, Usage: 0.53%, Memory: 62240 kB
+System Time: 1720555026.485961, Usage: 0.4%, Memory: 62240 kB
+System Time: 1720555027.487260, Usage: 0.41%, Memory: 62240 kB
+System Time: 1720555028.487635, Usage: 0.51%, Memory: 62240 kB
+System Time: 1720555029.488330, Usage: 2.03%, Memory: 62240 kB
+System Time: 1720555030.489348, Usage: 0.54%, Memory: 62240 kB
+System Time: 1720555031.490709, Usage: 2.52%, Memory: 62240 kB
+System Time: 1720555032.491910, Usage: 0.69%, Memory: 62240 kB
+System Time: 1720555033.491067, Usage: 1.1%, Memory: 62240 kB
+System Time: 1720555034.492049, Usage: 0.38%, Memory: 62240 kB
+System Time: 1720555035.492671, Usage: 0.5%, Memory: 62240 kB
+System Time: 1720555036.494401, Usage: 0.34%, Memory: 62240 kB
+System Time: 1720555037.494934, Usage: 0.35%, Memory: 62240 kB
+System Time: 1720555038.495506, Usage: 0.37%, Memory: 62240 kB
+System Time: 1720555039.497137, Usage: 0.38%, Memory: 62240 kB
+System Time: 1720555040.498192, Usage: 0.52%, Memory: 62240 kB
+System Time: 1720555041.499129, Usage: 2.15%, Memory: 62240 kB
+System Time: 1720555042.501076, Usage: 0.56%, Memory: 62240 kB
+System Time: 1720555043.501919, Usage: 2.64%, Memory: 62240 kB
+System Time: 1720555044.504060, Usage: 0.56%, Memory: 62240 kB
+System Time: 1720555045.504192, Usage: 1.36%, Memory: 62240 kB
+System Time: 1720555046.505308, Usage: 0.38%, Memory: 62240 kB
+System Time: 1720555047.506082, Usage: 0.37%, Memory: 62240 kB
+System Time: 1720555048.506685, Usage: 0.42%, Memory: 62240 kB
+CPU Temperature: 60.05
+2024-07-09 15:57:28,530 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
