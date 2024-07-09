@@ -249,3 +249,11 @@ Content-Type: multipart/form-data; boundary=------------------------LXvKeUcarWD7
 2024-07-08 21:30:07,929 [websockets.py:open()] - Websocket Opened: ID: 140735307696464, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
 2024-07-08 21:30:07,933 [websockets.py:_handle_identify()] - Websocket 140735307696464 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-08 21:30:07,933 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-08 22:19:37,973 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735307696464
+2024-07-08 22:19:42,931 [websockets.py:on_close()] - Websocket Closed: ID: 140735307696464 Close Code: None, Close Reason: None, Pong Time Elapsed: 45.00
+2024-07-08 22:32:51,488 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-08 22:44:39,547 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.119
+2024-07-08 22:45:59,603 [machine.py:_find_public_ip()] - Failed to detect local IP address
+2024-07-08 22:45:59,603 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
+2024-07-08 22:46:09,614 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.119
+2024-07-08 22:46:09,614 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.119
