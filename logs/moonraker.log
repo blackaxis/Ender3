@@ -208,3 +208,5 @@ Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
 2024-07-10 00:32:51,732 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-10 03:52:00,327 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735280447056
+2024-07-10 03:52:05,243 [websockets.py:on_close()] - Websocket Closed: ID: 140735280447056 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.90
