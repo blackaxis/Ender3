@@ -281,3 +281,9 @@ System Time: 1720555048.506685, Usage: 0.42%, Memory: 62240 kB
 CPU Temperature: 60.05
 2024-07-09 15:57:28,530 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
 2024-07-09 16:57:51,657 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-09 21:24:13,336 [websockets.py:on_close()] - Websocket Closed: ID: 140735280171728 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.39
+2024-07-09 21:24:20,019 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-09 21:24:20,240 [application.py:log_request()] - 101 GET /websocket?token=RTK4TD6ULEGOQYHAWXOCPZJEP6RIS43U (192.168.0.180) [_TRUSTED_USER_] 0.40ms
+2024-07-09 21:24:20,241 [websockets.py:open()] - Websocket Opened: ID: 140735280447056, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-09 21:24:20,247 [websockets.py:_handle_identify()] - Websocket 140735280447056 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-09 21:24:20,247 [file_manager.py:get_file_list()] - Updating File List <config>...
