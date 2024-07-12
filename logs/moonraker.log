@@ -227,3 +227,17 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-11 13:32:45,571 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-11 13:39:00,799 [websockets.py:on_close()] - Websocket Closed: ID: 140735308766800 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.13
 2024-07-11 14:32:52,146 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-11 22:46:54,768 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.209
+2024-07-11 22:46:54,768 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.66ms
+2024-07-11 22:46:54,768 [websockets.py:open()] - Websocket Opened: ID: 140735308572176, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-11 22:46:54,776 [websockets.py:_handle_identify()] - Websocket 140735308572176 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-11 22:46:54,825 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.03ms
+2024-07-11 22:47:05,324 [application.py:log_request()] - 404 GET /webcam/?action=stream (192.168.0.209) [_TRUSTED_USER_] 1.24ms
+2024-07-11 22:48:43,544 [websockets.py:on_close()] - Websocket Closed: ID: 140735308572176 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.73
+2024-07-11 22:58:13,500 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.46ms
+2024-07-11 22:58:13,500 [websockets.py:open()] - Websocket Opened: ID: 140735307670992, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-11 22:58:13,510 [websockets.py:_handle_identify()] - Websocket 140735307670992 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-11 22:58:43,667 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735307670992
+2024-07-11 22:58:48,502 [websockets.py:on_close()] - Websocket Closed: ID: 140735307670992 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2024-07-11 22:59:13,681 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.44ms
+2024-07-11 22:59:13,681 [websockets.py:open()] - Websocket Opened: ID: 140735280140432, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
