@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Jul 12 04:07:52 2024 --------------------
+-------------------- Log Start | Sat Jul 13 22:16:38 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -207,4 +207,13 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
-2024-07-12 00:07:52,240 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
+2024-07-13 18:16:38,962 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-13 18:16:39,183 [application.py:prepare()] - Upload Request Received from 192.168.0.180
+Content-Type: multipart/form-data; boundary=------------------------8Rv20GiOX5xOeodrbtQqVC
+2024-07-13 18:16:39,689 [application.py:post()] - Processing Uploaded File: y_endstop_21m_0.20mm_240C_ASA_.gcode
+2024-07-13 18:16:39,775 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-13 18:16:39,827 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "y_endstop_21m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-07-13 18:16:39,827 [klippy_apis.py:start_print()] - Requesting Job Start, filename = y_endstop_21m_0.20mm_240C_ASA_.gcode
+2024-07-13 18:16:39,836 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.180) [_TRUSTED_USER_] 653.70ms
+2024-07-13 18:16:39,994 [job_state.py:_status_update()] - Job Started: y_endstop_21m_0.20mm_240C_ASA_.gcode
