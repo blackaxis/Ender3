@@ -209,3 +209,13 @@ Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
 2024-07-14 00:42:52,684 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
 2024-07-14 02:00:00,015 [websockets.py:on_close()] - Websocket Closed: ID: 140735279256208 Close Code: None, Close Reason: None, Pong Time Elapsed: 9.90
+2024-07-14 02:08:53,693 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-14 02:08:53,878 [application.py:log_request()] - 101 GET /websocket?token=EKQFTGLWKDMKBWN27SJXGMVVRG5RZSNK (192.168.0.180) [_TRUSTED_USER_] 1.26ms
+2024-07-14 02:08:53,879 [websockets.py:open()] - Websocket Opened: ID: 140735279209552, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-14 02:08:53,884 [websockets.py:_handle_identify()] - Websocket 140735279209552 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-14 02:08:53,884 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-14 02:10:37,007 [application.py:log_request()] - 101 GET /websocket?token=LXCN4PWBCUFD6MYG5HY4T3CGIAAOPDXS (192.168.0.180) [_TRUSTED_USER_] 0.53ms
+2024-07-14 02:10:37,008 [websockets.py:open()] - Websocket Opened: ID: 140735307891728, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-07-14 02:10:37,013 [websockets.py:_handle_identify()] - Websocket 140735307891728 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-14 02:10:37,013 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-14 02:19:52,504 [websockets.py:on_close()] - Websocket Closed: ID: 140735279209552 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.61
