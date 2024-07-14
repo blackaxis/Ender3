@@ -217,3 +217,4 @@ Content-Type: multipart/form-data; boundary=------------------------8Rv20GiOX5xO
 2024-07-13 18:16:39,827 [klippy_apis.py:start_print()] - Requesting Job Start, filename = y_endstop_21m_0.20mm_240C_ASA_.gcode
 2024-07-13 18:16:39,836 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.180) [_TRUSTED_USER_] 653.70ms
 2024-07-13 18:16:39,994 [job_state.py:_status_update()] - Job Started: y_endstop_21m_0.20mm_240C_ASA_.gcode
+2024-07-13 19:17:52,634 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
