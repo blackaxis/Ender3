@@ -228,3 +228,15 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-14 06:54:59,073 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-14 06:55:29,099 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735308753424
 2024-07-14 06:55:34,069 [websockets.py:on_close()] - Websocket Closed: ID: 140735308753424 Close Code: None, Close Reason: None, Pong Time Elapsed: 35.00
+2024-07-14 07:15:05,428 [application.py:log_request()] - 101 GET /websocket?token=6P5NTL6UWKUYQVZNCZAMNAPETAAXGO32 (192.168.0.180) [_TRUSTED_USER_] 0.49ms
+2024-07-14 07:15:05,428 [websockets.py:open()] - Websocket Opened: ID: 140735308721104, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-07-14 07:15:05,436 [websockets.py:_handle_identify()] - Websocket 140735308721104 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-14 07:15:05,436 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-14 07:16:25,572 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735308721104
+2024-07-14 07:16:30,431 [websockets.py:on_close()] - Websocket Closed: ID: 140735308721104 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
+2024-07-14 07:42:06,323 [application.py:log_request()] - 101 GET /websocket?token=GCHQU6NZHNE3DHI4ZCOEE2EKL43DXGAG (192.168.0.180) [_TRUSTED_USER_] 0.63ms
+2024-07-14 07:42:06,323 [websockets.py:open()] - Websocket Opened: ID: 140735280458896, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.1.2 Safari/537.36, Host Name: 3dprinters.local
+2024-07-14 07:42:06,332 [websockets.py:_handle_identify()] - Websocket 140735280458896 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-14 07:42:06,333 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-14 07:50:16,511 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735280458896
+2024-07-14 07:50:21,324 [websockets.py:on_close()] - Websocket Closed: ID: 140735280458896 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.99
