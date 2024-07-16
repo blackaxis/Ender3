@@ -234,3 +234,9 @@ Content-Type: multipart/form-data; boundary=------------------------oB52NlxO2tfL
 2024-07-15 19:00:08,347 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Two Trees 20W mount_Part 1__Main_2024-07-15 17-51-19_43m_0.20mm_240C_ASA_.gcode
 2024-07-15 19:00:08,352 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.180) [_TRUSTED_USER_] 1126.24ms
 2024-07-15 19:00:08,528 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-15 17-51-19_43m_0.20mm_240C_ASA_.gcode
+2024-07-15 20:02:53,073 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-15 20:54:59,482 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-15 20:54:59,839 [application.py:log_request()] - 101 GET /websocket?token=46PSWNQZ5YZYOPIUVOIA3YDW65DA2QRY (192.168.0.180) [_TRUSTED_USER_] 0.79ms
+2024-07-15 20:54:59,840 [websockets.py:open()] - Websocket Opened: ID: 140735308250704, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Host Name: 3dprinters.local
+2024-07-15 20:54:59,850 [websockets.py:_handle_identify()] - Websocket 140735308250704 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-15 20:54:59,850 [file_manager.py:get_file_list()] - Updating File List <config>...
