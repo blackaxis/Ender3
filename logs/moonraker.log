@@ -209,3 +209,12 @@ Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
 2024-07-16 00:28:00,710 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
 2024-07-16 00:46:06,811 [websockets.py:on_close()] - Websocket Closed: ID: 140735280514960 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.03
+2024-07-16 01:31:59,358 [application.py:prepare()] - Upload Request Received from 192.168.0.180
+Content-Type: multipart/form-data; boundary=------------------------a0AtPmUsuqDDc29OxvVrAz
+2024-07-16 01:32:00,559 [application.py:post()] - Processing Uploaded File: Two Trees 20W mount_Part 1__Main_2024-07-15 17-51-19_43m_0.20mm_240C_ASA_.gcode
+2024-07-16 01:32:00,700 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-16 01:32:00,753 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Two Trees 20W mount_Part 1__Main_2024-07-15 17-51-19_43m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-07-16 01:32:00,753 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Two Trees 20W mount_Part 1__Main_2024-07-15 17-51-19_43m_0.20mm_240C_ASA_.gcode
+2024-07-16 01:32:00,765 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.180) [_TRUSTED_USER_] 1408.16ms
+2024-07-16 01:32:00,840 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-15 17-51-19_43m_0.20mm_240C_ASA_.gcode
