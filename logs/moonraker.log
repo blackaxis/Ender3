@@ -240,3 +240,11 @@ Content-Type: multipart/form-data; boundary=------------------------oB52NlxO2tfL
 2024-07-15 20:54:59,840 [websockets.py:open()] - Websocket Opened: ID: 140735308250704, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36, Host Name: 3dprinters.local
 2024-07-15 20:54:59,850 [websockets.py:_handle_identify()] - Websocket 140735308250704 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-15 20:54:59,850 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-15 21:33:05,085 [websockets.py:on_close()] - Websocket Closed: ID: 140735308250704 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.24
+2024-07-15 21:52:15,344 [application.py:log_request()] - 101 GET /websocket?token=4TQ3QGQG5EIXWU5RTWY2BLB7FZQKL6C4 (192.168.0.180) [_TRUSTED_USER_] 0.35ms
+2024-07-15 21:52:15,344 [websockets.py:open()] - Websocket Opened: ID: 140735318114768, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-15 21:52:15,350 [websockets.py:_handle_identify()] - Websocket 140735318114768 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-15 21:52:15,350 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-15 21:54:34,053 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-07-15 21:57:08,018 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-07-15 21:59:01,029 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
