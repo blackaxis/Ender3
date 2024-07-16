@@ -230,3 +230,7 @@ Content-Type: multipart/form-data; boundary=------------------------Z2wuTKYhyQq6
 2024-07-16 09:17:49,007 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.180) [_TRUSTED_USER_] 1569.68ms
 2024-07-16 09:17:49,049 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-16 09-17-26_1h3m_0.14mm_240C_ASA_.gcode
 2024-07-16 09:58:27,605 [websockets.py:on_close()] - Websocket Closed: ID: 140735318114768 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.25
+2024-07-16 10:01:36,642 [application.py:log_request()] - 101 GET /websocket?token=GUPZXQFZVFEVUD3H6MT3GITHPTVJQBVY (192.168.0.180) [_TRUSTED_USER_] 0.46ms
+2024-07-16 10:01:36,643 [websockets.py:open()] - Websocket Opened: ID: 140735308580880, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-16 10:01:36,647 [websockets.py:_handle_identify()] - Websocket 140735308580880 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-16 10:01:36,647 [file_manager.py:get_file_list()] - Updating File List <config>...
