@@ -242,3 +242,4 @@ Content-Type: multipart/form-data; boundary=------------------------Z2wuTKYhyQq6
 2024-07-16 16:19:00,270 [websockets.py:_handle_identify()] - Websocket 140735307947728 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-16 16:19:00,270 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-16 17:22:53,281 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-07-16 19:33:25,880 [websockets.py:on_close()] - Websocket Closed: ID: 140735307947728 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.56
