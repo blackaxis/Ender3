@@ -251,3 +251,14 @@ CPU Temperature: 62.25
 2024-07-22 19:58:18,466 [websockets.py:open()] - Websocket Opened: ID: 140735280583184, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
 2024-07-22 19:58:18,473 [websockets.py:_handle_identify()] - Websocket 140735280583184 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
 2024-07-22 19:58:54,713 [websockets.py:on_close()] - Websocket Closed: ID: 140735280583184 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.24
+2024-07-22 20:42:59,137 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.63ms
+2024-07-22 20:42:59,137 [websockets.py:open()] - Websocket Opened: ID: 140735280593296, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 20:42:59,143 [websockets.py:_handle_identify()] - Websocket 140735280593296 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-22 20:46:02,695 [websockets.py:on_close()] - Websocket Closed: ID: 140735280593296 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.45
+2024-07-22 20:49:28,049 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.66ms
+2024-07-22 20:49:28,049 [websockets.py:open()] - Websocket Opened: ID: 140735308764560, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 20:49:28,056 [websockets.py:_handle_identify()] - Websocket 140735308764560 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-22 20:55:50,024 [websockets.py:on_close()] - Websocket Closed: ID: 140735308764560 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.86
+2024-07-22 20:58:59,556 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.45ms
+2024-07-22 20:58:59,556 [websockets.py:open()] - Websocket Opened: ID: 140735279316624, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 20:58:59,561 [websockets.py:_handle_identify()] - Websocket 140735279316624 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
