@@ -1,4 +1,4 @@
--------------------- Log Start | Mon Jul 22 18:28:27 2024 --------------------
+-------------------- Log Start | Wed Jul 24 01:53:29 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -207,65 +207,8 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
-2024-07-22 14:28:27,893 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
-2024-07-22 14:28:27,894 [proc_stats.py:_handle_shutdown()] - 
-Moonraker System Usage Statistics:
-System Time: 1721672877.991907, Usage: 0.31%, Memory: 64640 kB
-System Time: 1721672878.992937, Usage: 0.34%, Memory: 64640 kB
-System Time: 1721672879.993610, Usage: 2.09%, Memory: 64640 kB
-System Time: 1721672880.994299, Usage: 2.21%, Memory: 64640 kB
-System Time: 1721672881.994404, Usage: 0.51%, Memory: 64640 kB
-System Time: 1721672882.994177, Usage: 0.75%, Memory: 64640 kB
-System Time: 1721672883.995393, Usage: 0.26%, Memory: 64640 kB
-System Time: 1721672884.995811, Usage: 0.26%, Memory: 64640 kB
-System Time: 1721672885.996046, Usage: 0.27%, Memory: 64640 kB
-System Time: 1721672886.996790, Usage: 0.37%, Memory: 64640 kB
-System Time: 1721672887.997147, Usage: 0.28%, Memory: 64640 kB
-System Time: 1721672888.997472, Usage: 0.25%, Memory: 64640 kB
-System Time: 1721672889.998930, Usage: 0.31%, Memory: 64640 kB
-System Time: 1721672891.004128, Usage: 0.34%, Memory: 64640 kB
-System Time: 1721672892.001367, Usage: 2.06%, Memory: 64640 kB
-System Time: 1721672893.001281, Usage: 2.15%, Memory: 64640 kB
-System Time: 1721672894.001753, Usage: 0.38%, Memory: 64640 kB
-System Time: 1721672895.002357, Usage: 0.76%, Memory: 64640 kB
-System Time: 1721672896.002560, Usage: 0.25%, Memory: 64640 kB
-System Time: 1721672897.002958, Usage: 0.37%, Memory: 64640 kB
-System Time: 1721672898.004194, Usage: 0.27%, Memory: 64640 kB
-System Time: 1721672899.004449, Usage: 0.26%, Memory: 64640 kB
-System Time: 1721672900.004874, Usage: 0.27%, Memory: 64640 kB
-System Time: 1721672901.004905, Usage: 0.26%, Memory: 64640 kB
-System Time: 1721672902.006242, Usage: 0.34%, Memory: 64640 kB
-System Time: 1721672903.007224, Usage: 0.69%, Memory: 64640 kB
-System Time: 1721672904.008500, Usage: 1.58%, Memory: 64640 kB
-System Time: 1721672905.008711, Usage: 2.68%, Memory: 64640 kB
-System Time: 1721672906.009929, Usage: 0.4%, Memory: 64640 kB
-System Time: 1721672907.011424, Usage: 0.98%, Memory: 64640 kB
-CPU Temperature: 62.25
-2024-07-22 14:28:27,896 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
-2024-07-22 19:57:16,418 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.209
-2024-07-22 19:57:16,418 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.62ms
-2024-07-22 19:57:16,418 [websockets.py:open()] - Websocket Opened: ID: 140735308664336, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-07-22 19:57:16,423 [websockets.py:_handle_identify()] - Websocket 140735308664336 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
-2024-07-22 19:57:35,000 [websockets.py:on_close()] - Websocket Closed: ID: 140735308664336 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.57
-2024-07-22 19:58:18,466 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.42ms
-2024-07-22 19:58:18,466 [websockets.py:open()] - Websocket Opened: ID: 140735280583184, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-07-22 19:58:18,473 [websockets.py:_handle_identify()] - Websocket 140735280583184 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
-2024-07-22 19:58:54,713 [websockets.py:on_close()] - Websocket Closed: ID: 140735280583184 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.24
-2024-07-22 20:42:59,137 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.63ms
-2024-07-22 20:42:59,137 [websockets.py:open()] - Websocket Opened: ID: 140735280593296, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-07-22 20:42:59,143 [websockets.py:_handle_identify()] - Websocket 140735280593296 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
-2024-07-22 20:46:02,695 [websockets.py:on_close()] - Websocket Closed: ID: 140735280593296 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.45
-2024-07-22 20:49:28,049 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.66ms
-2024-07-22 20:49:28,049 [websockets.py:open()] - Websocket Opened: ID: 140735308764560, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-07-22 20:49:28,056 [websockets.py:_handle_identify()] - Websocket 140735308764560 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
-2024-07-22 20:55:50,024 [websockets.py:on_close()] - Websocket Closed: ID: 140735308764560 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.86
-2024-07-22 20:58:59,556 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.45ms
-2024-07-22 20:58:59,556 [websockets.py:open()] - Websocket Opened: ID: 140735279316624, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-07-22 20:58:59,561 [websockets.py:_handle_identify()] - Websocket 140735279316624 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
-2024-07-22 21:01:51,895 [websockets.py:on_close()] - Websocket Closed: ID: 140735279316624 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.23
-2024-07-22 21:02:48,015 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.44ms
-2024-07-22 21:02:48,015 [websockets.py:open()] - Websocket Opened: ID: 140735308600784, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
-2024-07-22 21:02:48,022 [websockets.py:_handle_identify()] - Websocket 140735308600784 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
-2024-07-22 21:05:28,021 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735308600784
-2024-07-22 21:05:33,017 [websockets.py:on_close()] - Websocket Closed: ID: 140735308600784 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.92
-2024-07-22 22:02:54,822 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
+2024-07-23 21:53:29,127 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-07-23 21:53:29,225 [application.py:log_request()] - 101 GET /websocket?token=S5R65GXTASXLJLAKHRKQZR3XENJR5KXN (192.168.0.180) [_TRUSTED_USER_] 0.48ms
+2024-07-23 21:53:29,225 [websockets.py:open()] - Websocket Opened: ID: 140735308143312, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.2.0 Safari/537.36, Host Name: 3dprinters.local
+2024-07-23 21:53:29,231 [websockets.py:_handle_identify()] - Websocket 140735308143312 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-23 21:53:29,231 [file_manager.py:get_file_list()] - Updating File List <config>...

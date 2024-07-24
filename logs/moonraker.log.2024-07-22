@@ -1,0 +1,271 @@
+-------------------- Log Start | Mon Jul 22 18:28:27 2024 --------------------
+platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
+data_path: /home/blackaxis/Ender3_data
+is_default_data_path: False
+config_file: /home/blackaxis/Ender3_data/config/moonraker.conf
+startup_warnings: []
+verbose: False
+debug: False
+asyncio_debug: False
+is_backup_config: False
+is_python_package: False
+instance_uuid: 5f9d5402db9a40248e3d1a5c01ed37ed
+unix_socket_path: /home/blackaxis/Ender3_data/comms/moonraker.sock
+software_version: v0.8.0-379-g346a3d7
+git_branch: master
+git_remote: origin
+git_repo_url: https://github.com/Arksine/moonraker.git
+modified_files: []
+unofficial_components: []
+log_file: /home/blackaxis/Ender3_data/logs/moonraker.log
+python_version: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+launch_args: /home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/moonraker.py -d /home/blackaxis/Ender3_data
+msgspec_enabled: False
+uvloop_enabled: False
+
+#################### Moonraker Configuration ####################
+
+[server]
+host = 0.0.0.0
+port = 7126
+klippy_uds_address = /home/blackaxis/Ender3_data/comms/klippy.sock
+
+[authorization]
+trusted_clients = 
+	10.0.0.0/8
+	127.0.0.0/8
+	169.254.0.0/16
+	172.16.0.0/12
+	192.168.0.0/16
+	FE80::/10
+	::1/128
+cors_domains = 
+	*.lan
+	*.local
+	*://localhost
+	*://localhost:*
+	*://my.mainsail.xyz
+	*://app.fluidd.xyz
+
+[octoprint_compat]
+
+[history]
+
+[update_manager]
+channel = dev
+refresh_interval = 168
+
+[update_manager mainsail-config]
+type = git_repo
+primary_branch = master
+path = ~/mainsail-config
+origin = https://github.com/mainsail-crew/mainsail-config.git
+managed_services = klipper
+
+[update_manager canboot]
+type = git_repo
+origin = https://github.com/Arksine/Katapult.git
+path = ~/Katapult
+is_system_service = False
+
+[update_manager moonraker-telegram-bot]
+type = git_repo
+path = ~/moonraker-telegram-bot
+origin = https://github.com/nlef/moonraker-telegram-bot.git
+env = ~/moonraker-telegram-bot-env/bin/python
+requirements = scripts/requirements.txt
+install_script = scripts/install.sh
+
+[update_manager fluidd-config]
+type = git_repo
+primary_branch = master
+path = ~/fluidd-config
+origin = https://github.com/fluidd-core/fluidd-config.git
+managed_services = klipper
+
+[update_manager fluidd]
+type = web
+channel = stable
+repo = fluidd-core/fluidd
+path = ~/fluidd
+
+[update_manager mobileraker]
+type = git_repo
+path = /home/blackaxis/mobileraker_companion
+origin = https://github.com/Clon1998/mobileraker_companion.git
+primary_branch = main
+managed_services = mobileraker
+env = /home/blackaxis/mobileraker-env/bin/python
+requirements = scripts/mobileraker-requirements.txt
+install_script = scripts/install.sh
+
+#################################################################
+All Configuration Files:
+/home/blackaxis/Ender3_data/config/moonraker.conf
+#################################################################
+Loading Sqlite database provider. Sqlite Version: 3.40.1
+Unsafe Shutdown Count: 58
+
+System Info:
+
+***python***
+  version: (3, 11, 2, 'final', 0)
+  version_string: 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]
+
+***cpu_info***
+  cpu_count: 4
+  bits: 64bit
+  processor: aarch64
+  cpu_desc: 
+  serial_number: dddf145f114e1876
+  hardware_desc: 
+  model: Raspberry Pi 5 Model B Rev 1.0
+  total_memory: 8245712
+  memory_units: kB
+
+***sd_info***
+  manufacturer_id: 6f
+  manufacturer: Unknown
+  oem_id: 0303
+  product_name: SDABC
+  product_revision: 1.0
+  serial_number: aa0001c7
+  manufacturer_date: 5/2023
+  capacity: 58.3 GiB
+  total_bytes: 62550179840
+
+***distribution***
+  name: Debian GNU/Linux 12 (bookworm)
+  id: debian
+  version: 12
+  version_parts: {'major': '12', 'minor': '', 'build_number': ''}
+  like: 
+  codename: bookworm
+  release_info: {}
+  kernel_version: 6.6.28+rpt-rpi-2712
+
+***virtualization***
+  virt_type: none
+  virt_identifier: none
+
+***network***
+
+***canbus***
+
+***Allowed Services***
+  klipper_mcu
+  webcamd
+  MoonCord
+  KlipperScreen
+  moonraker-telegram-bot
+  moonraker-obico
+  sonar
+  crowsnest
+  octoeverywhere
+  ratos-configurator
+  mobileraker
+Module libcamera unavailble, import failed
+
+Systemd unit moonraker-Ender3.service:
+unit_name: moonraker-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['system.slice', 'sysinit.target', '-.mount', 'network-online.target']
+**After=['network-online.target', 'basic.target', 'system.slice', 'sysinit.target', '-.mount', 'systemd-journald.socket']
+**SupplementaryGroups=['moonraker-admin']
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/moonraker.env
+**ExecStart=/home/blackaxis/moonraker-env/bin/python $MOONRAKER_ARGS
+**WorkingDirectory=/home/blackaxis/moonraker
+**FragmentPath=/etc/systemd/system/moonraker-Ender3.service
+**Description=API Server for Klipper SV1 Ender3
+**User=blackaxis
+
+Systemd unit klipper-Ender3.service:
+unit_name: klipper-Ender3.service
+is_default: False
+manager: systemd
+Properties:
+**Requires=['sysinit.target', 'system.slice', '-.mount']
+**After=['basic.target', 'system.slice', 'sysinit.target', 'network-online.target', 'systemd-journald.socket', '-.mount']
+**SupplementaryGroups=[]
+**EnvironmentFiles=/home/blackaxis/Ender3_data/systemd/klipper.env
+**ExecStart=/home/blackaxis/klippy-env/bin/python $KLIPPER_ARGS
+**WorkingDirectory=/home/blackaxis/klipper
+**FragmentPath=/etc/systemd/system/klipper-Ender3.service
+**Description=Klipper 3D Printer Firmware SV1
+**User=blackaxis
+Multiple instances of Moonraker have the update manager enabled.
+moonraker-Ender5Plus:2c83ed81882d4673aaad84dbff75b7c8:874
+moonraker-Spare:cf1bd642409e4c7eb69cbf6a6650e64d:875
+moonraker-Ender3:5f9d5402db9a40248e3d1a5c01ed37ed:873
+Git Repo moonraker: No warnings detected
+Git Repo klipper: No warnings detected
+Git Repo mainsail-config: No warnings detected
+Git Repo canboot: No warnings detected
+Git Repo moonraker-telegram-bot: No warnings detected
+Git Repo fluidd-config: No warnings detected
+Git Repo mobileraker: No warnings detected
+Klipper Version: v0.12.0-258-g9318901f
+2024-07-22 14:28:27,893 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-07-22 14:28:27,894 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1721672877.991907, Usage: 0.31%, Memory: 64640 kB
+System Time: 1721672878.992937, Usage: 0.34%, Memory: 64640 kB
+System Time: 1721672879.993610, Usage: 2.09%, Memory: 64640 kB
+System Time: 1721672880.994299, Usage: 2.21%, Memory: 64640 kB
+System Time: 1721672881.994404, Usage: 0.51%, Memory: 64640 kB
+System Time: 1721672882.994177, Usage: 0.75%, Memory: 64640 kB
+System Time: 1721672883.995393, Usage: 0.26%, Memory: 64640 kB
+System Time: 1721672884.995811, Usage: 0.26%, Memory: 64640 kB
+System Time: 1721672885.996046, Usage: 0.27%, Memory: 64640 kB
+System Time: 1721672886.996790, Usage: 0.37%, Memory: 64640 kB
+System Time: 1721672887.997147, Usage: 0.28%, Memory: 64640 kB
+System Time: 1721672888.997472, Usage: 0.25%, Memory: 64640 kB
+System Time: 1721672889.998930, Usage: 0.31%, Memory: 64640 kB
+System Time: 1721672891.004128, Usage: 0.34%, Memory: 64640 kB
+System Time: 1721672892.001367, Usage: 2.06%, Memory: 64640 kB
+System Time: 1721672893.001281, Usage: 2.15%, Memory: 64640 kB
+System Time: 1721672894.001753, Usage: 0.38%, Memory: 64640 kB
+System Time: 1721672895.002357, Usage: 0.76%, Memory: 64640 kB
+System Time: 1721672896.002560, Usage: 0.25%, Memory: 64640 kB
+System Time: 1721672897.002958, Usage: 0.37%, Memory: 64640 kB
+System Time: 1721672898.004194, Usage: 0.27%, Memory: 64640 kB
+System Time: 1721672899.004449, Usage: 0.26%, Memory: 64640 kB
+System Time: 1721672900.004874, Usage: 0.27%, Memory: 64640 kB
+System Time: 1721672901.004905, Usage: 0.26%, Memory: 64640 kB
+System Time: 1721672902.006242, Usage: 0.34%, Memory: 64640 kB
+System Time: 1721672903.007224, Usage: 0.69%, Memory: 64640 kB
+System Time: 1721672904.008500, Usage: 1.58%, Memory: 64640 kB
+System Time: 1721672905.008711, Usage: 2.68%, Memory: 64640 kB
+System Time: 1721672906.009929, Usage: 0.4%, Memory: 64640 kB
+System Time: 1721672907.011424, Usage: 0.98%, Memory: 64640 kB
+CPU Temperature: 62.25
+2024-07-22 14:28:27,896 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
+2024-07-22 19:57:16,418 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.209
+2024-07-22 19:57:16,418 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.62ms
+2024-07-22 19:57:16,418 [websockets.py:open()] - Websocket Opened: ID: 140735308664336, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 19:57:16,423 [websockets.py:_handle_identify()] - Websocket 140735308664336 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-22 19:57:35,000 [websockets.py:on_close()] - Websocket Closed: ID: 140735308664336 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.57
+2024-07-22 19:58:18,466 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.42ms
+2024-07-22 19:58:18,466 [websockets.py:open()] - Websocket Opened: ID: 140735280583184, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 19:58:18,473 [websockets.py:_handle_identify()] - Websocket 140735280583184 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-22 19:58:54,713 [websockets.py:on_close()] - Websocket Closed: ID: 140735280583184 Close Code: None, Close Reason: None, Pong Time Elapsed: 6.24
+2024-07-22 20:42:59,137 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.63ms
+2024-07-22 20:42:59,137 [websockets.py:open()] - Websocket Opened: ID: 140735280593296, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 20:42:59,143 [websockets.py:_handle_identify()] - Websocket 140735280593296 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-22 20:46:02,695 [websockets.py:on_close()] - Websocket Closed: ID: 140735280593296 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.45
+2024-07-22 20:49:28,049 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.66ms
+2024-07-22 20:49:28,049 [websockets.py:open()] - Websocket Opened: ID: 140735308764560, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 20:49:28,056 [websockets.py:_handle_identify()] - Websocket 140735308764560 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-22 20:55:50,024 [websockets.py:on_close()] - Websocket Closed: ID: 140735308764560 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.86
+2024-07-22 20:58:59,556 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.45ms
+2024-07-22 20:58:59,556 [websockets.py:open()] - Websocket Opened: ID: 140735279316624, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 20:58:59,561 [websockets.py:_handle_identify()] - Websocket 140735279316624 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-22 21:01:51,895 [websockets.py:on_close()] - Websocket Closed: ID: 140735279316624 Close Code: None, Close Reason: None, Pong Time Elapsed: 2.23
+2024-07-22 21:02:48,015 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.44ms
+2024-07-22 21:02:48,015 [websockets.py:open()] - Websocket Opened: ID: 140735308600784, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
+2024-07-22 21:02:48,022 [websockets.py:_handle_identify()] - Websocket 140735308600784 Client Identified - Name: Mobileraker-ios, Version: 2.7.0-501, Type: mobile
+2024-07-22 21:05:28,021 [websockets.py:write_to_socket()] - Websocket closed while writing: 140735308600784
+2024-07-22 21:05:33,017 [websockets.py:on_close()] - Websocket Closed: ID: 140735308600784 Close Code: None, Close Reason: None, Pong Time Elapsed: 44.92
+2024-07-22 22:02:54,822 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
