@@ -213,3 +213,4 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-26 14:02:33,655 [websockets.py:_handle_identify()] - Websocket 140735308716176 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-26 14:02:33,656 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-26 14:03:38,166 [websockets.py:on_close()] - Websocket Closed: ID: 140735308716176 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 4.51
+2024-07-26 15:02:55,649 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
