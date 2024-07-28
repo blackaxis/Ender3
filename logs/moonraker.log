@@ -276,3 +276,34 @@ Content-Type: multipart/form-data; boundary=------------------------L0tn7IB9rm2v
 2024-07-28 14:57:30,480 [klippy_apis.py:start_print()] - Requesting Job Start, filename = eye stuff_49m_0.20mm_240C_ASA_.gcode
 2024-07-28 14:57:30,489 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.141) [_TRUSTED_USER_] 3884.44ms
 2024-07-28 14:57:30,494 [job_state.py:_status_update()] - Job Started: eye stuff_49m_0.20mm_240C_ASA_.gcode
+2024-07-28 15:02:24,259 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-07-28 15:03:24,259 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2024-07-28 15:04:24,260 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2024-07-28 15:05:24,261 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.00 seconds
+2024-07-28 15:06:24,262 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2024-07-28 15:07:24,264 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.01 seconds
+2024-07-28 15:08:24,265 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.01 seconds
+2024-07-28 15:09:24,266 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 480.01 seconds
+2024-07-28 15:10:24,268 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 540.01 seconds
+2024-07-28 15:11:24,269 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 600.01 seconds
+2024-07-28 15:32:12,324 [application.py:prepare()] - Upload Request Received from 192.168.0.141
+Content-Type: 
+2024-07-28 15:32:18,037 [application.py:prepare()] - Upload Request Received from 192.168.0.141
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryAomPyaDOyOxRLajH
+2024-07-28 15:32:23,443 [application.py:post()] - Processing Uploaded File: klipper_macros.cfg
+2024-07-28 15:32:23,447 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.141) [_TRUSTED_USER_] 5409.86ms
+2024-07-28 15:32:29,750 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-28 15:32:31,007 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-28 15:32:31,031 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-07-28 15:32:33,811 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-28 15:32:33,812 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-28 15:32:34,062 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-07-28 15:32:34,320 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-07-28 15:32:34,815 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-07-28 15:32:53,856 [klippy_apis.py:start_print()] - Requesting Job Start, filename = eye stuff_49m_0.20mm_240C_ASA_.gcode
+2024-07-28 15:32:53,867 [job_state.py:_status_update()] - Job Started: eye stuff_49m_0.20mm_240C_ASA_.gcode
+2024-07-28 15:33:19,462 [websockets.py:on_close()] - Websocket Closed: ID: 140735307785744 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 3.03
+2024-07-28 15:33:20,870 [application.py:log_request()] - 101 GET /websocket?token=Y67YKFDN4K4PZQFR7S3BXOKEWPDBGZCK (192.168.0.141) [_TRUSTED_USER_] 0.44ms
+2024-07-28 15:33:20,870 [websockets.py:open()] - Websocket Opened: ID: 140735279295696, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-28 15:33:20,875 [websockets.py:_handle_identify()] - Websocket 140735279295696 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-28 15:33:20,875 [file_manager.py:get_file_list()] - Updating File List <config>...
