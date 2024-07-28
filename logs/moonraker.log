@@ -307,3 +307,12 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryAomPyaDOyOxRLa
 2024-07-28 15:33:20,870 [websockets.py:open()] - Websocket Opened: ID: 140735279295696, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
 2024-07-28 15:33:20,875 [websockets.py:_handle_identify()] - Websocket 140735279295696 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-28 15:33:20,875 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-28 16:37:56,112 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
+2024-07-28 16:38:58,663 [klippy_apis.py:start_print()] - Requesting Job Start, filename = eye stuff_49m_0.20mm_240C_ASA_.gcode
+2024-07-28 16:38:58,905 [job_state.py:_status_update()] - Job Started: eye stuff_49m_0.20mm_240C_ASA_.gcode
+2024-07-28 16:39:07,349 [websockets.py:on_close()] - Websocket Closed: ID: 140735279295696 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.37
+2024-07-28 16:39:07,653 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.141
+2024-07-28 16:39:07,839 [application.py:log_request()] - 101 GET /websocket?token=YF22X4TH6657DKDDMXAEKMEK5TZWCVP2 (192.168.0.141) [_TRUSTED_USER_] 0.38ms
+2024-07-28 16:39:07,839 [websockets.py:open()] - Websocket Opened: ID: 140735280150672, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-28 16:39:07,953 [websockets.py:_handle_identify()] - Websocket 140735280150672 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-28 16:39:07,954 [file_manager.py:get_file_list()] - Updating File List <config>...
