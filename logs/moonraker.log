@@ -265,3 +265,14 @@ Content-Type: multipart/form-data; boundary=------------------------xT8ygABuM5ZN
 2024-07-28 13:00:58,081 [websockets.py:on_close()] - Websocket Closed: ID: 140735308288080 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.41
 2024-07-28 13:04:24,585 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
 2024-07-28 13:32:56,082 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
+2024-07-28 14:02:56,085 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
+2024-07-28 14:57:26,382 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.141
+2024-07-28 14:57:26,604 [application.py:prepare()] - Upload Request Received from 192.168.0.141
+Content-Type: multipart/form-data; boundary=------------------------L0tn7IB9rm2v28ANsBUC9G
+2024-07-28 14:57:30,315 [application.py:post()] - Processing Uploaded File: eye stuff_49m_0.20mm_240C_ASA_.gcode
+2024-07-28 14:57:30,426 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-28 14:57:30,480 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "eye stuff_49m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-07-28 14:57:30,480 [klippy_apis.py:start_print()] - Requesting Job Start, filename = eye stuff_49m_0.20mm_240C_ASA_.gcode
+2024-07-28 14:57:30,489 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.141) [_TRUSTED_USER_] 3884.44ms
+2024-07-28 14:57:30,494 [job_state.py:_status_update()] - Job Started: eye stuff_49m_0.20mm_240C_ASA_.gcode
