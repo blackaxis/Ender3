@@ -262,3 +262,6 @@ Content-Type: multipart/form-data; boundary=------------------------xT8ygABuM5ZN
 2024-07-28 12:59:03,653 [application.py:log_request()] - 101 GET /websocket (192.168.0.209) [_TRUSTED_USER_] 0.47ms
 2024-07-28 12:59:03,653 [websockets.py:open()] - Websocket Opened: ID: 140735308288080, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
 2024-07-28 12:59:03,666 [websockets.py:_handle_identify()] - Websocket 140735308288080 Client Identified - Name: Mobileraker-ios, Version: 2.7.1-511, Type: mobile
+2024-07-28 13:00:58,081 [websockets.py:on_close()] - Websocket Closed: ID: 140735308288080 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.41
+2024-07-28 13:04:24,585 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2024-07-28 13:32:56,082 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
