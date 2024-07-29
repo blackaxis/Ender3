@@ -809,3 +809,13 @@ Pinned Commit: None
 2024-07-29 14:23:08,181 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-29 14:23:13,619 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Two Trees 20W mount_Part 1__Main_2024-07-28 21-14-28_1h3m_0.14mm_240C_ASA_.gcode
 2024-07-29 14:23:13,712 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-28 21-14-28_1h3m_0.14mm_240C_ASA_.gcode
+2024-07-29 15:23:13,625 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
+2024-07-29 15:23:41,180 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'moonraker': Timeout while connecting
+2024-07-29 15:24:08,191 [announcements.py:_fetch_moonlight()] - Failed to update subscription 'klipper': Timeout while connecting
+2024-07-29 15:40:50,772 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-07-29 15:41:18,950 [websockets.py:on_close()] - Websocket Closed: ID: 140734414945040 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.09
+2024-07-29 15:41:19,265 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.141
+2024-07-29 15:41:19,365 [application.py:log_request()] - 101 GET /websocket?token=MVVOGLPDK7VUHNF7SHVCL4GHXDVDAVZ6 (192.168.0.141) [_TRUSTED_USER_] 0.66ms
+2024-07-29 15:41:19,366 [websockets.py:open()] - Websocket Opened: ID: 140734414820176, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-29 15:41:19,371 [websockets.py:_handle_identify()] - Websocket 140734414820176 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-29 15:41:19,371 [file_manager.py:get_file_list()] - Updating File List <config>...
