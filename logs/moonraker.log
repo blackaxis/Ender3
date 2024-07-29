@@ -801,3 +801,4 @@ Diverged: False
 Pinned Commit: None
 2024-07-29 12:53:34,326 [base_deploy.py:log_info()] - Git Repo mobileraker: Channel: dev
 2024-07-29 12:53:34,326 [base_deploy.py:log_info()] - Git Repo mobileraker: Validity check for git repo passed
+2024-07-29 13:58:13,610 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
