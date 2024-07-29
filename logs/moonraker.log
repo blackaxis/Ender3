@@ -819,3 +819,23 @@ Pinned Commit: None
 2024-07-29 15:41:19,366 [websockets.py:open()] - Websocket Opened: ID: 140734414820176, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
 2024-07-29 15:41:19,371 [websockets.py:_handle_identify()] - Websocket 140734414820176 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
 2024-07-29 15:41:19,371 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-29 16:02:39,044 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-07-29 16:02:50,467 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-29 16:02:50,506 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-29 16:02:51,728 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-29 16:02:51,742 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-07-29 16:02:54,264 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-29 16:02:54,264 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-29 16:02:54,515 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-07-29 16:02:54,768 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-07-29 16:02:55,267 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-07-29 16:04:00,195 [application.py:prepare()] - Upload Request Received from 192.168.0.141
+Content-Type: multipart/form-data; boundary=------------------------qe8zBws1QU2y1dCioIrX8y
+2024-07-29 16:04:01,853 [application.py:post()] - Processing Uploaded File: eye stuff_1h3m_0.14mm_240C_ASA_.gcode
+2024-07-29 16:04:02,252 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-29 16:04:02,340 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "eye stuff_1h3m_0.14mm_240C_ASA_.gcode") successfully finished
+2024-07-29 16:04:02,340 [klippy_apis.py:start_print()] - Requesting Job Start, filename = eye stuff_1h3m_0.14mm_240C_ASA_.gcode
+2024-07-29 16:04:02,350 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.141) [_TRUSTED_USER_] 2155.01ms
+2024-07-29 16:04:02,487 [job_state.py:_status_update()] - Job Started: eye stuff_1h3m_0.14mm_240C_ASA_.gcode
+2024-07-29 16:40:08,250 [websockets.py:on_close()] - Websocket Closed: ID: 140734414820176 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.78
