@@ -839,3 +839,4 @@ Content-Type: multipart/form-data; boundary=------------------------qe8zBws1QU2y
 2024-07-29 16:04:02,350 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.141) [_TRUSTED_USER_] 2155.01ms
 2024-07-29 16:04:02,487 [job_state.py:_status_update()] - Job Started: eye stuff_1h3m_0.14mm_240C_ASA_.gcode
 2024-07-29 16:40:08,250 [websockets.py:on_close()] - Websocket Closed: ID: 140734414820176 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.78
+2024-07-29 17:08:13,645 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
