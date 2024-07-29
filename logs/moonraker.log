@@ -219,3 +219,5 @@ Content-Type: multipart/form-data; boundary=------------------------qniW3e5l2fUd
 2024-07-29 01:13:05,480 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-28 21-14-28_1h3m_0.14mm_240C_ASA_.gcode
 2024-07-29 01:33:45,916 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Two Trees 20W mount_Part 1__Main_2024-07-28 21-14-28_1h3m_0.14mm_240C_ASA_.gcode
 2024-07-29 01:33:46,101 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-28 21-14-28_1h3m_0.14mm_240C_ASA_.gcode
+2024-07-29 02:05:02,563 [websockets.py:on_close()] - Websocket Closed: ID: 140735280523536 Close Code: None, Close Reason: None, Pong Time Elapsed: 8.74
+2024-07-29 02:17:56,208 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
