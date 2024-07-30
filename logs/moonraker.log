@@ -217,3 +217,4 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-30 00:39:46,192 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
 2024-07-30 00:39:46,324 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
 2024-07-30 01:03:13,724 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
+2024-07-30 02:55:08,133 [websockets.py:on_close()] - Websocket Closed: ID: 140734404380688 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.13
