@@ -859,3 +859,21 @@ Content-Type: multipart/form-data; boundary=------------------------QW35ehkpmhJ9
 2024-07-29 18:20:39,323 [websockets.py:open()] - Websocket Opened: ID: 140734451687760, Proxied: False, User Agent: Dart/3.4 (dart:io), Host Name: 3dprinters.local
 2024-07-29 18:20:39,334 [websockets.py:_handle_identify()] - Websocket 140734451687760 Client Identified - Name: Mobileraker-ios, Version: 2.7.1-511, Type: mobile
 2024-07-29 18:21:54,048 [websockets.py:on_close()] - Websocket Closed: ID: 140734451687760 Close Code: None, Close Reason: None, Pong Time Elapsed: 4.72
+2024-07-29 19:08:13,667 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
+2024-07-29 19:23:13,669 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.209
+2024-07-29 19:50:05,651 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.141
+2024-07-29 19:50:12,099 [application.py:prepare()] - Upload Request Received from 192.168.0.141
+Content-Type: 
+2024-07-29 19:50:12,104 [application.py:prepare()] - Upload Request Received from 192.168.0.141
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryXSYDs6FSb3HuGq6t
+2024-07-29 19:50:12,110 [application.py:post()] - Processing Uploaded File: printer.cfg
+2024-07-29 19:50:12,112 [application.py:log_request()] - 201 POST /server/files/upload (192.168.0.141) [_TRUSTED_USER_] 7.99ms
+2024-07-29 19:50:13,191 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-29 19:50:13,201 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-29 19:50:14,450 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-29 19:50:14,470 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-07-29 19:50:17,247 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-29 19:50:17,247 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-29 19:50:17,498 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-07-29 19:50:17,753 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-07-29 19:50:18,253 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
