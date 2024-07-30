@@ -1111,3 +1111,41 @@ Content-Type: multipart/form-data; boundary=------------------------HYoDE8FyOOxL
 2024-07-29 21:54:21,000 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
 2024-07-29 21:54:21,009 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.141) [_TRUSTED_USER_] 2928.16ms
 2024-07-29 21:54:21,075 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
+2024-07-29 22:00:36,330 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-07-29 22:01:55,750 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-07-29 22:02:05,149 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2024-07-29 22:02:05,223 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.info, Code: 503, Message: Klippy Host not connected
+2024-07-29 22:02:06,404 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2024-07-29 22:02:06,452 [machine.py:extract_service_info()] - Detected alternate unit name for klipper: klipper-Ender3.service
+2024-07-29 22:02:08,968 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2024-07-29 22:02:08,968 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2024-07-29 22:02:09,219 [job_state.py:_handle_started()] - Job state initialized: standby
+2024-07-29 22:02:09,474 [klippy_connection.py:_check_ready()] - Klippy ready
+2024-07-29 22:02:09,971 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-07-29 22:02:41,537 [application.py:prepare()] - Upload Request Received from 192.168.0.141
+Content-Type: multipart/form-data; boundary=------------------------RiIiF0fMBOoW1VeODUFCsK
+2024-07-29 22:02:44,983 [application.py:post()] - Processing Uploaded File: Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
+2024-07-29 22:02:45,159 [shell_command.py:pipe_data_received()] - INFO:metadata:Object Processing is disabled
+
+2024-07-29 22:02:45,202 [shell_command.py:_check_proc_success()] - Command (/home/blackaxis/moonraker-env/bin/python /home/blackaxis/moonraker/moonraker/components/file_manager/metadata.py -p /home/blackaxis/Ender3_data/gcodes -f "Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode") successfully finished
+2024-07-29 22:02:45,203 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
+2024-07-29 22:02:45,209 [application.py:log_request()] - 201 POST /api/files/local (192.168.0.141) [_TRUSTED_USER_] 3672.66ms
+2024-07-29 22:02:45,334 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
+2024-07-29 22:10:37,359 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-07-29 22:10:42,483 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-07-29 22:12:00,076 [klippy_apis.py:start_print()] - Requesting Job Start, filename = Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
+2024-07-29 22:12:00,284 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
+2024-07-29 22:19:31,981 [websockets.py:on_close()] - Websocket Closed: ID: 140734461257424 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 9.72
+2024-07-29 22:19:32,509 [application.py:log_request()] - 101 GET /websocket?token=X4MMWFC7BBNXQ4ZB3EBZSH5LCII6KJ6E (192.168.0.141) [_TRUSTED_USER_] 0.39ms
+2024-07-29 22:19:32,509 [websockets.py:open()] - Websocket Opened: ID: 140734451199952, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-29 22:19:32,520 [websockets.py:_handle_identify()] - Websocket 140734451199952 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-29 22:19:32,520 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-29 22:19:54,668 [klippy_apis.py:pause_print()] - Requesting job pause...
+2024-07-29 22:21:44,854 [klippy_apis.py:cancel_print()] - Requesting job cancel...
+2024-07-29 22:30:52,756 [websockets.py:on_close()] - Websocket Closed: ID: 140734451199952 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.24
+2024-07-29 22:31:12,287 [application.py:log_request()] - 101 GET /websocket?token=PX3HD52XQKI2QNUNYQEGJKVSO3U5ER5K (192.168.0.141) [_TRUSTED_USER_] 0.53ms
+2024-07-29 22:31:12,287 [websockets.py:open()] - Websocket Opened: ID: 140734415488656, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-29 22:31:12,293 [websockets.py:_handle_identify()] - Websocket 140734415488656 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-29 22:31:12,293 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-29 22:33:36,337 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: Error during homing probe: Communication timeout during homing
+2024-07-29 22:40:37,503 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
