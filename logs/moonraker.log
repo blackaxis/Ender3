@@ -218,3 +218,8 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-30 00:39:46,324 [job_state.py:_status_update()] - Job Started: Two Trees 20W mount_Part 1__Main_2024-07-29 18-04-25_1h0m_0.20mm_240C_ASA_.gcode
 2024-07-30 01:03:13,724 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
 2024-07-30 02:55:08,133 [websockets.py:on_close()] - Websocket Closed: ID: 140734404380688 Close Code: None, Close Reason: None, Pong Time Elapsed: 5.13
+2024-07-30 08:11:39,234 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.141
+2024-07-30 08:11:39,329 [application.py:log_request()] - 101 GET /websocket?token=2TVAIV5OGE32M76WEUZTUPUHINQGAO5J (192.168.0.141) [_TRUSTED_USER_] 0.52ms
+2024-07-30 08:11:39,329 [websockets.py:open()] - Websocket Opened: ID: 140734450037264, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-30 08:11:39,337 [websockets.py:_handle_identify()] - Websocket 140734450037264 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-30 08:11:39,337 [file_manager.py:get_file_list()] - Updating File List <config>...
