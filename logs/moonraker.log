@@ -225,3 +225,5 @@ Klipper Version: v0.12.0-258-g9318901f
 2024-07-30 08:11:39,337 [file_manager.py:get_file_list()] - Updating File List <config>...
 2024-07-30 09:13:13,801 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
 2024-07-30 11:16:04,060 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.141
+2024-07-30 12:15:12,535 [websockets.py:on_close()] - Websocket Closed: ID: 140734450037264 Close Code: None, Close Reason: None, Pong Time Elapsed: 3.20
+2024-07-30 12:18:13,831 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
