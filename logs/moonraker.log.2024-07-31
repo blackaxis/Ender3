@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Aug  2 12:16:48 2024 --------------------
+-------------------- Log Start | Wed Jul 31 14:36:42 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -208,19 +208,10 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
-2024-08-02 08:16:48,298 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.209
-2024-08-02 08:16:48,404 [application.py:log_request()] - 101 GET /websocket?token=GBPFVVHCO6KTW6EG65CBCE546GDDUHML (192.168.0.209) [_TRUSTED_USER_] 0.91ms
-2024-08-02 08:16:48,404 [websockets.py:open()] - Websocket Opened: ID: 140734415407760, Proxied: False, User Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/127.0.6533.77 Mobile/15E148 Safari/604.1, Host Name: 3dprinters.local
-2024-08-02 08:16:48,412 [websockets.py:_handle_identify()] - Websocket 140734415407760 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
-2024-08-02 08:16:48,412 [file_manager.py:get_file_list()] - Updating File List <config>...
-2024-08-02 08:18:09,070 [websockets.py:on_close()] - Websocket Closed: ID: 140734415407760 Close Code: None, Close Reason: None, Pong Time Elapsed: 0.66
-2024-08-02 08:24:45,475 [application.py:log_request()] - 101 GET /websocket?token=L74RSTLKUZ2TZS2QJ7Y3QA6HTCYRQRYR (192.168.0.209) [_TRUSTED_USER_] 0.42ms
-2024-08-02 08:24:45,475 [websockets.py:open()] - Websocket Opened: ID: 140734404362320, Proxied: False, User Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/127.0.6533.77 Mobile/15E148 Safari/604.1, Host Name: 3dprinters.local
-2024-08-02 08:24:45,509 [websockets.py:_handle_identify()] - Websocket 140734404362320 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
-2024-08-02 08:24:45,510 [file_manager.py:get_file_list()] - Updating File List <config>...
-2024-08-02 08:24:47,171 [websockets.py:on_close()] - Websocket Closed: ID: 140734404362320 Close Code: None, Close Reason: None, Pong Time Elapsed: 1.70
-2024-08-02 08:36:54,865 [application.py:log_request()] - 101 GET /websocket?token=WGAVNKWOXGBOBX7WQYEJDR7UWGFIBSXG (192.168.0.209) [_TRUSTED_USER_] 0.38ms
-2024-08-02 08:36:54,865 [websockets.py:open()] - Websocket Opened: ID: 140734415185936, Proxied: False, User Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/127.0.6533.77 Mobile/15E148 Safari/604.1, Host Name: 3dprinters.local
-2024-08-02 08:36:54,873 [websockets.py:_handle_identify()] - Websocket 140734415185936 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
-2024-08-02 08:36:54,873 [file_manager.py:get_file_list()] - Updating File List <config>...
-2024-08-02 08:37:10,001 [websockets.py:on_close()] - Websocket Closed: ID: 140734415185936 Close Code: 1001, Close Reason: WebSocket is closed due to suspension., Pong Time Elapsed: 5.13
+2024-07-31 10:36:42,323 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.141
+2024-07-31 10:40:16,699 [application.py:log_request()] - 101 GET /websocket?token=WHZE2O2ES353ZWBMHS5NT4KTS76ZKHHA (192.168.0.141) [_TRUSTED_USER_] 0.98ms
+2024-07-31 10:40:16,699 [websockets.py:open()] - Websocket Opened: ID: 140734450838160, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-07-31 10:40:16,706 [websockets.py:_handle_identify()] - Websocket 140734450838160 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-07-31 10:40:16,706 [file_manager.py:get_file_list()] - Updating File List <config>...
+2024-07-31 11:38:34,546 [websockets.py:on_close()] - Websocket Closed: ID: 140734450838160 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.72
+2024-07-31 11:43:14,058 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
