@@ -1,4 +1,4 @@
--------------------- Log Start | Wed Jul 31 14:36:42 2024 --------------------
+-------------------- Log Start | Wed Aug  7 03:53:24 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -208,10 +208,8 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
-2024-07-31 10:36:42,323 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.141
-2024-07-31 10:40:16,699 [application.py:log_request()] - 101 GET /websocket?token=WHZE2O2ES353ZWBMHS5NT4KTS76ZKHHA (192.168.0.141) [_TRUSTED_USER_] 0.98ms
-2024-07-31 10:40:16,699 [websockets.py:open()] - Websocket Opened: ID: 140734450838160, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
-2024-07-31 10:40:16,706 [websockets.py:_handle_identify()] - Websocket 140734450838160 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
-2024-07-31 10:40:16,706 [file_manager.py:get_file_list()] - Updating File List <config>...
-2024-07-31 11:38:34,546 [websockets.py:on_close()] - Websocket Closed: ID: 140734450838160 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 7.72
-2024-07-31 11:43:14,058 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.141
+2024-08-06 23:53:24,373 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
+2024-08-06 23:53:24,467 [application.py:log_request()] - 101 GET /websocket?token=XQHQ3TDTIU476PF7AOEUTVI6AEVHENRV (192.168.0.180) [_TRUSTED_USER_] 0.78ms
+2024-08-06 23:53:24,468 [websockets.py:open()] - Websocket Opened: ID: 140734450080912, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15, Host Name: 3dprinters.local
+2024-08-06 23:53:24,479 [websockets.py:_handle_identify()] - Websocket 140734450080912 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
+2024-08-06 23:53:24,479 [file_manager.py:get_file_list()] - Updating File List <config>...
