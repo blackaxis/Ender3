@@ -1,4 +1,4 @@
--------------------- Log Start | Sun Aug 11 23:51:59 2024 --------------------
+-------------------- Log Start | Fri Aug 16 19:29:37 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -208,17 +208,8 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
-2024-08-11 19:51:59,754 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
-2024-08-11 19:51:59,866 [application.py:log_request()] - 101 GET /websocket?token=HRNVLMB2FBMWTVTDR72JRY6ZYO6K7GQV (192.168.0.180) [_TRUSTED_USER_] 0.44ms
-2024-08-11 19:51:59,866 [websockets.py:open()] - Websocket Opened: ID: 140734415406608, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.2.2 Safari/537.36, Host Name: 3dprinters.local
-2024-08-11 19:51:59,875 [websockets.py:_handle_identify()] - Websocket 140734415406608 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
-2024-08-11 19:51:59,876 [file_manager.py:get_file_list()] - Updating File List <config>...
-2024-08-11 19:54:20,055 [websockets.py:on_close()] - Websocket Closed: ID: 140734415406608 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 0.17
-2024-08-11 20:53:16,808 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
-2024-08-11 21:54:46,022 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 192.168.0.180
-2024-08-11 21:54:46,132 [application.py:log_request()] - 101 GET /websocket?token=NE2LXDVCGMTVKNW4PSDFN5OS5Z64WHF7 (192.168.0.180) [_TRUSTED_USER_] 0.57ms
-2024-08-11 21:54:46,132 [websockets.py:open()] - Websocket Opened: ID: 140734450875728, Proxied: False, User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 OBS/30.2.2 Safari/537.36, Host Name: 3dprinters.local
-2024-08-11 21:54:46,143 [websockets.py:_handle_identify()] - Websocket 140734450875728 Client Identified - Name: fluidd, Version: 1.30.0-f3e4ac3, Type: web
-2024-08-11 21:54:46,143 [file_manager.py:get_file_list()] - Updating File List <config>...
-2024-08-11 22:04:51,233 [websockets.py:on_close()] - Websocket Closed: ID: 140734450875728 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 5.09
-2024-08-11 22:58:16,828 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.180
+2024-08-16 15:29:37,100 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.119
+2024-08-16 15:30:57,172 [machine.py:_find_public_ip()] - Failed to detect local IP address
+2024-08-16 15:30:57,172 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
+2024-08-16 15:31:07,179 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.119
+2024-08-16 15:31:07,179 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.119
