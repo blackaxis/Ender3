@@ -1,4 +1,4 @@
--------------------- Log Start | Fri Aug 16 19:29:37 2024 --------------------
+-------------------- Log Start | Fri Aug 30 00:28:14 2024 --------------------
 platform: Linux-6.6.28+rpt-rpi-2712-aarch64-with-glibc2.36
 data_path: /home/blackaxis/Ender3_data
 is_default_data_path: False
@@ -208,8 +208,38 @@ Git Repo moonraker-telegram-bot: No warnings detected
 Git Repo fluidd-config: No warnings detected
 Git Repo mobileraker: No warnings detected
 Klipper Version: v0.12.0-258-g9318901f
-2024-08-16 15:29:37,100 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.119
-2024-08-16 15:30:57,172 [machine.py:_find_public_ip()] - Failed to detect local IP address
-2024-08-16 15:30:57,172 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://127.0.0.1
-2024-08-16 15:31:07,179 [machine.py:_find_public_ip()] - Detected Local IP: 192.168.0.119
-2024-08-16 15:31:07,179 [webcam.py:_set_default_host_ip()] - Default public webcam address set: http://192.168.0.119
+2024-08-29 20:28:14,455 [klippy_connection.py:_process_status_update()] - Klippy has shutdown
+2024-08-29 20:28:14,456 [proc_stats.py:_handle_shutdown()] - 
+Moonraker System Usage Statistics:
+System Time: 1724977664.949741, Usage: 0.28%, Memory: 62560 kB
+System Time: 1724977665.950673, Usage: 0.28%, Memory: 62560 kB
+System Time: 1724977666.951436, Usage: 0.34%, Memory: 62560 kB
+System Time: 1724977667.953841, Usage: 1.89%, Memory: 62560 kB
+System Time: 1724977668.954459, Usage: 0.52%, Memory: 62560 kB
+System Time: 1724977669.954824, Usage: 0.78%, Memory: 62560 kB
+System Time: 1724977670.955948, Usage: 1.4%, Memory: 62560 kB
+System Time: 1724977671.956924, Usage: 0.58%, Memory: 62560 kB
+System Time: 1724977672.957630, Usage: 0.96%, Memory: 62560 kB
+System Time: 1724977673.957978, Usage: 0.26%, Memory: 62560 kB
+System Time: 1724977674.959339, Usage: 0.29%, Memory: 62560 kB
+System Time: 1724977675.960276, Usage: 0.28%, Memory: 62560 kB
+System Time: 1724977676.961799, Usage: 0.27%, Memory: 62560 kB
+System Time: 1724977677.962706, Usage: 0.28%, Memory: 62560 kB
+System Time: 1724977678.963678, Usage: 0.39%, Memory: 62560 kB
+System Time: 1724977679.965051, Usage: 2.08%, Memory: 62560 kB
+System Time: 1724977680.965326, Usage: 0.45%, Memory: 62560 kB
+System Time: 1724977681.965878, Usage: 0.91%, Memory: 62560 kB
+System Time: 1724977682.966370, Usage: 1.46%, Memory: 62560 kB
+System Time: 1724977683.967384, Usage: 0.41%, Memory: 62560 kB
+System Time: 1724977684.967842, Usage: 0.87%, Memory: 62560 kB
+System Time: 1724977685.968025, Usage: 0.26%, Memory: 62560 kB
+System Time: 1724977686.969172, Usage: 0.29%, Memory: 62560 kB
+System Time: 1724977687.969365, Usage: 0.25%, Memory: 62560 kB
+System Time: 1724977688.969554, Usage: 0.28%, Memory: 62560 kB
+System Time: 1724977689.970580, Usage: 0.28%, Memory: 62560 kB
+System Time: 1724977690.972633, Usage: 0.33%, Memory: 62560 kB
+System Time: 1724977691.973597, Usage: 2.24%, Memory: 62560 kB
+System Time: 1724977692.974308, Usage: 0.45%, Memory: 62560 kB
+System Time: 1724977693.974451, Usage: 0.74%, Memory: 62560 kB
+CPU Temperature: 63.35
+2024-08-29 20:28:14,459 [proc_stats.py:_handle_shutdown()] - Throttled Flags: 
