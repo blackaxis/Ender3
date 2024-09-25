@@ -1397,5 +1397,242 @@ Tracked URL: https://github.com/Klipper3d/klipper
 CPU: 4 core ?
 Python: '3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0]'
 webhooks client 140732124054224: {'program': 'Moonraker', 'version': 'v0.8.0-379-g346a3d7'}
-=============== Log rollover at Wed Sep 25 05:11:46 2024 ===============
-Timeout with MCU 'EBB' (eventtime=4983563.999974)
+=============== Log rollover at Thu Aug 29 20:28:09 2024 ===============
+b'Got EOF when reading from device'
+Timeout with MCU 'mcu' (eventtime=2705747.120305)
+Transition to shutdown state: Lost communication with MCU 'mcu'
+Dumping gcode input 0 blocks
+Dumping 20 requests for client 140732124054224
+Received 730852.701838: b'{"id": 140734414785104, "method": "info", "params": {}}'
+Received 730852.793336: b'{"id": 140734451337168, "method": "objects/list", "params": {}}'
+Received 730853.216463: b'{"id": 140734450039312, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "mcu EBB": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro PRINT_START": null, "gcode_macro PRINT_END": null, "gcode_macro START_PRINT": null, "gcode_macro FILAMENT_START": null, "gcode_macro CALCULATE_PA": null, "gcode_macro BEFORE_LAYER_CHANGE": null, "gcode_macro AFTER_LAYER_CHANGE": null, "gcode_macro END_PRINT": null, "gcode_macro SENSORLESS_HOME_ALL": null, "gcode_macro SENSORLESS_HOME_X": null, "gcode_macro SENSORLESS_HOME_Y": null, "gcode_macro SENSOR_HOME_ALL": null, "gcode_macro SENSOR_HOME_X": null, "gcode_macro SENSOR_HOME_Y": null, "gcode_macro M600": null, "gcode_macro TEST_SPEED": null, "gcode_macro DUMP_VARIABLES": null, "gcode_macro GET_VARIABLE": null, "gcode_macro M109": null, "gcode_macro M190": null, "save_variables": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro LINE_PURGE": null, "gcode_macro _KAMP_Settings": null, "idle_timeout": null, "screws_tilt_adjust": null, "z_tilt": null, "bed_screws": null, "probe": null, "bltouch": null, "bed_mesh": null, "heaters": null, "stepper_enable": null, "tmc2209 stepper_x": null, "tmc2209 stepper_y": null, "tmc2209 stepper_z": null, "tmc2209 stepper_z1": null, "firmware_retraction": null, "tmc2209 extruder": null, "heater_bed": null, "heater_fan nozzle_cooling_fan": null, "fan": null, "neopixel my_neopixel": null, "neopixel hotend_rgb": null, "temperature_host raspberry_pi": null, "temperature_sensor raspberry_pi": null, "temperature_sensor EBB": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 730853.591851: b'{"id": 140734461263184, "method": "gcode/help", "params": {}}'
+Received 734050.997006: b'{"id": 140734449822096, "method": "info", "params": {}}'
+Received 734050.997444: b'{"id": 140734404388368, "method": "objects/list", "params": {}}'
+Received 734051.113793: b'{"id": 140734415333456, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "mcu EBB": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro PRINT_START": null, "gcode_macro PRINT_END": null, "gcode_macro START_PRINT": null, "gcode_macro FILAMENT_START": null, "gcode_macro CALCULATE_PA": null, "gcode_macro BEFORE_LAYER_CHANGE": null, "gcode_macro AFTER_LAYER_CHANGE": null, "gcode_macro END_PRINT": null, "gcode_macro SENSORLESS_HOME_ALL": null, "gcode_macro SENSORLESS_HOME_X": null, "gcode_macro SENSORLESS_HOME_Y": null, "gcode_macro SENSOR_HOME_ALL": null, "gcode_macro SENSOR_HOME_X": null, "gcode_macro SENSOR_HOME_Y": null, "gcode_macro M600": null, "gcode_macro TEST_SPEED": null, "gcode_macro DUMP_VARIABLES": null, "gcode_macro GET_VARIABLE": null, "gcode_macro M109": null, "gcode_macro M190": null, "save_variables": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro LINE_PURGE": null, "gcode_macro _KAMP_Settings": null, "idle_timeout": null, "screws_tilt_adjust": null, "z_tilt": null, "bed_screws": null, "probe": null, "bltouch": null, "bed_mesh": null, "heaters": null, "stepper_enable": null, "tmc2209 stepper_x": null, "tmc2209 stepper_y": null, "tmc2209 stepper_z": null, "tmc2209 stepper_z1": null, "firmware_retraction": null, "tmc2209 extruder": null, "heater_bed": null, "heater_fan nozzle_cooling_fan": null, "fan": null, "neopixel my_neopixel": null, "neopixel hotend_rgb": null, "temperature_host raspberry_pi": null, "temperature_sensor raspberry_pi": null, "temperature_sensor EBB": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 734051.618827: b'{"id": 140734461199248, "method": "gcode/help", "params": {}}'
+Received 735687.539090: b'{"id": 140734451198672, "method": "info", "params": {}}'
+Received 735687.543042: b'{"id": 140734404450448, "method": "objects/list", "params": {}}'
+Received 735687.676160: b'{"id": 140734451783440, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "mcu EBB": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro PRINT_START": null, "gcode_macro PRINT_END": null, "gcode_macro START_PRINT": null, "gcode_macro FILAMENT_START": null, "gcode_macro CALCULATE_PA": null, "gcode_macro BEFORE_LAYER_CHANGE": null, "gcode_macro AFTER_LAYER_CHANGE": null, "gcode_macro END_PRINT": null, "gcode_macro SENSORLESS_HOME_ALL": null, "gcode_macro SENSORLESS_HOME_X": null, "gcode_macro SENSORLESS_HOME_Y": null, "gcode_macro SENSOR_HOME_ALL": null, "gcode_macro SENSOR_HOME_X": null, "gcode_macro SENSOR_HOME_Y": null, "gcode_macro M600": null, "gcode_macro TEST_SPEED": null, "gcode_macro DUMP_VARIABLES": null, "gcode_macro GET_VARIABLE": null, "gcode_macro M109": null, "gcode_macro M190": null, "save_variables": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro LINE_PURGE": null, "gcode_macro _KAMP_Settings": null, "idle_timeout": null, "screws_tilt_adjust": null, "z_tilt": null, "bed_screws": null, "probe": null, "bltouch": null, "bed_mesh": null, "heaters": null, "stepper_enable": null, "tmc2209 stepper_x": null, "tmc2209 stepper_y": null, "tmc2209 stepper_z": null, "tmc2209 stepper_z1": null, "firmware_retraction": null, "tmc2209 extruder": null, "heater_bed": null, "heater_fan nozzle_cooling_fan": null, "fan": null, "neopixel my_neopixel": null, "neopixel hotend_rgb": null, "temperature_host raspberry_pi": null, "temperature_sensor raspberry_pi": null, "temperature_sensor EBB": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 735688.197617: b'{"id": 140734461107088, "method": "gcode/help", "params": {}}'
+Received 1148369.096165: b'{"id": 140734415421136, "method": "info", "params": {}}'
+Received 1148369.097823: b'{"id": 140734451266448, "method": "objects/list", "params": {}}'
+Received 1148369.412741: b'{"id": 140734450887120, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "mcu EBB": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro PRINT_START": null, "gcode_macro PRINT_END": null, "gcode_macro START_PRINT": null, "gcode_macro FILAMENT_START": null, "gcode_macro CALCULATE_PA": null, "gcode_macro BEFORE_LAYER_CHANGE": null, "gcode_macro AFTER_LAYER_CHANGE": null, "gcode_macro END_PRINT": null, "gcode_macro SENSORLESS_HOME_ALL": null, "gcode_macro SENSORLESS_HOME_X": null, "gcode_macro SENSORLESS_HOME_Y": null, "gcode_macro SENSOR_HOME_ALL": null, "gcode_macro SENSOR_HOME_X": null, "gcode_macro SENSOR_HOME_Y": null, "gcode_macro M600": null, "gcode_macro TEST_SPEED": null, "gcode_macro DUMP_VARIABLES": null, "gcode_macro GET_VARIABLE": null, "gcode_macro M109": null, "gcode_macro M190": null, "save_variables": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro LINE_PURGE": null, "gcode_macro _KAMP_Settings": null, "idle_timeout": null, "screws_tilt_adjust": null, "z_tilt": null, "bed_screws": null, "probe": null, "bltouch": null, "bed_mesh": null, "heaters": null, "stepper_enable": null, "tmc2209 stepper_x": null, "tmc2209 stepper_y": null, "tmc2209 stepper_z": null, "tmc2209 stepper_z1": null, "firmware_retraction": null, "tmc2209 extruder": null, "heater_bed": null, "heater_fan nozzle_cooling_fan": null, "fan": null, "neopixel my_neopixel": null, "neopixel hotend_rgb": null, "temperature_host raspberry_pi": null, "temperature_sensor raspberry_pi": null, "temperature_sensor EBB": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 1148370.133055: b'{"id": 140734415509584, "method": "gcode/help", "params": {}}'
+Received 1155735.410315: b'{"id": 140734451615632, "method": "info", "params": {}}'
+Received 1155735.412784: b'{"id": 140734450871120, "method": "objects/list", "params": {}}'
+Received 1155735.612754: b'{"id": 140734415490320, "method": "objects/subscribe", "params": {"objects": {"gcode": null, "webhooks": null, "configfile": null, "mcu": null, "mcu EBB": null, "gcode_move": null, "print_stats": null, "virtual_sdcard": null, "pause_resume": null, "display_status": null, "gcode_macro CANCEL_PRINT": null, "gcode_macro PAUSE": null, "gcode_macro RESUME": null, "gcode_macro SET_PAUSE_NEXT_LAYER": null, "gcode_macro SET_PAUSE_AT_LAYER": null, "gcode_macro SET_PRINT_STATS_INFO": null, "gcode_macro _TOOLHEAD_PARK_PAUSE_CANCEL": null, "gcode_macro _CLIENT_EXTRUDE": null, "gcode_macro _CLIENT_RETRACT": null, "gcode_macro PRINT_START": null, "gcode_macro PRINT_END": null, "gcode_macro START_PRINT": null, "gcode_macro FILAMENT_START": null, "gcode_macro CALCULATE_PA": null, "gcode_macro BEFORE_LAYER_CHANGE": null, "gcode_macro AFTER_LAYER_CHANGE": null, "gcode_macro END_PRINT": null, "gcode_macro SENSORLESS_HOME_ALL": null, "gcode_macro SENSORLESS_HOME_X": null, "gcode_macro SENSORLESS_HOME_Y": null, "gcode_macro SENSOR_HOME_ALL": null, "gcode_macro SENSOR_HOME_X": null, "gcode_macro SENSOR_HOME_Y": null, "gcode_macro M600": null, "gcode_macro TEST_SPEED": null, "gcode_macro DUMP_VARIABLES": null, "gcode_macro GET_VARIABLE": null, "gcode_macro M109": null, "gcode_macro M190": null, "save_variables": null, "exclude_object": null, "gcode_macro BED_MESH_CALIBRATE": null, "gcode_macro LINE_PURGE": null, "gcode_macro _KAMP_Settings": null, "idle_timeout": null, "screws_tilt_adjust": null, "z_tilt": null, "bed_screws": null, "probe": null, "bltouch": null, "bed_mesh": null, "heaters": null, "stepper_enable": null, "tmc2209 stepper_x": null, "tmc2209 stepper_y": null, "tmc2209 stepper_z": null, "tmc2209 stepper_z1": null, "firmware_retraction": null, "tmc2209 extruder": null, "heater_bed": null, "heater_fan nozzle_cooling_fan": null, "fan": null, "neopixel my_neopixel": null, "neopixel hotend_rgb": null, "temperature_host raspberry_pi": null, "temperature_sensor raspberry_pi": null, "temperature_sensor EBB": null, "motion_report": null, "query_endstops": null, "system_stats": null, "manual_probe": null, "toolhead": null, "extruder": null}, "response_template": {"method": "process_status_update"}}}'
+Received 1155736.304190: b'{"id": 140734415216592, "method": "gcode/help", "params": {}}'
+gcode state: absolute_coord=True absolute_extrude=False base_position=[0.0, 0.0, -0.035, 9774.473640002077] last_position=[160.0, 165.0, 25.005, 9794.723520001988] homing_position=[0.0, 0.0, -0.035, 0.0] speed_factor=0.016666666666666666 extrude_factor=1.0 speed=16.666666666666668
+Reactor garbage collection: (730853.315826359, 39861.776964722, 0.0)
+Lost communication with MCU 'mcu'
+Once the underlying issue is corrected, use the
+"FIRMWARE_RESTART" command to reset the firmware, reload the
+config, and restart the host software.
+Printer is shutdown
+
+MCU 'EBB' shutdown: Command request
+clocksync state: mcu_freq=64000000 last_clock=171205775427471 clock_est=(2705717.943 171203948193804 64000278.656) min_half_rtt=0.000124 min_rtt_time=2704762.969 time_avg=2705717.942(843.181) clock_avg=171203948193804.125(53963804390.525) pred_variance=3133269.934 clock_adj=(-0.943 64002230.000)
+Dumping serial stats: bytes_write=24440522 bytes_read=309899406 bytes_retransmit=0 bytes_invalid=0 send_seq=2906848 receive_seq=2906848 retransmit_seq=0 srtt=0.001 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0
+Dumping send queue 100 messages
+Sent 0 2705650.013523 2705650.013341 6: seq: 1c, get_clock
+Sent 1 2705650.998128 2705650.997946 6: seq: 1d, get_clock
+Sent 2 2705651.982859 2705651.982677 6: seq: 1e, get_clock
+Sent 3 2705652.967011 2705652.966829 6: seq: 1f, get_clock
+Sent 4 2705653.951391 2705653.951209 6: seq: 10, get_clock
+Sent 5 2705654.935770 2705654.935588 6: seq: 11, get_clock
+Sent 6 2705655.919797 2705655.919615 6: seq: 12, get_clock
+Sent 7 2705656.905307 2705656.905125 6: seq: 13, get_clock
+Sent 8 2705657.888766 2705657.888584 6: seq: 14, get_clock
+Sent 9 2705658.873432 2705658.873250 6: seq: 15, get_clock
+Sent 10 2705659.858473 2705659.858291 6: seq: 16, get_clock
+Sent 11 2705660.843175 2705660.842993 6: seq: 17, get_clock
+Sent 12 2705661.827774 2705661.827592 6: seq: 18, get_clock
+Sent 13 2705662.812504 2705662.812322 6: seq: 19, get_clock
+Sent 14 2705663.796739 2705663.796557 6: seq: 1a, get_clock
+Sent 15 2705664.781065 2705664.780883 6: seq: 1b, get_clock
+Sent 16 2705665.765538 2705665.765356 6: seq: 1c, get_clock
+Sent 17 2705666.749782 2705666.749600 6: seq: 1d, get_clock
+Sent 18 2705667.734254 2705667.734072 6: seq: 1e, get_clock
+Sent 19 2705668.718590 2705668.718408 6: seq: 1f, get_clock
+Sent 20 2705669.702950 2705669.702768 6: seq: 10, get_clock
+Sent 21 2705670.687905 2705670.687723 6: seq: 11, get_clock
+Sent 22 2705671.672955 2705671.672773 6: seq: 12, get_clock
+Sent 23 2705672.657943 2705672.657761 6: seq: 13, get_clock
+Sent 24 2705673.642371 2705673.642189 6: seq: 14, get_clock
+Sent 25 2705674.627282 2705674.627100 6: seq: 15, get_clock
+Sent 26 2705675.612033 2705675.611851 6: seq: 16, get_clock
+Sent 27 2705676.596504 2705676.596322 6: seq: 17, get_clock
+Sent 28 2705677.580576 2705677.580394 6: seq: 18, get_clock
+Sent 29 2705678.564868 2705678.564686 6: seq: 19, get_clock
+Sent 30 2705679.549149 2705679.548967 6: seq: 1a, get_clock
+Sent 31 2705680.533423 2705680.533241 6: seq: 1b, get_clock
+Sent 32 2705681.517768 2705681.517586 6: seq: 1c, get_clock
+Sent 33 2705682.502281 2705682.502099 6: seq: 1d, get_clock
+Sent 34 2705683.486604 2705683.486422 6: seq: 1e, get_clock
+Sent 35 2705684.471670 2705684.471488 6: seq: 1f, get_clock
+Sent 36 2705685.456180 2705685.455998 6: seq: 10, get_clock
+Sent 37 2705686.440418 2705686.440236 6: seq: 11, get_clock
+Sent 38 2705687.424851 2705687.424669 6: seq: 12, get_clock
+Sent 39 2705688.409112 2705688.408930 6: seq: 13, get_clock
+Sent 40 2705689.393955 2705689.393773 6: seq: 14, get_clock
+Sent 41 2705690.378244 2705690.378062 6: seq: 15, get_clock
+Sent 42 2705691.362640 2705691.362458 6: seq: 16, get_clock
+Sent 43 2705692.346907 2705692.346725 6: seq: 17, get_clock
+Sent 44 2705693.331196 2705693.331014 6: seq: 18, get_clock
+Sent 45 2705694.315683 2705694.315501 6: seq: 19, get_clock
+Sent 46 2705695.299694 2705695.299512 6: seq: 1a, get_clock
+Sent 47 2705696.284032 2705696.283850 6: seq: 1b, get_clock
+Sent 48 2705697.268926 2705697.268744 6: seq: 1c, get_clock
+Sent 49 2705698.253792 2705698.253610 6: seq: 1d, get_clock
+Sent 50 2705699.238062 2705699.237880 6: seq: 1e, get_clock
+Sent 51 2705700.222246 2705700.222064 6: seq: 1f, get_clock
+Sent 52 2705701.206616 2705701.206434 6: seq: 10, get_clock
+Sent 53 2705702.191012 2705702.190830 6: seq: 11, get_clock
+Sent 54 2705703.175216 2705703.175034 6: seq: 12, get_clock
+Sent 55 2705704.159483 2705704.159301 6: seq: 13, get_clock
+Sent 56 2705705.143680 2705705.143498 6: seq: 14, get_clock
+Sent 57 2705706.127867 2705706.127685 6: seq: 15, get_clock
+Sent 58 2705707.112806 2705707.112624 6: seq: 16, get_clock
+Sent 59 2705708.096792 2705708.096610 6: seq: 17, get_clock
+Sent 60 2705709.081060 2705709.080878 6: seq: 18, get_clock
+Sent 61 2705710.066020 2705710.065838 6: seq: 19, get_clock
+Sent 62 2705711.050328 2705711.050146 6: seq: 1a, get_clock
+Sent 63 2705712.035391 2705712.035209 6: seq: 1b, get_clock
+Sent 64 2705713.019940 2705713.019758 6: seq: 1c, get_clock
+Sent 65 2705714.004750 2705714.004568 6: seq: 1d, get_clock
+Sent 66 2705714.989044 2705714.988862 6: seq: 1e, get_clock
+Sent 67 2705715.973154 2705715.972972 6: seq: 1f, get_clock
+Sent 68 2705716.957352 2705716.957170 6: seq: 10, get_clock
+Sent 69 2705717.941625 2705717.941443 6: seq: 11, get_clock
+Sent 70 2705718.926254 2705718.926072 6: seq: 12, get_clock
+Sent 71 2705719.911082 2705719.910900 6: seq: 13, get_clock
+Sent 72 2705720.895197 2705720.895015 6: seq: 14, get_clock
+Sent 73 2705721.879414 2705721.879232 6: seq: 15, get_clock
+Sent 74 2705722.864125 2705722.863943 6: seq: 16, get_clock
+Sent 75 2705723.848929 2705723.848747 6: seq: 17, get_clock
+Sent 76 2705724.833607 2705724.833425 6: seq: 18, get_clock
+Sent 77 2705725.817908 2705725.817726 6: seq: 19, get_clock
+Sent 78 2705726.802132 2705726.801950 6: seq: 1a, get_clock
+Sent 79 2705727.786528 2705727.786346 6: seq: 1b, get_clock
+Sent 80 2705728.770786 2705728.770604 6: seq: 1c, get_clock
+Sent 81 2705729.755017 2705729.754835 6: seq: 1d, get_clock
+Sent 82 2705730.739544 2705730.739362 6: seq: 1e, get_clock
+Sent 83 2705731.724449 2705731.724267 6: seq: 1f, get_clock
+Sent 84 2705732.709387 2705732.709205 6: seq: 10, get_clock
+Sent 85 2705733.694311 2705733.694129 6: seq: 11, get_clock
+Sent 86 2705734.679045 2705734.678863 6: seq: 12, get_clock
+Sent 87 2705735.663542 2705735.663360 6: seq: 13, get_clock
+Sent 88 2705736.648148 2705736.647966 6: seq: 14, get_clock
+Sent 89 2705737.632401 2705737.632219 6: seq: 15, get_clock
+Sent 90 2705738.616534 2705738.616352 6: seq: 16, get_clock
+Sent 91 2705739.600746 2705739.600564 6: seq: 17, get_clock
+Sent 92 2705740.584964 2705740.584782 6: seq: 18, get_clock
+Sent 93 2705741.569148 2705741.568966 6: seq: 19, get_clock
+Sent 94 2705742.553630 2705742.553448 6: seq: 1a, get_clock
+Sent 95 2705743.538518 2705743.538336 6: seq: 1b, get_clock
+Sent 96 2705744.522952 2705744.522770 6: seq: 1c, get_clock
+Sent 97 2705745.507875 2705745.507693 6: seq: 1d, get_clock
+Sent 98 2705746.492793 2705746.492611 6: seq: 1e, get_clock
+Sent 99 2705747.121317 2705747.121135 6: seq: 1f, emergency_stop
+Dumping receive queue 100 messages
+Receive: 0 2705734.657008 2705733.694311 14: seq: 12, analog_in_state oid=10 next_clock=3345281830 value=7534
+Receive: 1 2705734.667000 2705733.694311 15: seq: 12, analog_in_state oid=11 next_clock=3345921830 value=31286
+Receive: 2 2705734.679312 2705734.679045 11: seq: 13, clock clock=3327958759
+Receive: 3 2705734.956994 2705734.679045 14: seq: 13, analog_in_state oid=10 next_clock=3364481830 value=7533
+Receive: 4 2705734.967002 2705734.679045 15: seq: 13, analog_in_state oid=11 next_clock=3365121830 value=31285
+Receive: 5 2705735.257009 2705734.679045 14: seq: 13, analog_in_state oid=10 next_clock=3383681830 value=7535
+Receive: 6 2705735.266996 2705734.679045 15: seq: 13, analog_in_state oid=11 next_clock=3384321830 value=31286
+Receive: 7 2705735.557029 2705734.679045 14: seq: 13, analog_in_state oid=10 next_clock=3402881830 value=7537
+Receive: 8 2705735.567016 2705734.679045 15: seq: 13, analog_in_state oid=11 next_clock=3403521830 value=31289
+Receive: 9 2705735.663833 2705735.663542 11: seq: 14, clock clock=3390967487
+Receive: 10 2705735.857014 2705735.663542 14: seq: 14, analog_in_state oid=10 next_clock=3422081830 value=7535
+Receive: 11 2705735.867011 2705735.663542 15: seq: 14, analog_in_state oid=11 next_clock=3422721830 value=31287
+Receive: 12 2705736.157007 2705735.663542 14: seq: 14, analog_in_state oid=10 next_clock=3441281830 value=7535
+Receive: 13 2705736.167001 2705735.663542 15: seq: 14, analog_in_state oid=11 next_clock=3441921830 value=31289
+Receive: 14 2705736.457010 2705735.663542 14: seq: 14, analog_in_state oid=10 next_clock=3460481830 value=7531
+Receive: 15 2705736.467002 2705735.663542 15: seq: 14, analog_in_state oid=11 next_clock=3461121830 value=31290
+Receive: 16 2705736.648503 2705736.648148 11: seq: 15, clock clock=3453984031
+Receive: 17 2705736.756997 2705736.648148 14: seq: 15, analog_in_state oid=10 next_clock=3479681830 value=7530
+Receive: 18 2705736.766995 2705736.648148 15: seq: 15, analog_in_state oid=11 next_clock=3480321830 value=31288
+Receive: 19 2705737.057002 2705736.648148 14: seq: 15, analog_in_state oid=10 next_clock=3498881830 value=7533
+Receive: 20 2705737.067005 2705736.648148 15: seq: 15, analog_in_state oid=11 next_clock=3499521830 value=31286
+Receive: 21 2705737.356993 2705736.648148 14: seq: 15, analog_in_state oid=10 next_clock=3518081830 value=7536
+Receive: 22 2705737.366988 2705736.648148 15: seq: 15, analog_in_state oid=11 next_clock=3518721830 value=31287
+Receive: 23 2705737.632688 2705737.632401 11: seq: 16, clock clock=3516974095
+Receive: 24 2705737.657016 2705737.632401 14: seq: 16, analog_in_state oid=10 next_clock=3537281830 value=7528
+Receive: 25 2705737.666995 2705737.632401 15: seq: 16, analog_in_state oid=11 next_clock=3537921830 value=31290
+Receive: 26 2705737.752041 2705737.632401 14: seq: 16, stats count=171 sum=104603 sumsq=506483
+Receive: 27 2705737.957034 2705737.632401 14: seq: 16, analog_in_state oid=10 next_clock=3556481830 value=7534
+Receive: 28 2705737.967011 2705737.632401 15: seq: 16, analog_in_state oid=11 next_clock=3557121830 value=31284
+Receive: 29 2705738.257053 2705737.632401 14: seq: 16, analog_in_state oid=10 next_clock=3575681830 value=7535
+Receive: 30 2705738.267034 2705737.632401 15: seq: 16, analog_in_state oid=11 next_clock=3576321830 value=31286
+Receive: 31 2705738.556993 2705737.632401 14: seq: 16, analog_in_state oid=10 next_clock=3594881830 value=7536
+Receive: 32 2705738.566985 2705737.632401 15: seq: 16, analog_in_state oid=11 next_clock=3595521830 value=31288
+Receive: 33 2705738.616866 2705738.616534 11: seq: 17, clock clock=3579963087
+Receive: 34 2705738.856989 2705738.616534 14: seq: 17, analog_in_state oid=10 next_clock=3614081830 value=7532
+Receive: 35 2705738.866983 2705738.616534 15: seq: 17, analog_in_state oid=11 next_clock=3614721830 value=31288
+Receive: 36 2705739.156989 2705738.616534 14: seq: 17, analog_in_state oid=10 next_clock=3633281830 value=7532
+Receive: 37 2705739.166983 2705738.616534 15: seq: 17, analog_in_state oid=11 next_clock=3633921830 value=31289
+Receive: 38 2705739.456976 2705738.616534 14: seq: 17, analog_in_state oid=10 next_clock=3652481830 value=7539
+Receive: 39 2705739.466994 2705738.616534 15: seq: 17, analog_in_state oid=11 next_clock=3653121830 value=31290
+Receive: 40 2705739.601054 2705739.600746 11: seq: 18, clock clock=3642949807
+Receive: 41 2705739.756989 2705739.600746 14: seq: 18, analog_in_state oid=10 next_clock=3671681830 value=7538
+Receive: 42 2705739.766975 2705739.600746 15: seq: 18, analog_in_state oid=11 next_clock=3672321830 value=31285
+Receive: 43 2705740.056977 2705739.600746 14: seq: 18, analog_in_state oid=10 next_clock=3690881830 value=7534
+Receive: 44 2705740.066989 2705739.600746 15: seq: 18, analog_in_state oid=11 next_clock=3691521830 value=31283
+Receive: 45 2705740.356974 2705739.600746 14: seq: 18, analog_in_state oid=10 next_clock=3710081830 value=7533
+Receive: 46 2705740.366983 2705739.600746 15: seq: 18, analog_in_state oid=11 next_clock=3710721830 value=31286
+Receive: 47 2705740.585250 2705740.584964 11: seq: 19, clock clock=3705939863
+Receive: 48 2705740.656969 2705740.584964 14: seq: 19, analog_in_state oid=10 next_clock=3729281830 value=7532
+Receive: 49 2705740.666991 2705740.584964 15: seq: 19, analog_in_state oid=11 next_clock=3729921830 value=31284
+Receive: 50 2705740.956968 2705740.584964 14: seq: 19, analog_in_state oid=10 next_clock=3748481830 value=7534
+Receive: 51 2705740.966979 2705740.584964 15: seq: 19, analog_in_state oid=11 next_clock=3749121830 value=31291
+Receive: 52 2705741.256978 2705740.584964 14: seq: 19, analog_in_state oid=10 next_clock=3767681830 value=7530
+Receive: 53 2705741.266978 2705740.584964 15: seq: 19, analog_in_state oid=11 next_clock=3768321830 value=31288
+Receive: 54 2705741.556972 2705740.584964 14: seq: 19, analog_in_state oid=10 next_clock=3786881830 value=7533
+Receive: 55 2705741.566982 2705740.584964 15: seq: 19, analog_in_state oid=11 next_clock=3787521830 value=31285
+Receive: 56 2705741.569425 2705741.569148 11: seq: 1a, clock clock=3768927407
+Receive: 57 2705741.856985 2705741.569148 14: seq: 1a, analog_in_state oid=10 next_clock=3806081830 value=7532
+Receive: 58 2705741.866965 2705741.569148 15: seq: 1a, analog_in_state oid=11 next_clock=3806721830 value=31282
+Receive: 59 2705742.156970 2705741.569148 14: seq: 1a, analog_in_state oid=10 next_clock=3825281830 value=7536
+Receive: 60 2705742.166984 2705741.569148 15: seq: 1a, analog_in_state oid=11 next_clock=3825921830 value=31287
+Receive: 61 2705742.456964 2705741.569148 14: seq: 1a, analog_in_state oid=10 next_clock=3844481830 value=7530
+Receive: 62 2705742.466974 2705741.569148 15: seq: 1a, analog_in_state oid=11 next_clock=3845121830 value=31287
+Receive: 63 2705742.553895 2705742.553630 11: seq: 1b, clock clock=3831933719
+Receive: 64 2705742.751956 2705742.553630 14: seq: 1b, stats count=163 sum=99383 sumsq=481705
+Receive: 65 2705742.756967 2705742.553630 14: seq: 1b, analog_in_state oid=10 next_clock=3863681830 value=7533
+Receive: 66 2705742.766978 2705742.553630 15: seq: 1b, analog_in_state oid=11 next_clock=3864321830 value=31289
+Receive: 67 2705743.056966 2705742.553630 14: seq: 1b, analog_in_state oid=10 next_clock=3882881830 value=7534
+Receive: 68 2705743.066975 2705742.553630 15: seq: 1b, analog_in_state oid=11 next_clock=3883521830 value=31285
+Receive: 69 2705743.356973 2705742.553630 14: seq: 1b, analog_in_state oid=10 next_clock=3902081830 value=7533
+Receive: 70 2705743.366975 2705742.553630 15: seq: 1b, analog_in_state oid=11 next_clock=3902721830 value=31286
+Receive: 71 2705743.538789 2705743.538518 11: seq: 1c, clock clock=3894966935
+Receive: 72 2705743.657072 2705743.538518 14: seq: 1c, analog_in_state oid=10 next_clock=3921281830 value=7532
+Receive: 73 2705743.666976 2705743.538518 15: seq: 1c, analog_in_state oid=11 next_clock=3921921830 value=31287
+Receive: 74 2705743.956983 2705743.538518 14: seq: 1c, analog_in_state oid=10 next_clock=3940481830 value=7532
+Receive: 75 2705743.966967 2705743.538518 15: seq: 1c, analog_in_state oid=11 next_clock=3941121830 value=31286
+Receive: 76 2705744.256976 2705743.538518 14: seq: 1c, analog_in_state oid=10 next_clock=3959681830 value=7531
+Receive: 77 2705744.266982 2705743.538518 15: seq: 1c, analog_in_state oid=11 next_clock=3960321830 value=31288
+Receive: 78 2705744.523238 2705744.522952 11: seq: 1d, clock clock=3957971591
+Receive: 79 2705744.556964 2705744.522952 14: seq: 1d, analog_in_state oid=10 next_clock=3978881830 value=7533
+Receive: 80 2705744.566961 2705744.522952 15: seq: 1d, analog_in_state oid=11 next_clock=3979521830 value=31286
+Receive: 81 2705744.856966 2705744.522952 14: seq: 1d, analog_in_state oid=10 next_clock=3998081830 value=7535
+Receive: 82 2705744.866970 2705744.522952 15: seq: 1d, analog_in_state oid=11 next_clock=3998721830 value=31288
+Receive: 83 2705745.156961 2705744.522952 14: seq: 1d, analog_in_state oid=10 next_clock=4017281830 value=7534
+Receive: 84 2705745.166964 2705744.522952 15: seq: 1d, analog_in_state oid=11 next_clock=4017921830 value=31283
+Receive: 85 2705745.456978 2705744.522952 14: seq: 1d, analog_in_state oid=10 next_clock=4036481830 value=7531
+Receive: 86 2705745.466967 2705744.522952 15: seq: 1d, analog_in_state oid=11 next_clock=4037121830 value=31285
+Receive: 87 2705745.508141 2705745.507875 11: seq: 1e, clock clock=4021006247
+Receive: 88 2705745.756984 2705745.507875 14: seq: 1e, analog_in_state oid=10 next_clock=4055681830 value=7533
+Receive: 89 2705745.766969 2705745.507875 15: seq: 1e, analog_in_state oid=11 next_clock=4056321830 value=31287
+Receive: 90 2705746.056952 2705745.507875 14: seq: 1e, analog_in_state oid=10 next_clock=4074881830 value=7537
+Receive: 91 2705746.066960 2705745.507875 15: seq: 1e, analog_in_state oid=11 next_clock=4075521830 value=31290
+Receive: 92 2705746.356949 2705745.507875 14: seq: 1e, analog_in_state oid=10 next_clock=4094081830 value=7533
+Receive: 93 2705746.366979 2705745.507875 15: seq: 1e, analog_in_state oid=11 next_clock=4094721830 value=31284
+Receive: 94 2705746.493069 2705746.492793 11: seq: 1f, clock clock=4084041615
+Receive: 95 2705746.656956 2705746.492793 14: seq: 1f, analog_in_state oid=10 next_clock=4113281830 value=7539
+Receive: 96 2705746.666957 2705746.492793 15: seq: 1f, analog_in_state oid=11 next_clock=4113921830 value=31285
+Receive: 97 2705746.956951 2705746.492793 14: seq: 1f, analog_in_state oid=10 next_clock=4132481830 value=7533
+Receive: 98 2705746.966949 2705746.492793 15: seq: 1f, analog_in_state oid=11 next_clock=4133121830 value=31291
+Receive: 99 2705747.121763 2705747.121317 12: seq: 10, shutdown clock=4124267505 static_string_id=Command request
