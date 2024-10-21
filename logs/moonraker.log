@@ -236,3 +236,5 @@ Error configuring printer
 2024-10-20 20:27:54,110 [job_state.py:_handle_started()] - Job state initialized: standby
 2024-10-20 20:27:54,365 [klippy_connection.py:_check_ready()] - Klippy ready
 2024-10-20 20:27:54,863 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor raspberry_pi', 'temperature_sensor EBB', 'extruder']
+2024-10-20 21:09:09,914 [websockets.py:on_close()] - Websocket Closed: ID: 140734414838608 Close Code: 1001, Close Reason: None, Pong Time Elapsed: 6.12
+2024-10-20 21:28:33,332 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 192.168.0.215
